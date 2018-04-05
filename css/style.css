@@ -148,6 +148,17 @@ body, html {
   }
 }
 
+.topo > .lateral .itemMenu.optSub .titulo::before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 18px;
+}
+
 .topo > .lateral .itemMenu:hover .icon, .topo > .lateral .itemMenu:hover .titulo {
   color: #fe1777;
 }
@@ -166,10 +177,12 @@ body, html {
 }
 
 .topo > .lateral .itemMenu .titulo {
+  position: relative;
   margin-left: -6.5px;
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
+  width: 190px;
 }
 
 .topo > .lateral .itemMenu .subMenu {
@@ -195,9 +208,11 @@ body, html {
 
 .topo > .lateral .itemMenu.subAberto {
   height: auto;
+  color: #fe1777;
 }
 
 .topo > .lateral .itemMenu.subAberto .subMenu {
   display: block;
+  color: #9aa3c2;
 }
 /*# sourceMappingURL=style.css.map */

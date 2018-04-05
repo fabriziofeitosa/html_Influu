@@ -317,6 +317,18 @@ body, html {
           color: #fff !important;
         }
       }
+      &.optSub {
+        .titulo::before {
+          display: block;
+          position: absolute;
+          top: 0px;
+          right: 10px;
+          content: "\f0d7";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          font-size: 18px;
+        }
+      }
       &:hover {
         .icon, .titulo {
           color: $rosaPadrao;
@@ -336,10 +348,12 @@ body, html {
         width: 70px;
       }
       .titulo {
+        position: relative;
         margin-left: -6.5px;
         display: inline-block;
         font-size: 14px;
         font-weight: bold;
+        width: 190px;
       }
       .subMenu {
         display: none;
@@ -360,8 +374,10 @@ body, html {
       }
       &.subAberto {
         height: auto;
+        color: $rosaPadrao;
         .subMenu {
           display: block;
+          color: $secundaria;
         }
       }
     }
