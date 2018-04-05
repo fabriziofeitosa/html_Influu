@@ -273,22 +273,24 @@ body, html {
 }
 
 .topo > .conteudo > .perfil .box ul li a {
+  display: block;
+  width: 100%;
   color: inherit;
   text-decoration: none;
+}
+
+.topo > .conteudo > .perfil .box ul li a:hover {
+  color: #fe1777;
+}
+
+.topo > .conteudo > .perfil .box ul li a:hover .icon {
+  color: #fe1777;
 }
 
 .topo > .conteudo > .perfil .box ul li .icon {
   color: #9aa3c2;
   font-size: 18px;
   margin-right: 10px;
-}
-
-.topo > .conteudo > .perfil .box ul li:hover {
-  color: #fe1777;
-}
-
-.topo > .conteudo > .perfil .box ul li:hover .icon {
-  color: #fe1777;
 }
 
 .topo > .conteudo > .perfil:hover > .box {
