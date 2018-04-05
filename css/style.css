@@ -59,27 +59,27 @@ body, html {
   }
 }
 
-.topo > .conteudo .titulo {
+.topo > .conteudo > .titulo {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 70px;
 }
 
-.topo > .conteudo .notificacoes {
+.topo > .conteudo > .notificacoes {
   position: relative;
   line-height: 70px;
   font-size: 30px;
-  margin-right: 20px;
+  margin-right: 30px;
   width: 50px;
 }
 
 @media screen and (max-width: 767px) {
-  .topo > .conteudo .notificacoes {
+  .topo > .conteudo > .notificacoes {
     margin-right: 10px;
   }
 }
 
-.topo > .conteudo .notificacoes label {
+.topo > .conteudo > .notificacoes label {
   text-align: center;
   position: relative;
   cursor: pointer;
@@ -89,7 +89,7 @@ body, html {
   height: 100%;
 }
 
-.topo > .conteudo .notificacoes label .numb {
+.topo > .conteudo > .notificacoes label .numb {
   position: absolute;
   top: 15px;
   right: 5px;
@@ -104,19 +104,20 @@ body, html {
   text-align: center;
 }
 
-.topo > .conteudo .notificacoes input[type="checkbox"] {
+.topo > .conteudo > .notificacoes input[type="checkbox"] {
   position: absolute;
   top: 0;
   left: -9999px;
 }
 
-.topo > .conteudo .notificacoes .box {
+.topo > .conteudo > .notificacoes .box {
   z-index: 20;
   display: none;
   position: absolute;
   top: 65px;
   right: 0px;
   background-color: #fff;
+  color: #555566;
   border-radius: 4px;
   width: 300px;
   min-height: 80px;
@@ -126,14 +127,14 @@ body, html {
 }
 
 @media screen and (max-width: 767px) {
-  .topo > .conteudo .notificacoes .box {
+  .topo > .conteudo > .notificacoes .box {
     position: fixed;
     right: 10px;
     top: 65px;
   }
 }
 
-.topo > .conteudo .notificacoes .box::after {
+.topo > .conteudo > .notificacoes .box::after {
   content: '';
   position: absolute;
   top: -5px;
@@ -146,15 +147,146 @@ body, html {
 }
 
 @media screen and (max-width: 767px) {
-  .topo > .conteudo .notificacoes input[type="checkbox"]:checked ~ .box {
+  .topo > .conteudo > .notificacoes input[type="checkbox"]:checked ~ .box {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .topo > .conteudo .notificacoes:hover > .box {
+  .topo > .conteudo > .notificacoes:hover > .box {
     display: block !important;
   }
+}
+
+.topo > .conteudo > .perfil {
+  position: relative;
+}
+
+.topo > .conteudo > .perfil .foto, .topo > .conteudo > .perfil .infor {
+  cursor: pointer;
+}
+
+.topo > .conteudo > .perfil .foto {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+
+.topo > .conteudo > .perfil .foto img {
+  width: 36px;
+  height: 36px;
+}
+
+.topo > .conteudo > .perfil .infor {
+  padding: 0 10px;
+  position: relative;
+  margin: 0;
+}
+
+.topo > .conteudo > .perfil .infor .point {
+  position: absolute;
+  top: 7px;
+  right: -5px;
+  font-size: 8px;
+}
+
+.topo > .conteudo > .perfil .infor .nome, .topo > .conteudo > .perfil .infor .profissao {
+  display: block;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.topo > .conteudo > .perfil .infor .nome {
+  font-size: 14px;
+}
+
+.topo > .conteudo > .perfil .infor .profissao {
+  font-size: 9px;
+}
+
+.topo > .conteudo > .perfil .box {
+  z-index: 21;
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: -30px;
+  background-color: #fff;
+  color: #555566;
+  width: 235px;
+  min-height: 70px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.topo > .conteudo > .perfil .box::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 23px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  transform: rotate(45deg);
+}
+
+.topo > .conteudo > .perfil .box .titulo {
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #9aa3c2;
+  padding: 7px 25px;
+  border-bottom: 1px solid #e5ecf4;
+  font-weight: bold;
+}
+
+.topo > .conteudo > .perfil .box .titulo:not(:first-of-type) {
+  border-top: 1px solid #e5ecf4;
+}
+
+.topo > .conteudo > .perfil .box ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 25px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.topo > .conteudo > .perfil .box ul li {
+  padding: 10px 0;
+}
+
+.topo > .conteudo > .perfil .box ul li:first-child {
+  padding-top: 20px;
+}
+
+.topo > .conteudo > .perfil .box ul li:last-child {
+  padding-bottom: 20px;
+}
+
+.topo > .conteudo > .perfil .box ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.topo > .conteudo > .perfil .box ul li .icon {
+  color: #9aa3c2;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.topo > .conteudo > .perfil .box ul li:hover {
+  color: #fe1777;
+}
+
+.topo > .conteudo > .perfil .box ul li:hover .icon {
+  color: #fe1777;
+}
+
+.topo > .conteudo > .perfil:hover > .box {
+  display: block !important;
 }
 
 .topo > .lateral {
