@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <!-- Required meta tags -->
@@ -8,18 +8,146 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Font Icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+ <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Active-Campaigns</title>
 </head>
 
 <body>
-  <h1>Active-Campaigns</h1>
 
-  <!-- Optional JavaScript -->
+  <header>
+    <div class="topo">
+      <div class="conteudo d-flex flex-row justify-content-end">
+        <!-- Título da página -->
+        <div class="titulo mr-auto">Campanhas Ativas</div>
+
+        <!-- Notificações -->
+        <div class="notificacoes">
+          <i class="fas fa-bell"></i>
+          <div class="numb">
+            <span>3</span>
+          </div>
+        </div>
+
+        <!-- Perfil -->
+        <div class="perfil">
+          <div class="foto">
+            <!-- Imagem de perfil -->
+            <img src="image/perfil.png" alt="Imagem de perfil">
+          </div>
+          <div class="infor">
+            <!-- Nome e Profissão -->
+            <span class="nome">John Doe</span>
+            <span class="profissao">Influuencer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Lateral -->
+      <div class="lateral">
+        <div class="logo d-flex flex-row">
+          <div class="img"> <!-- max 70x70 px -->
+            <img src="image/iconLogo.png" alt="Logotipo">
+          </div>
+          <div class="name">INFLUU</div>
+        </div>
+
+        <!-- Itens de Menu | Abre e fecha -->
+        <div class="itemMenu clickMenu">
+          <div class="icon">
+            <i class="fas fa-bars iconAbrir"></i>
+            <i class="fas fa-times iconFechar"></i>
+          </div>
+          <div class="titulo noSelect">
+            <span>Fechar Menu</span>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu">
+          <div class="icon">
+            <i class="far fa-user"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Perfil</span>
+          </div>
+        </div>
+
+        <!-- Itens de Menu | com subMenu add classe 'optSub' -->
+        <div class="itemMenu optSub">
+          <div class="icon">
+            <i class="fas fa-bullhorn"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Campanhas</span>
+          </div>
+          <!-- SubMenu -->
+          <div class="subMenu">
+            <ul>
+              <li class="itemSub">
+                <span>Disponíveis</span>
+                <a href="#linkSubItem1" class="tudo"></a>
+              </li>
+              <li class="itemSub">
+                <span>Ativos</span>
+                <a href="#linkSubItem2" class="tudo"></a>
+              </li>
+              <li class="itemSub">
+                <span>Expirados</span>
+                <a href="#linkSubItem3" class="tudo"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu">
+          <div class="icon">
+            <i class="fas fa-history"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Histórico</span>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu">
+          <div class="icon">
+            <i class="fas fa-chart-pie"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Estatística</span>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu">
+          <div class="icon">
+            <i class="fas fa-credit-card"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Pagamento</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/theme.js"></script>
 </body>
 
 </html>
