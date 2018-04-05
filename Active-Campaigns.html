@@ -26,14 +26,19 @@
 
         <!-- Notificações -->
         <div class="notificacoes">
-          <i class="fas fa-bell"></i>
-          <div class="numb">
-            <span>3</span>
-          </div>
+          <label for="notifBox">
+            <i class="fas fa-bell"></i>
+            <div class="numb noSelect">
+              <span>3</span>
+            </div>
+          </label>
+          <input type="checkbox" name="notifBox" id="notifBox">
+          <!-- Box com as notificações -->
+          <div class="box"></div>
         </div>
 
         <!-- Perfil -->
-        <div class="perfil">
+        <div class="perfil d-none d-md-block">
           <div class="foto">
             <!-- Imagem de perfil -->
             <img src="image/perfil.png" alt="Imagem de perfil">
