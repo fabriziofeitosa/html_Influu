@@ -49,6 +49,12 @@ body, html {
   height: 70px;
 }
 
+@media screen and (max-width: 767px) {
+  .topo {
+    position: fixed;
+  }
+}
+
 .topo > .conteudo {
   padding: 0 50px 0 100px;
 }
@@ -454,5 +460,26 @@ body, html {
 .topo > .lateral .itemMenu.subAberto .subMenu {
   display: block;
   color: #9aa3c2;
+}
+
+/* #######################################
+		ÁREA DE CONTEUDO
+   ####################################### */
+.areaDeConteudo {
+  max-width: 1070px;
+  margin: 100px auto 0 auto;
+}
+
+@media screen and (max-width: 1240px) {
+  .areaDeConteudo {
+    padding-left: 85px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .areaDeConteudo {
+    padding: 0 15px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
