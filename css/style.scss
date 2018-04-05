@@ -271,13 +271,15 @@ body, html {
     transition: all .5s;
 
     @media screen and (max-width: $maxMobile) {
-      height: 70px;
+      left: -70px;
+      top: 70px;
     }
 
     &.aberto {
       width: 270px;
       @media screen and (max-width: $maxMobile) {
         height: 100vh;
+        left: 0;
       }
       
       .iconAbrir { display: none; }
@@ -312,8 +314,13 @@ body, html {
       line-height: 70px;
       font-size: 24px;
       &.clickMenu {
+        transition: all .4s;
         @media screen and (max-width: $maxMobile) {
-          background-color: $rosaPadrao;
+          background-color: #ec0e6b;
+          width: 70px;
+          position: fixed;
+          top: 0;
+          left: 0;
           color: #fff !important;
         }
       }

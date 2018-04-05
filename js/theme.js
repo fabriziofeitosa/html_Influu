@@ -8,11 +8,11 @@
 jQuery(document).ready(function ($) {
 
   // Menu Lateral 
-  $('.lateral .clickMenu').click(function(){
+  $('header .lateral .clickMenu').click(function(){
     $(this).parents('.lateral').toggleClass('aberto');
-    $('.lateral .itemMenu').removeClass('subAberto');
+    $('header .lateral .itemMenu').removeClass('subAberto');
   });
-  $('.lateral .optSub .titulo').click(function () {
+  $('header .lateral .optSub .titulo').click(function () {
     $(this).parents('.itemMenu').toggleClass('subAberto');
   });
 
