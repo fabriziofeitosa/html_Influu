@@ -205,6 +205,7 @@ Version: 1.0
    ####################################### */
 
 $rosaPadrao: #fe1777;
+$azulClaro: #01bee4;
 
 $primaria: #555566;
 $secundaria: #9aa3c2;
@@ -281,7 +282,7 @@ body, html {
           position: absolute;
           top: 15px;
           right: 5px;
-          background-color: #37a9ff;
+          background-color: $azulClaro;
           color: #fff;
           font-size: 12px;
           font-weight: bold;
@@ -299,34 +300,148 @@ body, html {
       }
       .box {
         z-index: 20;
+        font-size: 16px;
+        line-height: 1;
         display: none;
         position: absolute;
         top: 65px;
-        right: 0px;
+        right: -160px;
+        width: 380px;
         background-color: #fff;
         color: $primaria;
         border-radius: 4px;
-        width: 300px;
         min-height: 80px;
         -webkit-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.2);
         -moz-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.2);
         box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.2);
         @media screen and (max-width: $maxMobile) {
           position: fixed;
-          right: 10px;
+          right: 14px;
           top: 65px;
-          // width: 90%;
+          width: 90%;
+          max-width: 380px;
+        }
+        @media screen and (max-width: 380px) {
+          width: 100%;
+          right: 0;
         }
         &::after {
           content: '';
           position: absolute;
           top: -5px;
-          right: 20px;
+          right: 180px;
           display: block;
           width: 10px;
           height: 10px;
           background-color: #fff;
           transform: rotate(45deg);
+          @media screen and (max-width: $maxMobile) {
+            right: 16px;
+          }
+          @media screen and (max-width: 380px) {
+            right: 30px;
+          }
+        }
+
+        // Conteudo BOX notificações
+        > .titulo {
+          text-transform: uppercase;
+          font-size: 10px;
+          color: #9aa3c2;
+          padding: 7px 25px;
+          border-bottom: 1px solid #e5ecf4;
+          font-weight: bold;
+        }
+        > .mensagemVazia {
+          font-size: 12px;
+          padding: 20px 10px;
+          color: $secundaria;
+        }
+        > .item {
+          padding: 20px 10px;
+          &:not(:last-child) {
+            border-bottom: 1px solid #e5ecf4;
+          }
+          .foto {
+            position: relative;
+            margin-left: 16px;
+            width: 36px;
+            padding-top: 5px;
+            img {
+              border-radius: 50%;
+              vertical-align: top;
+              width: 36px;
+              height: 36px;
+            }
+          }
+          .txt {
+            margin-left: 10px;
+            padding-right: 25px;
+            a {
+              text-decoration: none;
+              color: $azulClaro;
+              font-weight: bold;
+            }
+            a.linkPerfil {
+              color: $primaria;
+              font-weight: bold;
+              font-size: 13px;
+            }
+            .nome {
+              font-size: 14px;
+              line-height: 18px;
+              font-weight: bold;
+              a {
+                font-size: inherit;
+              }
+            }
+            .sobre {
+              font-size: 12px;
+              line-height: 16px;
+              color: $secundaria;
+            }
+          }
+          .interacao {
+            margin-right: 16px;
+            padding-top: 5px;
+            .icon {
+              color: #fff;
+            }
+            .like, .deslike, .decisao {
+              position: relative;
+              width: 40px;
+              height: 40px;
+              line-height: 40px;
+              text-align: center;
+              border-radius: 8px;
+              background-color: $secundaria;
+            }
+            .like {
+              margin-right: 7px;
+              background-color: $azulClaro;
+            }
+            .decisao {
+              background-color: transparent;
+              .icon {
+                color: #d4d6e2;
+                font-size: 24px;
+              }
+            }
+          }
+        }
+        > .footer {
+          position: relative;
+          text-transform: uppercase;
+          background-color: $azulClaro;
+          color: #fff;
+          width: 100%;
+          height: 55px;
+          line-height: 55px;
+          text-align: center;
+          font-size: 12px;
+          border-bottom-right-radius: 4px;
+          border-bottom-left-radius: 4px;
+          font-weight: bold;
         }
       }
       @media screen and (max-width: $maxMobile) {
