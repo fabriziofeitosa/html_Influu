@@ -34,12 +34,14 @@ a.tudo {
 
 body, html {
   background-color: #edf2f6;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* #######################################
 		HEADER
    ####################################### */
 .topo {
+  z-index: 100;
   background-color: #fe1777;
   color: #fff;
   position: absolute;
@@ -202,7 +204,9 @@ body, html {
   position: relative;
   margin-left: 16px;
   width: 36px;
-  padding-top: 5px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #edf2f6;
 }
 
 .topo > .conteudo > .notificacoes .box > .item .foto img {
@@ -318,6 +322,7 @@ body, html {
   border-radius: 50%;
   width: 36px;
   height: 36px;
+  background-color: #edf2f6;
 }
 
 .topo > .conteudo > .perfil .foto img {
@@ -609,6 +614,7 @@ body, html {
 		ÁREA DE CONTEUDO
    ####################################### */
 .areaDeConteudo {
+  z-index: 1;
   max-width: 1070px;
   margin: 100px auto 0 auto;
 }
@@ -624,5 +630,148 @@ body, html {
   .areaDeConteudo {
     padding: 0 15px;
   }
+}
+
+/* #######################################
+		CABEÇALHO
+   ####################################### */
+.cabecalho {
+  position: relative;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .cabecalho {
+    margin-bottom: 30px;
+  }
+}
+
+.cabecalho > .social {
+  position: absolute;
+  top: 17px;
+  right: -17px;
+}
+
+@media screen and (max-width: 767px) {
+  .cabecalho > .social {
+    top: initial;
+    bottom: -17px;
+    right: calc(50% - 75px);
+  }
+}
+
+.cabecalho > .social .icon {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .cabecalho > .social .icon {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+
+.cabecalho > .capa img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+
+.cabecalho > .optMenu {
+  min-height: 50px;
+  padding: 38px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .cabecalho > .optMenu {
+    padding-top: 130px;
+  }
+}
+
+.cabecalho > .optMenu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cabecalho > .optMenu ul li {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: #9aa3c2;
+}
+
+@media screen and (max-width: 767px) {
+  .cabecalho > .optMenu ul li {
+    padding: 10px 0;
+  }
+}
+
+.cabecalho > .optMenu ul li.active {
+  color: #fe1777;
+}
+
+.cabecalho > .optMenu ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.cabecalho > .optMenu ul li a:hover {
+  color: #fe1777;
+}
+
+.cabecalho > .autor {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  bottom: 15px;
+  text-align: center;
+  max-width: 200px;
+  z-index: 4;
+}
+
+@media screen and (max-width: 767px) {
+  .cabecalho > .autor {
+    bottom: 290px;
+  }
+}
+
+.cabecalho > .autor a.autor-thumb {
+  display: block;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 6px solid #fff;
+  margin: 0 auto;
+  width: 132px;
+  height: 132px;
+  background-color: #edf2f6;
+}
+
+.cabecalho > .autor a.autor-thumb img {
+  border-radius: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.cabecalho > .autor .autor-content a.nome {
+  font-size: 22px;
+  font-weight: bold;
+  color: #555566;
+  text-decoration: none;
+}
+
+.cabecalho > .autor .autor-content .sobre {
+  font-size: 12px;
+  color: #9aa3c2;
 }
 /*# sourceMappingURL=style.css.map */
