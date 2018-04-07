@@ -113,6 +113,7 @@ body.login .box {
   color: #555566;
   border-radius: 4px;
   max-width: 435px;
+  min-height: 495px;
 }
 
 @media screen and (max-width: 767px) {
