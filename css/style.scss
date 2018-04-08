@@ -353,9 +353,9 @@ body.login {
       }
     }
   }
-  .step02 {
+  .step02, .step03 {
     .corpo {
-      .numTelefone {
+      .numTelefone, .numConfirmacao {
         background-color: #fff;
         color: $primaria;
         border: 1px solid #e5ecf6;

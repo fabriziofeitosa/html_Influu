@@ -172,7 +172,7 @@ body.login .box > .corpo .btn-grupo .botao .frase {
   font-size: 14px;
 }
 
-body.login .step02 .corpo .numTelefone {
+body.login .step02 .corpo .numTelefone, body.login .step02 .corpo .numConfirmacao, body.login .step03 .corpo .numTelefone, body.login .step03 .corpo .numConfirmacao {
   background-color: #fff;
   color: #555566;
   border: 1px solid #e5ecf6;
@@ -183,12 +183,12 @@ body.login .step02 .corpo .numTelefone {
   margin: 20px 0 30px 0;
 }
 
-body.login .step02 .corpo a {
+body.login .step02 .corpo a, body.login .step03 .corpo a {
   color: #fe2787;
   text-decoration: none;
 }
 
-body.login .step02 .corpo .footer {
+body.login .step02 .corpo .footer, body.login .step03 .corpo .footer {
   position: absolute;
   left: 0px;
   bottom: 30px;
@@ -196,19 +196,19 @@ body.login .step02 .corpo .footer {
   margin: 0 28px;
 }
 
-body.login .step02 .corpo .footer .termoDeUso {
+body.login .step02 .corpo .footer .termoDeUso, body.login .step03 .corpo .footer .termoDeUso {
   position: relative;
   z-index: 10;
 }
 
-body.login .step02 .corpo .footer .termoDeUso label span {
+body.login .step02 .corpo .footer .termoDeUso label span, body.login .step03 .corpo .footer .termoDeUso label span {
   font-size: 13px;
   line-height: 24px;
   padding-left: 5px;
   font-weight: normal;
 }
 
-body.login .step02 .corpo .footer .custom-control-label::before {
+body.login .step02 .corpo .footer .custom-control-label::before, body.login .step03 .corpo .footer .custom-control-label::before {
   width: 20px;
   height: 20px;
   background-color: #fff;
@@ -216,24 +216,24 @@ body.login .step02 .corpo .footer .custom-control-label::before {
   border: 1px solid #e5ecf6;
 }
 
-body.login .step02 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+body.login .step02 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before, body.login .step03 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #fe2787;
 }
 
-body.login .step02 .corpo .footer .custom-control-label::after {
+body.login .step02 .corpo .footer .custom-control-label::after, body.login .step03 .corpo .footer .custom-control-label::after {
   width: 20px;
   height: 20px;
 }
 
-body.login .step02 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+body.login .step02 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after, body.login .step03 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   border: 1px solid #fe2787;
 }
 
-body.login .step02 .corpo .footer .custom-control-input:focus ~ .custom-control-label::before {
+body.login .step02 .corpo .footer .custom-control-input:focus ~ .custom-control-label::before, body.login .step03 .corpo .footer .custom-control-input:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 0;
 }
 
-body.login .step02 .corpo .footer .btnEnviar {
+body.login .step02 .corpo .footer .btnEnviar, body.login .step03 .corpo .footer .btnEnviar {
   background-color: #fe2787;
   color: #fff;
   padding: 20px 20px;
