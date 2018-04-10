@@ -210,6 +210,8 @@ $azulClaro: #01bee4;
 $primaria: #555566;
 $secundaria: #9aa3c2;
 
+$corLinha: #e5ecf6;
+
 $maxMobile: 767px;
 $minDesktop: 768px;
 
@@ -316,7 +318,7 @@ body.login {
       font-size: 14px;
       padding: 20px 28px;
       font-weight: bold;
-      border-bottom: 1px solid #e5ecf6;
+      border-bottom: 1px solid $corLinha;
       margin-bottom: 10px;
     }
     > .corpo {
@@ -357,7 +359,7 @@ body.login {
       .numTelefone, .numConfirmacao {
         background-color: #fff;
         color: $primaria;
-        border: 1px solid #e5ecf6;
+        border: 1px solid $corLinha;
         font-size: 14px;
         padding: 15px 20px;
         width: 100%;
@@ -394,7 +396,7 @@ body.login {
           height: 20px;
           background-color: #fff;
           border-radius: 0;
-          border: 1px solid #e5ecf6;
+          border: 1px solid $corLinha;
         }
         .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
           background-color: $loginRosa;
@@ -1001,6 +1003,8 @@ body.loading {
   position: relative;
   border-radius: 5px;
   background-color: #fff;
+  border: 1px solid $corLinha;
+  margin-bottom: 15px;
   @media screen and (max-width: $maxMobile) {
     margin-bottom: 30px;
   }
@@ -1067,6 +1071,20 @@ body.loading {
     }
   }
   > .capa {
+    width: 100%;
+    background-color: #eeeeee;
+    background-position: center center !important;
+    background-size: cover !important;
+    &::before {
+      content: '';
+      padding-top: 33.33%;
+      float: left;
+    }
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
     img {
       width: 100%;
       border-radius: 5px 5px 0 0;
@@ -1147,5 +1165,45 @@ body.loading {
       }
     }
 
+  }
+}
+
+/* #######################################
+		SUBHEADER
+   ####################################### */
+
+.subHeader {
+  border: 1px solid $corLinha;
+  background-color: #fff;
+  min-height: 85px;
+  border-radius: 4px;
+  padding: 10px 25px;
+
+  margin-bottom: 500px;
+  > .campanhas {
+    width: 40%;
+    .txt {
+      font-size: 14px;
+      font-weight: bold;
+      color: $primaria;
+    }
+    .social {
+      > div { display: inline-block; }
+      .icon {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        border-radius: 50%;
+        margin-right: 5px;
+        font-size: 16px;
+        &.desativado {
+          background-color: #adadad !important;
+          color: #fff !important;
+        }
+      }
+    }
   }
 }
