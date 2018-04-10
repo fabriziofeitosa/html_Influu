@@ -201,6 +201,10 @@ body.login .step02 .corpo .footer .termoDeUso, body.login .step03 .corpo .footer
   z-index: 10;
 }
 
+body.login .step02 .corpo .footer .termoDeUso label, body.login .step03 .corpo .footer .termoDeUso label {
+  cursor: pointer;
+}
+
 body.login .step02 .corpo .footer .termoDeUso label span, body.login .step03 .corpo .footer .termoDeUso label span {
   font-size: 13px;
   line-height: 24px;
