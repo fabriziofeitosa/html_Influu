@@ -943,33 +943,73 @@ body.loading #loader-wrapper .spinner .dot2 {
 
 .cabecalho > .social {
   position: absolute;
-  top: 17px;
-  right: -17px;
+  top: 20px;
+  right: -20px;
 }
 
 @media screen and (max-width: 767px) {
   .cabecalho > .social {
     top: initial;
-    bottom: -17px;
+    bottom: -20px;
     right: calc(50% - 75px);
   }
 }
 
 .cabecalho > .social .icon {
   position: relative;
-  width: 34px;
-  height: 34px;
-  line-height: 34px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   color: #fff;
   border-radius: 50%;
   margin-bottom: 10px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 767px) {
   .cabecalho > .social .icon {
     display: inline-block;
     margin-bottom: 0;
+  }
+}
+
+.cabecalho > .social .icon:not(.desativado):hover {
+  font-size: 20px;
+  border: 2px solid #fff;
+  line-height: 34px;
+}
+
+.cabecalho > .social .icon:hover .tooltiptext {
+  visibility: visible;
+}
+
+.cabecalho > .social .icon.desativado {
+  background-color: #adadad !important;
+}
+
+.cabecalho > .social .icon .tooltiptext {
+  width: 100px;
+  visibility: hidden;
+  padding: 5px 10px;
+  background-color: #fe1777;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 45px;
+}
+
+@media screen and (max-width: 767px) {
+  .cabecalho > .social .icon .tooltiptext {
+    top: -25px;
+    right: -30px;
   }
 }
 
