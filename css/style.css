@@ -1235,14 +1235,15 @@ body.loading #loader-wrapper .spinner .dot2 {
   max-width: 130px;
 }
 
+.subHeader > .filtro .select .bootstrap-select {
+  width: 100%;
+}
+
 @media screen and (max-width: 767px) {
   .subHeader > .filtro .select {
     max-width: 100%;
     width: 70%;
     padding-right: 10px;
-  }
-  .subHeader > .filtro .select .bootstrap-select {
-    width: 100%;
   }
   .subHeader > .filtro .select button {
     width: 100%;
@@ -1253,25 +1254,28 @@ body.loading #loader-wrapper .spinner .dot2 {
 .subHeader > .filtro .botao {
   width: 100%;
   max-width: 100px;
+  margin-left: 15px;
 }
 
 @media screen and (max-width: 767px) {
   .subHeader > .filtro .botao {
+    margin-left: 0px;
     width: 30%;
     max-width: 30%;
   }
 }
 
 .subHeader > .filtro .botao button {
+  cursor: pointer;
   width: 100%;
   height: 45px;
   background-color: #fe1777;
   border: none;
   color: #fff;
   border-radius: 4px;
-  margin-left: 15px;
   font-size: 12px;
   font-weight: bold;
+  padding: 0 20px;
 }
 
 @media screen and (max-width: 767px) {
