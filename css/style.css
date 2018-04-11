@@ -952,7 +952,7 @@ body.loading #loader-wrapper .spinner .dot2 {
   .cabecalho > .social {
     top: initial;
     bottom: -20px;
-    right: calc(50% - 75px);
+    right: calc(50% - 85.5px);
   }
 }
 
@@ -1019,6 +1019,8 @@ body.loading #loader-wrapper .spinner .dot2 {
   background-color: #eeeeee;
   background-position: center center !important;
   background-size: cover !important;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .cabecalho > .capa::before {
@@ -1138,17 +1140,47 @@ body.loading #loader-wrapper .spinner .dot2 {
   min-height: 85px;
   border-radius: 4px;
   padding: 10px 25px;
-  margin-bottom: 500px;
+}
+
+@media screen and (max-width: 767px) {
+  .subHeader > div {
+    margin-bottom: 20px;
+  }
+  .subHeader > div:last-child {
+    margin-bottom: 10px;
+  }
 }
 
 .subHeader > .campanhas {
-  width: 40%;
+  width: 42%;
+}
+
+@media screen and (max-width: 991px) {
+  .subHeader > .campanhas {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .subHeader > .campanhas {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .subHeader > .campanhas > div {
+    width: 100%;
+  }
 }
 
 .subHeader > .campanhas .txt {
   font-size: 14px;
   font-weight: bold;
   color: #555566;
+}
+
+@media screen and (max-width: 1199px) {
+  .subHeader > .campanhas .txt {
+    padding-bottom: 10px;
+  }
 }
 
 .subHeader > .campanhas .social > div {
@@ -1170,5 +1202,141 @@ body.loading #loader-wrapper .spinner .dot2 {
 .subHeader > .campanhas .social .icon.desativado {
   background-color: #adadad !important;
   color: #fff !important;
+}
+
+@media screen and (max-width: 767px) {
+  .subHeader > .filtro {
+    width: 100%;
+  }
+}
+
+.subHeader > .filtro button.btn, .subHeader > .filtro button.btn:active {
+  max-width: 130px;
+  height: 45px;
+  background-color: #fff;
+  color: #555566;
+  border: 1px solid #e5ecf6;
+  font-size: 12px;
+}
+
+.subHeader > .filtro button.btn:focus, .subHeader > .filtro button.btn:active:focus {
+  box-shadow: 0 0 0 0;
+}
+
+.subHeader > .filtro button.btn .filter-option, .subHeader > .filtro button.btn:active .filter-option {
+  margin-top: 4px;
+}
+
+.subHeader > .filtro button.btn::after, .subHeader > .filtro button.btn:active::after {
+  vertical-align: 7px;
+}
+
+.subHeader > .filtro .select {
+  max-width: 130px;
+}
+
+@media screen and (max-width: 767px) {
+  .subHeader > .filtro .select {
+    max-width: 100%;
+    width: 70%;
+    padding-right: 10px;
+  }
+  .subHeader > .filtro .select .bootstrap-select {
+    width: 100%;
+  }
+  .subHeader > .filtro .select button {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.subHeader > .filtro .botao {
+  width: 100%;
+  max-width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .subHeader > .filtro .botao {
+    width: 30%;
+    max-width: 30%;
+  }
+}
+
+.subHeader > .filtro .botao button {
+  width: 100%;
+  height: 45px;
+  background-color: #fe1777;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .subHeader > .filtro .botao button {
+    margin-left: 0;
+  }
+}
+
+.subHeader > .filtro .bootstrap-select.show > .dropdown-menu > .dropdown-menu {
+  display: block;
+  font-size: 14px;
+}
+
+.subHeader > .filtro .bootstrap-select > .dropdown-menu > .dropdown-menu li.hidden {
+  display: none;
+}
+
+.subHeader > .filtro .bootstrap-select > .dropdown-menu > .dropdown-menu li a {
+  display: block;
+  width: 100%;
+  padding: 3px 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #292b2c;
+  text-align: inherit;
+  white-space: nowrap;
+  background: 0 0;
+  border: 0;
+}
+
+.subHeader > .filtro .bootstrap-select > .dropdown-menu > .dropdown-menu li a:hover {
+  background-color: #fe1777;
+  color: #fff;
+}
+
+.subHeader > .pesquisa {
+  border: 1px solid #e5ecf6;
+  overflow: hidden;
+  border-radius: 4px;
+  width: 30%;
+}
+
+@media screen and (max-width: 767px) {
+  .subHeader > .pesquisa {
+    width: 100%;
+  }
+}
+
+.subHeader > .pesquisa input, .subHeader > .pesquisa button {
+  border: none;
+  height: 45px;
+}
+
+.subHeader > .pesquisa .inputPesquisa {
+  padding: 0 10px;
+  font-size: 12px;
+  color: #555566;
+  width: calc(100% - 40px);
+}
+
+.subHeader > .pesquisa .inputButton {
+  width: 40px;
+  background-color: #d7d9e5;
+  color: #fff;
+  padding: 0 10px;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
