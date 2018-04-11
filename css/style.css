@@ -1337,6 +1337,7 @@ body.loading #loader-wrapper .spinner .dot2 {
 }
 
 .subHeader > .pesquisa .inputButton {
+  cursor: pointer;
   width: 40px;
   background-color: #d7d9e5;
   color: #fff;

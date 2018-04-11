@@ -1335,6 +1335,7 @@ body.loading {
       width: calc(100% - 40px);
     }
     .inputButton {
+      cursor: pointer;
       width: 40px;
       background-color: #d7d9e5;
       color: #fff;
