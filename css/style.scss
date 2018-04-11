@@ -1253,6 +1253,7 @@ body.loading {
       max-width: 130px;
       .bootstrap-select {
         width: 100%;
+        min-width: 130px;
       }
       @media screen and (max-width: $maxMobile) {
         max-width: 100%;
