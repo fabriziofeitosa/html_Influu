@@ -1346,6 +1346,15 @@ body.loading {
       margin: 0;
     }
   }
+  &.menor {
+    > .campanhas {
+      width: 30%;
+      @media screen and (max-width: $maxMobile) {
+        padding-top: 0;
+        width: 100%;
+      }
+    }
+  }
 }
 
 /* #######################################
@@ -1483,8 +1492,108 @@ body.loading {
     }
   }
 
-  &.responsivo {
-    > .capa {}
-    > .conteudo {}
+  &.horizontal {
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 0 auto 20px auto;
+    > .capa {
+      width: 50%;
+      border-radius: 4px 0 0 4px;
+      @media screen and (max-width: $maxMobile) {
+        border-radius: 4px 4px 0 0;
+        width: 100%;
+      }
+      &::before {
+        padding-top: 50%;
+      }
+    }
+    > .conteudo {
+      width: 50%;
+      padding: 30px 15px 30px 30px;
+      font-size: 14px;
+      color: $secundaria;
+      @media screen and (max-width: $maxMobile) {
+        padding: 30px 15px;
+        width: 100%;
+      }
+      > .tituloCamp {
+        position: relative;
+        h3 {
+          width: 100%;
+          font-weight: lighter;
+          color: $primaria;
+          margin-bottom: 10px;
+          line-height: 1.1;
+        }
+      }
+      > .tags {
+        font-size: 14px;
+        margin-bottom: 15px;
+        .badge {
+          text-transform: uppercase;
+          background-color: #00b6ff;
+          color: #fff;
+          padding: 5px 5px;
+          font-weight: normal;
+          &:not(:last-child) {
+            margin-right: 5px;
+          }
+          &.fixed {
+            background-color: #fe5e3a;
+          }
+          &.data {
+            background-color: #7d5ac2;
+          }
+        }
+      }
+      > .sobre {
+        .txt {
+          max-height: 84px;
+          overflow: hidden;
+        }
+      }
+      > .final {
+        .social {
+          .icon {
+            position: relative;
+            width: 27px;
+            height: 27px;
+            line-height: 25px;
+            text-align: center;
+            background-color: $rosaPadrao;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 12px;
+            border: 2px solid #fff;
+            &:not(:first-child) {
+              margin-left: -10px;
+            }
+          }
+        }
+        .graf {
+          font-size: 12px;
+          .icon {
+            margin-right: 10px;
+            font-size: 20px;
+          }
+        }
+        .valor {
+          line-height: 20px;
+          .icon {
+            margin-right: 10px;
+            display: inline-block;
+            background-color: $secundaria;
+            color: #fff;
+            border-radius: 50px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            overflow: hidden;
+          }
+        }
+      }
+    }
   }
 }

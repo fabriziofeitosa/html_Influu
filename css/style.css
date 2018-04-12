@@ -1349,6 +1349,17 @@ body.loading #loader-wrapper .spinner .dot2 {
   margin: 0;
 }
 
+.subHeader.menor > .campanhas {
+  width: 30%;
+}
+
+@media screen and (max-width: 767px) {
+  .subHeader.menor > .campanhas {
+    padding-top: 0;
+    width: 100%;
+  }
+}
+
 /* #######################################
 		AREA DE CARD
    ####################################### */
@@ -1498,5 +1509,127 @@ body.loading #loader-wrapper .spinner .dot2 {
   border-radius: 50%;
   margin-right: 5px;
   font-size: 16px;
+}
+
+.cardCampanha.horizontal {
+  width: 100%;
+  max-width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 0 auto 20px auto;
+}
+
+.cardCampanha.horizontal > .capa {
+  width: 50%;
+  border-radius: 4px 0 0 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .cardCampanha.horizontal > .capa {
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+  }
+}
+
+.cardCampanha.horizontal > .capa::before {
+  padding-top: 50%;
+}
+
+.cardCampanha.horizontal > .conteudo {
+  width: 50%;
+  padding: 30px 15px 30px 30px;
+  font-size: 14px;
+  color: #9aa3c2;
+}
+
+@media screen and (max-width: 767px) {
+  .cardCampanha.horizontal > .conteudo {
+    padding: 30px 15px;
+    width: 100%;
+  }
+}
+
+.cardCampanha.horizontal > .conteudo > .tituloCamp {
+  position: relative;
+}
+
+.cardCampanha.horizontal > .conteudo > .tituloCamp h3 {
+  width: 100%;
+  font-weight: lighter;
+  color: #555566;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.cardCampanha.horizontal > .conteudo > .tags {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.cardCampanha.horizontal > .conteudo > .tags .badge {
+  text-transform: uppercase;
+  background-color: #00b6ff;
+  color: #fff;
+  padding: 5px 5px;
+  font-weight: normal;
+}
+
+.cardCampanha.horizontal > .conteudo > .tags .badge:not(:last-child) {
+  margin-right: 5px;
+}
+
+.cardCampanha.horizontal > .conteudo > .tags .badge.fixed {
+  background-color: #fe5e3a;
+}
+
+.cardCampanha.horizontal > .conteudo > .tags .badge.data {
+  background-color: #7d5ac2;
+}
+
+.cardCampanha.horizontal > .conteudo > .sobre .txt {
+  max-height: 84px;
+  overflow: hidden;
+}
+
+.cardCampanha.horizontal > .conteudo > .final .social .icon {
+  position: relative;
+  width: 27px;
+  height: 27px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #fe1777;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  border: 2px solid #fff;
+}
+
+.cardCampanha.horizontal > .conteudo > .final .social .icon:not(:first-child) {
+  margin-left: -10px;
+}
+
+.cardCampanha.horizontal > .conteudo > .final .graf {
+  font-size: 12px;
+}
+
+.cardCampanha.horizontal > .conteudo > .final .graf .icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.cardCampanha.horizontal > .conteudo > .final .valor {
+  line-height: 20px;
+}
+
+.cardCampanha.horizontal > .conteudo > .final .valor .icon {
+  margin-right: 10px;
+  display: inline-block;
+  background-color: #9aa3c2;
+  color: #fff;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
