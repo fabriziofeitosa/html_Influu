@@ -843,6 +843,7 @@ body.loading {
     }
   }
   > .lateral {
+    overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
@@ -854,7 +855,6 @@ body.loading {
     -webkit-box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.1);
     box-shadow: 5px 0px 10px 0px rgba(0,0,0,0.1);
-    overflow: hidden;
     transition: all .5s;
 
     @media screen and (max-width: $maxMobile) {
@@ -864,6 +864,8 @@ body.loading {
 
     &.aberto {
       width: 270px;
+      overflow-x: hidden;
+      overflow-y: auto;
       @media screen and (max-width: $maxMobile) {
         height: 100vh;
         left: 0;
@@ -1479,5 +1481,10 @@ body.loading {
         }
       }
     }
+  }
+
+  &.responsivo {
+    > .capa {}
+    > .conteudo {}
   }
 }

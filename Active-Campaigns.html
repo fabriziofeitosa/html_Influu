@@ -226,11 +226,13 @@
           </div>
           <div class="titulo noSelect">
             <span>Perfil</span>
+            <!-- Quando NÃO TEM SubMenu, é adicionado esse link abaixo do título -->
+            <a href="#linkItemMenu" class="tudo"></a>
           </div>
         </div>
 
-        <!-- Itens de Menu | com subMenu add classe 'optSub' -->
-        <div class="itemMenu optSub">
+        <!-- Itens de Menu -->
+        <div class="itemMenu optSub"> <!-- com subMenu add class 'optSub' -->
           <div class="icon">
             <i class="fas fa-bullhorn"></i>
             <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
@@ -238,7 +240,7 @@
           <div class="titulo noSelect">
             <span>Campanhas</span>
           </div>
-          <!-- SubMenu -->
+          <!-- SubMenu | adicionado sem o título ter link -->
           <div class="subMenu">
             <ul>
               <li class="itemSub">
@@ -265,6 +267,8 @@
           </div>
           <div class="titulo noSelect">
             <span>Histórico</span>
+            <!-- Quando NÃO TEM SubMenu, é adicionado esse link abaixo do título -->
+            <a href="#linkItemMenu" class="tudo"></a>
           </div>
         </div>
 
@@ -276,17 +280,32 @@
           </div>
           <div class="titulo noSelect">
             <span>Estatística</span>
+            <!-- Quando NÃO TEM SubMenu, é adicionado esse link abaixo do título -->
+            <a href="#linkItemMenu" class="tudo"></a>
           </div>
         </div>
 
         <!-- Itens de Menu -->
-        <div class="itemMenu">
+        <div class="itemMenu optSub"> <!-- com subMenu add class 'optSub' -->
           <div class="icon">
             <i class="fas fa-credit-card"></i>
             <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
           </div>
           <div class="titulo noSelect">
             <span>Pagamento</span>
+          </div>
+          <!-- SubMenu | adicionado sem o título ter link -->
+          <div class="subMenu">
+            <ul>
+              <li class="itemSub">
+                <span>Pendentes</span>
+                <a href="#linkSubItem1" class="tudo"></a>
+              </li>
+              <li class="itemSub">
+                <span>Histórico</span>
+                <a href="#linkSubItem2" class="tudo"></a>
+              </li>
+            </ul>
           </div>
         </div>
 

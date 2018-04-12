@@ -13,7 +13,10 @@ jQuery(document).ready(function ($) {
     $('header .lateral .itemMenu').removeClass('subAberto');
   });
   $('header .lateral .optSub .titulo').click(function () {
-    $(this).parents('.itemMenu').toggleClass('subAberto');
+    var state = $(this).parents('.itemMenu').hasClass('subAberto');
+    $('.itemMenu').removeClass('subAberto');
+    if( state ) $(this).parents('.itemMenu').removeClass('subAberto');
+    else $(this).parents('.itemMenu').addClass('subAberto');
   });
 
 });
