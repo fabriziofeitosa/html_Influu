@@ -1640,4 +1640,110 @@ body.loading #loader-wrapper .spinner .dot2 {
   text-align: center;
   overflow: hidden;
 }
+
+/* #######################################
+		FEED ATIVIDADES
+   ####################################### */
+.feedAtividades {
+  background-color: #fff;
+  border: 1px solid #e5ecf6;
+  min-height: 50px;
+  border-radius: 4px;
+  color: #9aa3c2;
+  margin-bottom: 30px;
+}
+
+.feedAtividades > .header {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555566;
+  padding: 20px 25px;
+  border-bottom: 1px solid #e5ecf6;
+}
+
+.feedAtividades > .listaDeItens > .item {
+  padding: 20px 25px;
+  font-size: 12px;
+}
+
+.feedAtividades > .listaDeItens > .item:not(:first-child) {
+  border-top: 1px solid #e5ecf6;
+}
+
+.feedAtividades > .listaDeItens > .item .foto {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #edf2f6;
+}
+
+.feedAtividades > .listaDeItens > .item .foto img {
+  max-width: 100%;
+}
+
+.feedAtividades > .listaDeItens > .item .conteudo {
+  padding-left: 15px;
+}
+
+.feedAtividades > .listaDeItens > .item .conteudo a {
+  color: #fe1777;
+  text-decoration: none;
+}
+
+.feedAtividades > .listaDeItens > .item .conteudo a.perfil {
+  color: #555566;
+  font-weight: bold;
+}
+
+.feedAtividades > .listaDeItens > .item .conteudo .tempo {
+  margin-top: 8px;
+  font-size: 11px;
+}
+
+.feedAtividades > .verTodos {
+  position: relative;
+  padding: 20px 25px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: #555566;
+  border-top: 1px solid #e5ecf6;
+}
+
+/* #######################################
+		BOTAO FLUTUANTE DE CRIAR CAMPANHA
+   ####################################### */
+.btnCriarCampanha {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #01b7ff;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.btnCriarCampanha .icon {
+  display: block;
+  font-size: 30px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.btnCriarCampanha .plus {
+  position: absolute;
+  font-size: 9px;
+  top: 10px;
+  right: 12px;
+}
 /*# sourceMappingURL=style.css.map */

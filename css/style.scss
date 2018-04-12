@@ -1606,3 +1606,101 @@ body.loading {
     }
   }
 }
+
+/* #######################################
+		FEED ATIVIDADES
+   ####################################### */
+
+.feedAtividades {
+  background-color: #fff;
+  border: 1px solid $corLinha;
+  min-height: 50px;
+  border-radius: 4px;
+  color: $secundaria;
+  margin-bottom: 30px;
+  > .header {
+    font-size: 14px;
+    font-weight: bold;
+    color: $primaria;
+    padding: 20px 25px;
+    border-bottom: 1px solid $corLinha;
+  }
+  > .listaDeItens {
+    > .item {
+      padding: 20px 25px;
+      font-size: 12px;
+      &:not(:first-child) {
+        border-top: 1px solid $corLinha;
+      }
+      .foto {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: #edf2f6;
+        img {
+          max-width: 100%;
+        }
+      }
+      .conteudo {
+        padding-left: 15px;
+        a {
+          color: $rosaPadrao;
+          text-decoration: none;
+          &.perfil {
+            color: $primaria;
+            font-weight: bold;
+          }
+        }
+        .tempo {
+          margin-top: 8px;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+  > .verTodos {
+    position: relative;
+    padding: 20px 25px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: $primaria;
+    border-top: 1px solid $corLinha;
+  }
+}
+
+/* #######################################
+		BOTAO FLUTUANTE DE CRIAR CAMPANHA
+   ####################################### */
+
+.btnCriarCampanha {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #01b7ff;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.2);
+  .icon {
+    display: block;
+    font-size: 30px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -o-transform:rotate(-45deg);
+    transform:rotate(-45deg);
+  }
+  .plus {
+    position: absolute;
+    font-size: 9px;
+    top: 10px;
+    right: 12px;
+  }
+}
