@@ -1618,6 +1618,7 @@ body.loading #loader-wrapper .spinner .dot2 {
 }
 
 .cardCampanha.horizontal > .conteudo > .final .valor {
+  font-size: 12px;
   line-height: 20px;
 }
 
