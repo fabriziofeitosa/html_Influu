@@ -1353,6 +1353,14 @@ body.loading {
         padding-top: 0;
         width: 100%;
       }
+      .social {
+        .icon {
+          width: 27px;
+          height: 27px;
+          line-height: 27px;
+          font-size: 14px;
+        }
+      }
     }
   }
 }

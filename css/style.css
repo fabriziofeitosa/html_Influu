@@ -1360,6 +1360,13 @@ body.loading #loader-wrapper .spinner .dot2 {
   }
 }
 
+.subHeader.menor > .campanhas .social .icon {
+  width: 27px;
+  height: 27px;
+  line-height: 27px;
+  font-size: 14px;
+}
+
 /* #######################################
 		AREA DE CARD
    ####################################### */
