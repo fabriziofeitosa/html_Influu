@@ -1140,6 +1140,7 @@ body.loading #loader-wrapper .spinner .dot2 {
   min-height: 85px;
   border-radius: 4px;
   padding: 10px 25px;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1344,5 +1345,156 @@ body.loading #loader-wrapper .spinner .dot2 {
   color: #fff;
   padding: 0 10px;
   margin: 0;
+}
+
+/* #######################################
+		AREA DE CARD
+   ####################################### */
+.areaDeCard {
+  margin-bottom: 20px;
+}
+
+.carregarMais {
+  margin: 50px 0 50px 0;
+}
+
+.carregarMais .icon {
+  position: relative;
+  background-color: #cbd1df;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* #######################################
+		CARD CAMPANHA
+   ####################################### */
+.cardCampanha {
+  width: 100%;
+  max-width: 340px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 0 auto 20px auto;
+}
+
+.cardCampanha > .capa {
+  width: 100%;
+  background-color: #eeeeee;
+  background-position: center center !important;
+  background-size: cover !important;
+  border-radius: 4px 4px 0 0;
+}
+
+.cardCampanha > .capa::before {
+  content: '';
+  padding-top: 40%;
+  float: left;
+}
+
+.cardCampanha > .capa::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.cardCampanha > .conteudo {
+  position: relative;
+  padding: 120px 10px 35px 10px;
+}
+
+.cardCampanha > .conteudo > .campanha {
+  position: absolute;
+  top: -53px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  text-align: center;
+  max-width: 200px;
+  z-index: 4;
+}
+
+.cardCampanha > .conteudo > .campanha .avatar {
+  display: block;
+  overflow: hidden;
+  border-radius: 100%;
+  border: 6px solid #fff;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  background-color: #edf2f6;
+}
+
+.cardCampanha > .conteudo > .campanha .avatar img {
+  border-radius: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+.cardCampanha > .conteudo > .campanha .titulo {
+  margin-top: 5px;
+  display: block;
+  font-size: 16px;
+  color: #555566;
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.cardCampanha > .conteudo > .campanha .cliente {
+  margin-top: 5px;
+  display: block;
+  font-size: 12px;
+  color: #9aa3c2;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.cardCampanha > .conteudo > .infor > .dados {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cardCampanha > .conteudo > .infor > .dados > .item {
+  width: 30%;
+}
+
+.cardCampanha > .conteudo > .infor > .dados > .item .valor {
+  font-weight: bold;
+  color: #555566;
+}
+
+.cardCampanha > .conteudo > .infor > .dados > .item .nome {
+  font-weight: normal;
+  color: #9aa3c2;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.cardCampanha > .conteudo > .infor > .social {
+  position: relative;
+}
+
+.cardCampanha > .conteudo > .infor > .social > div {
+  display: inline-block;
+}
+
+.cardCampanha > .conteudo > .infor > .social .icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 5px;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
