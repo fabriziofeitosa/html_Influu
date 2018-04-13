@@ -1847,7 +1847,6 @@ body.loading #loader-wrapper .spinner .dot2 {
 
 #criandoCampanha .tipoCampanha .help {
   position: relative;
-  display: inline-block;
   color: #9aa3c2;
   cursor: pointer;
   height: 100%;
