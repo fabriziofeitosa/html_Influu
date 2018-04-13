@@ -1249,7 +1249,7 @@ body.loading {
       border: 1px solid $corLinha;
       font-size: 12px;
       &:focus {
-        box-shadow: 0 0 0 0;
+        box-shadow: 0 0 0 0 transparent;
       }
       .filter-option {
         margin-top: 4px;

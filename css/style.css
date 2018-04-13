@@ -1231,7 +1231,7 @@ body.loading #loader-wrapper .spinner .dot2 {
 }
 
 .subHeader > .filtro button.btn:focus, .subHeader > .filtro button.btn:active:focus {
-  box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0 transparent;
 }
 
 .subHeader > .filtro button.btn .filter-option, .subHeader > .filtro button.btn:active .filter-option {
