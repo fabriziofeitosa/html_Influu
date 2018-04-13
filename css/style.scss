@@ -224,6 +224,13 @@ $minDesktop: 768px;
     user-select: none;
 }
 
+* {
+    outline: 0;
+  }
+.bootstrap-select .dropdown-toggle:focus {
+  outline: 0 !important;
+}
+
 .relative { position: relative; }
 .absolute { position: absolute; }
 a.tudo {
