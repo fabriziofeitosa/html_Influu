@@ -1711,3 +1711,70 @@ body.loading {
     right: 12px;
   }
 }
+
+/* #######################################
+		MODAL PADRAO
+   ####################################### */
+
+.modalPadrao {
+  .modal-dialog {
+    max-width: 804px;
+    
+    .capa {
+      position: relative;
+      background-color: #edf2f6;
+      border-radius: 4px 4px 0 0;
+      overflow: hidden;
+      border: 1px solid #edf2f6;
+      img {
+        border-radius: 4px 4px 0 0;
+        max-width: 100%;
+      }
+      &::before {
+        content: '';
+        padding-top: 33.33%;
+        float: left;
+      }
+      &::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+      .semImg {
+        position: absolute;
+        top: 2.5%;
+        left: 1%;
+        text-align: center;
+        width: 98%;
+        height: 95%;
+        border: 2px dashed #bbbfd8;
+        .titulo {
+          font-weight: bold;
+          font-size: 15px;
+          color: $primaria;
+        }
+        .sub {
+          color: $secundaria;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .modal-footer {
+      .botao {
+        background-color: #9a9fbf;
+        color: #fff;
+        border-radius: 4px;
+        height: 54px;
+        line-height: 54px;
+        width: 48%;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+        &.criar {
+          background-color: $rosaPadrao;
+        }
+      }
+    }
+  }
+}

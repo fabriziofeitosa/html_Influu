@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Font Icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>AD-Campaigns-Page</title>
+</head>
+
+<body>
+
+  <!-- MODALS -->
+  <div class="modal fade modalPadrao" id="criandoCampanha" tabindex="-1" role="dialog" aria-labelledby="criandoCampanha" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!-- CAPA / Inserir imagem-->
+        <div class="capa">
+          <!-- Ou permite a Imagem ou a Div a seguir dela -->
+          <!-- <img src="image/capa.jpg" alt="Capa Exemplo"> -->
+
+          <!-- Div caso não tenha imagem -->
+          <div class="semImg d-flex flex-column justify-content-center align-items-center">
+            <div class="titulo">Inserir Imagem</div>
+            <div class="sub">Adicione uma imagem a sua campanha</div>
+          </div>
+        </div>
+  
+        <!-- CORPO DO MODAL -->
+        <div class="modal-body">
+          FORM
+        </div>
+  
+        <!-- FOOTER DO MODAL -->
+        <div class="modal-footer d-flex flex-column flex-md-row justify-content-md-between">
+          <!-- Btn Cancelar-->
+          <a href="#cancelar" data-dismiss="modal" aria-label="Close" class="botao">
+            <span>Cancelar</span>
+          </a>
+          <!-- Btn Criar-->
+          <a href="#criar" class="botao criar">
+            <span>Criar Campanha</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODALS -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+
+  <script src="js/theme.js"></script>
+
+  <script>
+    // Ficar mostrando sempre o Modal
+    $('#criandoCampanha').modal({
+      show: true
+    });
+  </script>
+</body>
+
+</html>
