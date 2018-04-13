@@ -1818,6 +1818,7 @@ body.loading #loader-wrapper .spinner .dot2 {
   text-align: center;
   font-weight: bold;
   font-size: 14px;
+  text-decoration: none;
 }
 
 .modalPadrao .modal-dialog .modal-footer .botao.criar {
@@ -1832,5 +1833,118 @@ body.loading #loader-wrapper .spinner .dot2 {
   .modalPadrao .modal-dialog .modal-footer .botao:not(:first-child) {
     margin-bottom: 10px;
   }
+}
+
+/* #######################################
+		Input Group
+   ####################################### */
+.input-group.influu {
+  background-color: #fff;
+  border: 1px solid #e5ecf6;
+  border-radius: 4px;
+  padding: 10px 15px 0px 15px;
+  margin-bottom: 15px;
+}
+
+.input-group.influu.invalid {
+  border-color: red;
+}
+
+.input-group.influu.invalid .titulo,
+.input-group.influu.invalid .help {
+  color: red !important;
+}
+
+.input-group.influu .titulo {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  z-index: 10;
+  color: #9aa3c2;
+  font-size: 11px;
+  margin: 0;
+}
+
+.input-group.influu .form-control {
+  margin-top: 10px;
+  outline: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 6px 20px 6px 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .input-group.influu .form-control {
+    padding: 6px 0px 6px 0px;
+  }
+}
+
+.input-group.influu .form-control:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.input-group.influu .form-control:invalid {
+  border-color: transparent;
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.input-group.influu .help {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 10;
+  color: #9aa3c2;
+  cursor: help;
+  height: 100%;
+  padding-top: 14px;
+}
+
+.input-group.influu .help > div {
+  position: relative;
+}
+
+.input-group.influu .help .tooltiptext {
+  width: 180px;
+  visibility: hidden;
+  padding: 8px 10px;
+  background-color: #fe1777;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 24px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.input-group.influu .help .tooltiptext::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #fe1777;
+  -webkit-transform: rotate(45deg);
+  /* prefixo para browsers webkit */
+  -moz-transform: rotate(45deg);
+  /* prefixo para browsers gecko */
+  -o-transform: rotate(45deg);
+  /* prefixo para opera */
+  transform: rotate(45deg);
+}
+
+.input-group.influu .help:hover .tooltiptext {
+  visibility: visible;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1771,6 +1771,7 @@ body.loading {
         text-align: center;
         font-weight: bold;
         font-size: 14px;
+        text-decoration: none;
         &.criar {
           background-color: $rosaPadrao;
         }
@@ -1782,6 +1783,101 @@ body.loading {
           }
         }
       }
+    }
+  }
+}
+
+/* #######################################
+		Input Group
+   ####################################### */
+
+.input-group.influu {
+  background-color: #fff;
+  border: 1px solid $corLinha;
+  border-radius: 4px;
+  padding: 10px 15px 0px 15px;
+  margin-bottom: 15px;
+  &.invalid {
+    border-color: red;
+    .titulo,
+    .help
+     { color: red !important; }
+  }
+  .titulo {
+    position: absolute;
+    top: 5px;
+    left: 15px;
+    z-index: 10;
+    color: $secundaria;
+    font-size: 11px;
+    margin: 0;
+  }
+  .form-control { // input
+    margin-top: 10px;
+    outline: 0;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 20px 6px 0px;
+    @media screen and (max-width: $maxMobile) {
+      padding: 6px 0px 6px 0px;
+    }
+
+    &:focus {
+      border-color: transparent;
+      box-shadow: 0 0 0 0 transparent;
+    }
+    &:invalid {
+      border-color: transparent;
+      box-shadow: 0 0 0 0 transparent;
+    }
+  }
+  .help {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: 10;
+    color: $secundaria;
+    cursor: help;
+    height: 100%;
+    padding-top: 14px;
+    > div { position: relative; }
+    .tooltiptext {
+      width: 180px;
+      visibility: hidden;
+      padding: 8px 10px;
+      background-color: $rosaPadrao;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      right: 24px;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: calc(50% - 5px);
+        right: -4px;
+        width: 10px;
+        height: 10px;
+        background-color: $rosaPadrao;
+        -webkit-transform: rotate(45deg); /* prefixo para browsers webkit */
+        -moz-transform: rotate(45deg); /* prefixo para browsers gecko */
+        -o-transform: rotate(45deg); /* prefixo para opera */
+        transform: rotate(45deg);
+      }
+    }
+    &:hover {
+      .tooltiptext { visibility: visible; }
     }
   }
 }
