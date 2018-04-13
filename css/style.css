@@ -1901,6 +1901,7 @@ body.loading #loader-wrapper .spinner .dot2 {
 }
 
 .custom-checkbox label {
+  cursor: pointer;
   color: #9aa3c2;
   font-size: 14px;
   line-height: 28px;

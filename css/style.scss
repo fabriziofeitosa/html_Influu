@@ -1849,6 +1849,7 @@ body.loading {
 
 .custom-checkbox {
   label {
+    cursor: pointer;
     color: $secundaria;
     font-size: 14px;
     line-height: 28px;
