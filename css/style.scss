@@ -1721,6 +1721,7 @@ body.loading {
     max-width: 804px;
     
     .capa {
+      cursor: pointer;
       position: relative;
       background-color: #edf2f6;
       border-radius: 4px 4px 0 0;
@@ -1788,7 +1789,95 @@ body.loading {
 }
 
 /* #######################################
-		Input Group
+		MODAL CAMPANHA
+   ####################################### */
+
+#criandoCampanha {
+  .tipoCampanha {
+    > .titulo {
+      display: block;
+      font-weight: bold;
+      font-size: 12px;
+    }
+    .help {
+      position: relative;
+      display: inline-block;
+      color: $secundaria;
+      cursor: pointer;
+      height: 100%;
+      padding-top: 14px;
+      > div { position: relative; }
+      .tooltiptext {
+        width: 220px;
+        visibility: hidden;
+        padding: 8px 10px;
+        background-color: $rosaPadrao;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1;
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        left: 24px;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: calc(50% - 5px);
+          left: -4px;
+          width: 10px;
+          height: 10px;
+          background-color: $rosaPadrao;
+          -webkit-transform: rotate(45deg); /* prefixo para browsers webkit */
+          -moz-transform: rotate(45deg); /* prefixo para browsers gecko */
+          -o-transform: rotate(45deg); /* prefixo para opera */
+          transform: rotate(45deg);
+        }
+      }
+      &:hover {
+        .tooltiptext { visibility: visible; }
+      }
+    }
+  }
+}
+
+.custom-checkbox {
+  label {
+    color: $secundaria;
+    font-size: 14px;
+    line-height: 28px;
+    &::before {
+      border-radius: 0 !important;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #eaebf0;
+      background-color: #fff;
+    }
+    &::after {
+      width: 20px;
+      height: 20px;
+    }
+  }    
+  .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $rosaPadrao;
+    border-color: $rosaPadrao;
+  }  
+}
+.custom-control-input:active ~ .custom-control-label::before {
+  background-color: transparent;
+}
+.custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: 0 0 0 0 transparent;
+}
+
+/* #######################################
+		INPUT GROUP
    ####################################### */
 
 .input-group.influu {
