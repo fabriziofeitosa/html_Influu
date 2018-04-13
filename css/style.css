@@ -1823,4 +1823,14 @@ body.loading #loader-wrapper .spinner .dot2 {
 .modalPadrao .modal-dialog .modal-footer .botao.criar {
   background-color: #fe1777;
 }
+
+@media screen and (max-width: 767px) {
+  .modalPadrao .modal-dialog .modal-footer .botao {
+    width: 100%;
+    margin: 0;
+  }
+  .modalPadrao .modal-dialog .modal-footer .botao:not(:first-child) {
+    margin-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
