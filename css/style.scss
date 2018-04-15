@@ -257,11 +257,13 @@ body {
 $loginAzul: #0bbce8;
 $loginRosa: #fe2787;
 
-body.login {
+#loginPrincipal {
   background-image: url(../image/loginbg.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  height: 100%;
+  min-height: 100vh;
 
   > .gradient {
     position: fixed;
@@ -307,10 +309,70 @@ body.login {
       font-size: 12px;
       font-weight: bold;
       text-decoration: none;
+      transition: all .2s;
+      &:hover {
+        background-color: #fff;
+        color: $loginAzul;
+      }
     }
   }
 
+  //////////////
+  // FLIP
+  //////////////
+
+  /* container com a perspectiva */
+  .flip-container {
+    perspective: 1000;
+  }
+    /* feito com o hover */
+    // .flip-container:hover .flipper,
+    .flip-container.hover .flipper {
+      transform: rotateY(180deg);
+    }
+
+  .flip-container, .front, .back {
+    width: 100%;
+    height: 100%;
+    max-width: 435px;
+    min-height: 495px;
+  }
+
+  /* velocidade da animação */
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+  }
+
+  /* esconder parte de trás do painel durante a troca */
+  .front, .back {
+    backface-visibility: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* coloca o painel frontal acima */
+  .front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+  }
+
+  /* painel de volta, inicialmente escondido */
+  .back {
+    transform: rotateY(180deg);
+  }
+
+  //////////////
+  // FIM FLIP
+  //////////////
+
   .box {
+    z-index: 1;
     position: relative;
     background-color: #fff;
     color: $primaria;
@@ -361,18 +423,25 @@ body.login {
       }
     }
   }
+  .inputAreaLogin,
+  .numTelefone,
+  .numConfirmacao {
+    background-color: #fff;
+    color: $primaria;
+    border: 1px solid $corLinha;
+    font-size: 14px;
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 4px;
+    margin: 20px 0 30px 0;
+  }
+  .areaAnunciante {
+    .inputAreaLogin {
+      margin-bottom: 0px;
+    }
+  }
   .step02, .step03 {
     .corpo {
-      .numTelefone, .numConfirmacao {
-        background-color: #fff;
-        color: $primaria;
-        border: 1px solid $corLinha;
-        font-size: 14px;
-        padding: 15px 20px;
-        width: 100%;
-        border-radius: 4px;
-        margin: 20px 0 30px 0;
-      }
       a {
         color: $loginRosa;
         text-decoration: none;
@@ -420,18 +489,24 @@ body.login {
         }
         // -------
 
-        .btnEnviar {
-          background-color: $loginRosa;
-          color: #fff;
-          padding: 20px 20px;
-          line-height: 1;
-          font-size: 14px;
-          font-weight: bold;
-          border-radius: 4px;
-          text-align: center;
-          margin-top: 20px;
-        }
       }
+    }
+  }
+  .btnEnviar {
+    position: relative;
+    background-color: $loginRosa;
+    color: #fff;
+    padding: 20px 20px;
+    line-height: 1;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    &.esqueci {
+      background-color: transparent;
+      color: $loginAzul;
+      border: 1px solid $loginAzul;
     }
   }
 }
@@ -442,7 +517,7 @@ body.login {
 
 $loadingRosa: #ff1777;
 
-body.loading {
+#loading {
   height: auto;
   #loader-wrapper {
     position: fixed;
