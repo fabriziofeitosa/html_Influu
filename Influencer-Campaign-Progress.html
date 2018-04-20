@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/bootstrap-select.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>AD-Campaigns-Page</title>
+  <title>Influencer-Campaign-Progress</title>
 </head>
 
 <body>
@@ -314,297 +314,132 @@
   </header>
 
   <section class="areaDeConteudo">
+    
+    <!-- CABEÇALHO -->
+    <div class="cabecalho">
 
-    <div class="row">
-      <div class="col-12 col-xl-8">
-        
-        <!-- SubHeader | Add class 'menor' para essa página -->
-        <div class="subHeader menor d-flex flex-column flex-md-row align-items-md-center justify-content-md-between flex-md-wrap">
-
-          <!-- Pesquisa -->
-          <div class="pesquisa d-flex flex-row">
-            <input class="inputPesquisa" type="text" placeholder="Procurar por campanha..">
-            <button class="inputButton">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        
-          <!-- Primeira DIV -->
-          <div class="campanhas d-flex flex-column flex-xl-row align-items-xl-center justify-content-xl-between">
-            <div class="social d-lg-block d-flex justify-content-between justify-content-md-start">
-              <div class="icon" style="background-color: #de3715;">
-                <i class="fab fa-youtube"></i>
-                <a href="#linkSocial" class="tudo"></a>
-              </div>
-              <div class="icon" style="background-color: #0254a8;">
-                <i class="fab fa-facebook-f"></i>
-                <a href="#linkSocial" class="tudo"></a>
-              </div>
-              <div class="icon desativado" style="background-color: #00ace8;">
-                <!-- Class 'desativado' -->
-                <i class="fab fa-twitter"></i>
-                <a href="#linkSocial" class="tudo"></a>
-              </div>
-              <div class="icon desativado" style="background-color: #ff9f40;">
-                <!-- Class 'desativado' -->
-                <i class="fab fa-instagram"></i>
-                <a href="#linkSocial" class="tudo"></a>
-              </div>
-              <div class="icon desativado" style="background-color: #fffb00; color: #000;">
-                <!-- Class 'desativado' -->
-                <i class="fab fa-snapchat-ghost"></i>
-                <a href="#linkSocial" class="tudo"></a>
-              </div>
-            </div>
-          </div>
-        
-          <!-- Meio DIV -->
-          <div class="filtro d-flex flex-row">
-            <div class="select">
-              <select class="selectpicker"> <!-- Tem um JS lá no final -->
-                <option selected>Todos os tipos</option>
-                <option value="1">Tipo 1</option>
-                <option value="2">Tipo 2</option>
-                <option value="3">Tipo 3</option>
-              </select>
-            </div>
-            <div class="botao">
-              <button>Filtrar</button>
-            </div>
-          </div>
-        
+      <!-- Ícones Sociais -->
+      <div class="social">
+        <div class="icon" style="background-color: #de3715;">
+          <i class="fab fa-youtube"></i>
+          <a href="#linkSocial" class="tudo"></a>
         </div>
-        <!-- Fim SubHeader -->
-
-        <!-- Área dos Cards -->
-        <div class="areaDeCard">
-          <div class="row">
-        
-            <!-- CARD -->
-            <div class="col-12">
-              <div class="cardCampanha horizontal d-flex flex-column flex-md-row">
-                <!-- Capa da Campanha -->
-                <div class="capa" style="background-image: url(image/capaCampanha.jpg)">
-                  <!-- Imagem da capa como Background-->
-                </div>
-        
-                <div class="conteudo">
-                  <!-- Título -->
-                  <div class="tituloCamp">
-                    <h3 class="text-truncate">Título da Campanha Grande</h3>
-                    <a href="#linkCampanha" class="tudo"></a>
-                  </div>
-
-                  <!-- Tags -->
-                  <div class="tags d-flex flex-row">
-                    <span class="badge">CPC</span>
-                    <span class="badge">CPI</span>
-                    <span class="badge">CPV</span>
-                    <span class="badge fixed">Fixo</span>
-                    <span class="badge data">Expira 22/04/2018</span>
-                  </div>
-
-                  <!-- Sobre -->
-                  <div class="sobre">
-                    <p class="txt">Cras pulvinar bibendum accumsan. Donec non velit purus. Etiam quam neque, porta quis dictum vitae, fringilla nec magna. Maecenas lacinia nisl eu nunc pulvinar, nec fringilla. </p>
-                  </div>
-
-                  <!-- Final -->
-                  <div class="final d-flex flex-row justify-content-between align-items-center">
-
-                    <!-- Redes Sociais -->
-                    <div class="social d-flex flex-row">
-                      <div class="icon" style="background-color: #00ace8;"> <!-- Cor Social -->
-                        <i class="fab fa-twitter"></i>
-                      </div>
-                      <div class="icon" style="background-color: #0254a8;"> <!-- Cor Social -->
-                        <i class="fab fa-facebook-f"></i>
-                      </div>
-                      <div class="icon" style="background-color: #de3715;"> <!-- Cor Social -->
-                        <i class="fab fa-youtube"></i>
-                      </div>
-                      <div class="icon" style="background-color: #ff9f40;"> <!-- Cor Social -->
-                        <i class="fab fa-instagram"></i>
-                      </div>
-                      <div class="icon" style="background-color: #fffb00; color: #000;"> <!-- Cor Social -->
-                        <i class="fab fa-snapchat-ghost"></i>
-                      </div>
-                    </div>
-
-                    <!-- Valor de Grafico -->
-                    <div class="graf d-flex align-items-center">
-                      <span class="icon"><i class="fas fa-chart-line"></i></span>
-                      <span>3.450</span>
-                    </div>
-
-                    <!-- Dinheiro -->
-                    <div class="valor d-flex align-items-center">
-                      <span class="icon"><i class="fas fa-dollar-sign"></i></span>
-                      <span>R$ 5.809,30</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- FIM DO CARD -->
-
-            <!-- CARD -->
-            <div class="col-12">
-              <div class="cardCampanha horizontal d-flex flex-column flex-md-row">
-                <!-- Capa da Campanha -->
-                <div class="capa" style="background-image: url(image/capaCampanha.jpg)">
-                  <!-- Imagem da capa como Background-->
-                </div>
-        
-                <div class="conteudo">
-                  <!-- Título -->
-                  <div class="tituloCamp">
-                    <h3 class="text-truncate">Título da Campanha Grande</h3>
-                    <a href="#linkCampanha" class="tudo"></a>
-                  </div>
-
-                  <!-- Tags -->
-                  <div class="tags d-flex flex-row">
-                    <span class="badge">CPC</span>
-                    <span class="badge">CPI</span>
-                    <span class="badge">CPV</span>
-                    <span class="badge fixed">Fixo</span>
-                    <span class="badge data">Expira 22/04/2018</span>
-                  </div>
-
-                  <!-- Sobre -->
-                  <div class="sobre">
-                    <p class="txt">Cras pulvinar bibendum accumsan. Donec non velit purus. Etiam quam neque, porta quis dictum vitae, fringilla nec magna. Maecenas lacinia nisl eu nunc pulvinar, nec fringilla. </p>
-                  </div>
-
-                  <!-- Final -->
-                  <div class="final d-flex flex-row justify-content-between align-items-center">
-
-                    <!-- Redes Sociais -->
-                    <div class="social d-flex flex-row">
-                      <div class="icon" style="background-color: #00ace8;"> <!-- Cor Social -->
-                        <i class="fab fa-twitter"></i>
-                      </div>
-                      <div class="icon" style="background-color: #0254a8;"> <!-- Cor Social -->
-                        <i class="fab fa-facebook-f"></i>
-                      </div>
-                      <div class="icon" style="background-color: #de3715;"> <!-- Cor Social -->
-                        <i class="fab fa-youtube"></i>
-                      </div>
-                      <div class="icon" style="background-color: #ff9f40;"> <!-- Cor Social -->
-                        <i class="fab fa-instagram"></i>
-                      </div>
-                      <div class="icon" style="background-color: #fffb00; color: #000;"> <!-- Cor Social -->
-                        <i class="fab fa-snapchat-ghost"></i>
-                      </div>
-                    </div>
-
-                    <!-- Valor de Grafico -->
-                    <div class="graf d-flex align-items-center">
-                      <span class="icon"><i class="fas fa-chart-line"></i></span>
-                      <span>3.450</span>
-                    </div>
-
-                    <!-- Dinheiro -->
-                    <div class="valor d-flex align-items-center">
-                      <span class="icon"><i class="fas fa-dollar-sign"></i></span>
-                      <span>R$ 5.809,30</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- FIM DO CARD -->
-        
-          </div>
+        <div class="icon" style="background-color: #0254a8;">
+          <i class="fab fa-facebook-f"></i>
+          <a href="#linkSocial" class="tudo"></a>
         </div>
-        <!-- Fim Área dos Cards -->
-        
-        <!-- Carrega mais -->
-        <div class="carregarMais">
-          <div class="icon">
-            <i class="fas fa-ellipsis-h fa-spin"></i>
-          </div>
+        <div class="icon" style="background-color: #00ace8;">
+          <i class="fab fa-twitter"></i>
+          <a href="#linkSocial" class="tudo"></a>
         </div>
-        <!-- Fim Carrega mais -->
-
+        <div class="icon desativado" style="background-color: #ff9f40;"> <!-- Class 'desativado' -->
+          <i class="fab fa-instagram"></i>
+          <a href="#linkSocial" class="tudo"></a>
+          <span class="tooltiptext">Não ativado</span> <!--  Pendente de Ativação -->
+        </div>
       </div>
-      <div class="col-12 col-xl-4">
-        <div class="feedAtividades">
-          <!-- Header -->
-          <div class="header">
-            <span>Feed de Atividades</span>
+
+      <!-- Capa do perfil -->
+      <div class="capa" style="background-image: url(image/capaCampanha.jpg);">
+        <!-- A imagem vem como Background -->
+      </div>
+      
+      <!-- Opções do menu -->
+      <div class="optMenu">
+        <div class="row">
+          <div class="col-md-5">
+            <ul class="d-flex flex-column flex-md-row justify-content-md-around">
+              <li class="active"> <!-- Class para link ativado -->
+                <a href="#link">Posts Ativos</a>
+              </li>
+              <li>
+                <a href="#link">Posts Expirados</a>
+              </li>
+            </ul>
           </div>
-
-          <!-- Lista Feed -->
-          <div class="listaDeItens">
-
-            <!-- Item da Lista -->
-            <div class="item d-flex flex-row">
-              <div class="foto">
-                <img src="image/perfil02.png" alt="Imagem de perfil">
-                <a href="#linkPerfil" class="tudo"></a> <!-- Link Perfil -->
-              </div>
-              <div class="conteudo">
-                <!-- Para o perfil, o link ganha uma class, os outros são normais -->
-                <div class="txt">
-                  <a href="#linkPerfil" class="perfil">Marina Polsin</a> enviou um script da <a href="#">Título da Campanha</a>
-                </div>
-                <div class="tempo">2 min atrás</div>
-              </div>
-            </div>
-
-            <!-- Item da Lista -->
-            <div class="item d-flex flex-row">
-              <div class="foto">
-                <img src="image/perfil03.png" alt="Imagem de perfil">
-                <a href="#linkPerfil" class="tudo"></a> <!-- Link Perfil -->
-              </div>
-              <div class="conteudo">
-                <!-- Para o perfil, o link ganha uma class, os outros são normais -->
-                <div class="txt">
-                  <a href="#linkPerfil" class="perfil">Luiza Sonza</a> enviou um script da <a href="#">Título da Campanha</a>
-                </div>
-                <div class="tempo">1h atrás</div>
-              </div>
-            </div>
-
-            <!-- Item da Lista -->
-            <div class="item d-flex flex-row">
-              <div class="foto">
-                <img src="image/perfil04.png" alt="Imagem de perfil">
-                <a href="#linkPerfil" class="tudo"></a> <!-- Link Perfil -->
-              </div>
-              <div class="conteudo">
-                <!-- Para o perfil, o link ganha uma class, os outros são normais -->
-                <div class="txt">
-                  <a href="#linkPerfil" class="perfil">Roberta Stebesh</a> enviou um script da <a href="#">Título da Campanha</a>
-                </div>
-                <div class="tempo">2h atrás</div>
-              </div>
-            </div>
-
+          <div class="col-md-5 ml-auto">
+            <ul class="d-flex flex-column flex-md-row justify-content-md-around">
+              <li>
+                <a href="#link">Sobre a Campanha</a>
+              </li>
+              <li>
+                <a href="#link">Em breve</a>
+              </li>
+            </ul>
           </div>
-          <!-- Fim da Lista Feed -->
-
-          <div class="verTodos">
-            <span class="text-uppercase">Ver todos...</span>
-            <a href="#linkVerTudo" class="tudo"></a>
-          </div>
-
         </div>
+      </div>
+
+      <!-- Autor do Perfil -->
+      <div class="autor">
+        <a class="autor-thumb" href="#linkPerfil">
+          <img src="image/campanhaIcon.png" alt="Imagem de Perfil">
+        </a>
+        <div class="autor-content">
+          <a href="#linkPerfil" class="nome">Título da Campanha</a>
+          <div class="sobre">Nome do Cliente</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="subHeader filtroBy d-flex flex-column flex-md-row align-items-md-center justify-content-md-center flex-wrap flex-md-nowrap">
+
+      <!-- Label -->
+      <div class="label">Filtrar por:</div>
+
+      <!-- Redes Sociais -->
+      <div class="filtro filtroSocial">
+        <div class="select">
+          <select class="selectpicker"> <!-- Tem um JS lá no final -->
+            <option selected>Todas as Redes Sociais</option>
+            <option data-thumbnail="image/iconSocial_instagram.png">Instagram</option>
+            <option data-thumbnail="image/iconSocial_facebook.png">Facebook</option>
+            <option data-thumbnail="image/iconSocial_youtube.png">YouTube</option>
+            <option data-thumbnail="image/iconSocial_twitter.png">Twitter</option>
+            <option data-thumbnail="image/iconSocial_snapchat.png">Snapchat</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Tipo Data -->
+      <div class="filtro segundoFiltro">
+        <div class="select">
+          <select class="selectpicker"> <!-- Tem um JS lá no final -->
+            <option selected>Data (decrescente)</option>
+            <option>Data (crescente)</option>
+            <option>Likes (decrescente)</option>
+            <option>Likes (crescente)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Botão Aplicar -->
+      <div class="btnSubmit">
+        <button>Filtrar</button>
+      </div>
+
+    </div>
+
+    <div class="areaDeCard">
+      <div class="row">
+
+        <!-- CARD -->
+        <div class="col-12 col-md-6 col-lg-4">
+          CARD
+        </div>
+        <!-- FIM DO CARD -->
+
       </div>
     </div>
 
-    <!-- BOTÃO FLUTUANTE | CRIAR CAMPANHA -->
-    <div class="btnCriarCampanha">
-      <span class="icon"><i class="fas fa-bullhorn"></i></span>
-      <span class="plus"><i class="fas fa-plus"></i></span>
-      <a href="#linkCriarCampanha" class="tudo"></a>
+    <div class="carregarMais">
+      <div class="icon">
+        <i class="fas fa-ellipsis-h fa-spin"></i>
+      </div>
     </div>
-    <!-- FIM BOTÃO FLUTUANTE -->
+
   </section>
-
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="js/jquery.min.js"></script>
