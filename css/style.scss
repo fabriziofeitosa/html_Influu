@@ -1317,10 +1317,7 @@ $loadingRosa: #ff1777;
       @media screen and (max-width: $maxMobile) {
         bottom: 210px;
       }
-      
-      // sm
-      @media screen and (min-width: 576px) {
-      }
+
       // md
       @media screen and (min-width: 768px) {
         max-width: 190px;
@@ -1331,9 +1328,6 @@ $loadingRosa: #ff1777;
       // lg
       @media screen and (min-width: 992px) {
         max-width: 200px;
-      }
-      // xl
-      @media screen and (min-width: 1200px) {
       }
     }
   }
@@ -2170,6 +2164,7 @@ $loadingRosa: #ff1777;
 
     // Mobile 
     max-width: 100%;
+    margin-bottom: 15px;
     &:not(:last-child) {
       margin-right: 0;
     }
@@ -2190,6 +2185,7 @@ $loadingRosa: #ff1777;
     // lg
     @media screen and (min-width: 992px) {
       max-width: 23.5%;
+      margin-bottom: 0px;
       &:not(:last-child) {
         margin-right: 2%;
       }

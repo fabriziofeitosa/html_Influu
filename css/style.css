@@ -2239,6 +2239,7 @@ body {
   width: 100%;
   padding: 20px;
   max-width: 100%;
+  margin-bottom: 15px;
 }
 
 .inforCards > .itemCard:not(:last-child) {
@@ -2266,6 +2267,7 @@ body {
 @media screen and (min-width: 992px) {
   .inforCards > .itemCard {
     max-width: 23.5%;
+    margin-bottom: 0px;
   }
   .inforCards > .itemCard:not(:last-child) {
     margin-right: 2%;
