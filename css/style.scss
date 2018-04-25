@@ -2119,3 +2119,58 @@ $loadingRosa: #ff1777;
     }
   }
 }
+
+/* #######################################
+		INFOR CARDS
+   ####################################### */
+
+.inforCards {
+  width: 100%;
+  > .itemCard {
+    background-color: #fff;
+    border: 1px solid $corLinha;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 23.5%;
+    padding: 20px;
+    &:not(:last-child) {
+      margin-right: 2%;
+    }
+    .icon {
+      font-size: 24px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      background-color: #eeeeee;
+      color: #fff;
+      border-radius: 50%;
+      margin-right: 15px;
+      &.girar {
+        i {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+        }
+      }
+      &.azul {
+        background-color: $azulClaro;
+      }
+      &.rosa {
+        background-color: $rosaPadrao;
+      }
+    }
+    .infor {
+      line-height: 1;
+      .valor {
+        font-size: 24px;
+        padding-bottom: 5px;
+      }
+      .nome {
+        font-size: 12px;
+        color: $secundaria;
+      }
+    }
+  }
+}

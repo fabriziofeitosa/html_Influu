@@ -2186,4 +2186,65 @@ body {
 .input-group.influu .help:hover .tooltiptext {
   visibility: visible;
 }
+
+/* #######################################
+		INFOR CARDS
+   ####################################### */
+.inforCards {
+  width: 100%;
+}
+
+.inforCards > .itemCard {
+  background-color: #fff;
+  border: 1px solid #e5ecf6;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 23.5%;
+  padding: 20px;
+}
+
+.inforCards > .itemCard:not(:last-child) {
+  margin-right: 2%;
+}
+
+.inforCards > .itemCard .icon {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #eeeeee;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.inforCards > .itemCard .icon.girar i {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.inforCards > .itemCard .icon.azul {
+  background-color: #01bee4;
+}
+
+.inforCards > .itemCard .icon.rosa {
+  background-color: #fe1777;
+}
+
+.inforCards > .itemCard .infor {
+  line-height: 1;
+}
+
+.inforCards > .itemCard .infor .valor {
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.inforCards > .itemCard .infor .nome {
+  font-size: 12px;
+  color: #9aa3c2;
+}
 /*# sourceMappingURL=style.css.map */
