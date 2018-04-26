@@ -1790,6 +1790,125 @@ $loadingRosa: #ff1777;
       }
     }
   }
+  &.areaCampanha {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    // height: 542px;
+
+    background-color: #fff;
+    border: 1px solid $corLinha;
+    border-radius: 4px;
+    margin: 0 auto 20px auto;
+    > .capa {
+      width: 100%;
+      background-color: #eeeeee;
+      background-position: center center !important;
+      background-size: cover !important;
+      border-radius: 4px 4px 0 0;
+      &::before {
+        content: '';
+        padding-top: 85%;
+        float: left;
+      }
+      &::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+    > .redeSocial {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      overflow: hidden;
+      background-color: #fff;
+      -webkit-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.3);
+      -moz-box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.3);
+      box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.3);
+      img {
+        max-width: 100%;
+        vertical-align: top;
+      }
+    }
+    > .corpo {
+      padding: 20px 30px;
+      .conteudo {
+        .autor {
+          width: 100%;
+          margin-bottom: 20px;
+          .foto {
+            background-color: #edf2f6;
+            width: 50px;
+            height: 50px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-right: 10px;
+            img {
+              max-width: 100%;
+              vertical-align: top;
+            }
+          }
+          .infor {
+            .nome {
+              font-size: 14px;
+              color: $primaria;
+              font-weight: bold;
+            }
+            .tempo {
+              font-size: 12px;
+              color: $secundaria;
+            }
+          }
+          .dado {
+            background-color: $azulClaro;
+            color: #fff;
+            font-size: 12px;
+            padding: 0px 10px;
+            height: 25px;
+            line-height: 25px;
+            border-radius: 4px;
+            i {
+              font-size: 14px;
+            }
+            span {
+              line-height: 1;
+            }
+          }
+        }
+        .txt {
+          font-size: 14px;
+          color: $secundaria;
+          height: 64px;
+          overflow: hidden;
+          a {
+            color: #f13685;
+            text-decoration: none;
+          }
+        }
+        .footer {
+          color: $secundaria;
+          font-size: 16px;
+          border-top: 1px solid $corLinha;
+          margin-top: 20px;
+          padding-top: 20px;
+          .icon {
+            font-size: 18px;
+          }
+          .valor {
+            margin-left: 10px;
+            font-size: 12px;
+          }
+          .compartilhar {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
 }
 
 /* #######################################

@@ -1829,6 +1829,140 @@ body {
   overflow: hidden;
 }
 
+.cardCampanha.areaCampanha {
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  background-color: #fff;
+  border: 1px solid #e5ecf6;
+  border-radius: 4px;
+  margin: 0 auto 20px auto;
+}
+
+.cardCampanha.areaCampanha > .capa {
+  width: 100%;
+  background-color: #eeeeee;
+  background-position: center center !important;
+  background-size: cover !important;
+  border-radius: 4px 4px 0 0;
+}
+
+.cardCampanha.areaCampanha > .capa::before {
+  content: '';
+  padding-top: 85%;
+  float: left;
+}
+
+.cardCampanha.areaCampanha > .capa::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.cardCampanha.areaCampanha > .redeSocial {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.3);
+}
+
+.cardCampanha.areaCampanha > .redeSocial img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.cardCampanha.areaCampanha > .corpo {
+  padding: 20px 30px;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .autor {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .autor .foto {
+  background-color: #edf2f6;
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .autor .foto img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .autor .infor .nome {
+  font-size: 14px;
+  color: #555566;
+  font-weight: bold;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .autor .infor .tempo {
+  font-size: 12px;
+  color: #9aa3c2;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .autor .dado {
+  background-color: #01bee4;
+  color: #fff;
+  font-size: 12px;
+  padding: 0px 10px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .autor .dado i {
+  font-size: 14px;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .autor .dado span {
+  line-height: 1;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .txt {
+  font-size: 14px;
+  color: #9aa3c2;
+  height: 64px;
+  overflow: hidden;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .txt a {
+  color: #f13685;
+  text-decoration: none;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .footer {
+  color: #9aa3c2;
+  font-size: 16px;
+  border-top: 1px solid #e5ecf6;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .footer .icon {
+  font-size: 18px;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .footer .valor {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.cardCampanha.areaCampanha > .corpo .conteudo .footer .compartilhar {
+  margin-left: 20px;
+}
+
 /* #######################################
 		FEED ATIVIDADES
    ####################################### */
