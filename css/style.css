@@ -2010,6 +2010,12 @@ body {
   align-items: center !important;
 }
 
+.cardCampanha.areaCampanha.semImg > .corpo .autor .dado {
+  position: absolute;
+  bottom: 80px;
+  right: 30px;
+}
+
 .cardCampanha.areaCampanha.semImg > .corpo .footer {
   position: absolute;
   bottom: 20px;

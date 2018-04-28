@@ -1952,6 +1952,13 @@ $loadingRosa: #ff1777;
       -ms-flex-align: center !important;
       align-items: center !important;
       > .corpo {
+        .autor {
+          .dado {
+            position: absolute;
+          bottom: 80px;
+          right: 30px;
+          }
+        }
         .footer {
           position: absolute;
           bottom: 20px;
