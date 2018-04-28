@@ -1999,6 +1999,24 @@ body {
   color: #9aa3c2;
 }
 
+.cardCampanha.areaCampanha.semImg {
+  height: calc(100% - 20px);
+  min-height: 400px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.cardCampanha.areaCampanha.semImg > .corpo .footer {
+  position: absolute;
+  bottom: 20px;
+  width: calc(100% - 60px);
+  left: 30px;
+}
+
 /* #######################################
 		FEED ATIVIDADES
    ####################################### */

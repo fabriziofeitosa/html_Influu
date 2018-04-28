@@ -1941,6 +1941,25 @@ $loadingRosa: #ff1777;
         }
       }
     }
+    &.semImg {
+      height: calc(100% - 20px);
+      min-height: 400px;
+      // Alinhamento central
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+      align-items: center !important;
+      > .corpo {
+        .footer {
+          position: absolute;
+          bottom: 20px;
+          width: calc(100% - 60px);
+          left: 30px;
+        }
+      }
+    }
   }
 }
 
