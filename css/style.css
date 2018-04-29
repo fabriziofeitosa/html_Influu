@@ -1964,6 +1964,7 @@ body {
 }
 
 .cardCampanha.areaCampanha.vazio {
+  position: relative;
   height: calc(100% - 20px);
   border: 2px dashed #babfd3;
   background-color: transparent;
@@ -2010,6 +2011,12 @@ body {
   align-items: center !important;
 }
 
+@media screen and (min-width: 768px) {
+  .cardCampanha.areaCampanha.semImg {
+    min-height: 526px;
+  }
+}
+
 .cardCampanha.areaCampanha.semImg > .corpo .autor .dado {
   position: absolute;
   bottom: 80px;
@@ -2021,6 +2028,24 @@ body {
   bottom: 20px;
   width: calc(100% - 60px);
   left: 30px;
+}
+
+.cardCampanha.areaCampanha.semImg.envio .footer {
+  border-top: none;
+  left: 15px;
+  width: calc(100% - 30px);
+}
+
+.cardCampanha.areaCampanha.semImg.envio .footer > .btnConfirmar {
+  background-color: #fe1777;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 20px 20px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
 }
 
 /* #######################################
@@ -2568,5 +2593,128 @@ body {
 
 .showMore::after {
   right: 0;
+}
+
+/* #######################################
+		MODAL INFLUU
+   ####################################### */
+.modal.influu .modal-header {
+  position: relative;
+  line-height: 1;
+}
+
+.modal.influu .modal-header h5 {
+  font-size: 14px;
+  color: #555566;
+}
+
+.modal.influu .modal-header button.close {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  color: #fff;
+}
+
+.modal.influu .modal-footer {
+  border-top-color: transparent;
+}
+
+.modal.influu#modalEnviarProposta .modal-dialog {
+  max-width: 470px;
+}
+
+.modal.influu#modalEnviarProposta .modal-body .formulario .btn-enviar {
+  background-color: #fe1777;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+/* #######################################
+		INFLUU INPUT FORM
+   ####################################### */
+.influu-form {
+  position: relative;
+  width: 100%;
+}
+
+.influu-form label {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  font-size: 11px;
+  color: #9aa3c2;
+}
+
+.influu-form input, .influu-form textarea {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e5ecf6;
+  border-radius: 4px;
+  padding: 24px 20px 20px;
+  font-size: 14px;
+  color: #555566;
+}
+
+.influu-form textarea.noResize {
+  resize: none;
+  min-height: 128px;
+}
+
+.influu-form .selectVue {
+  margin: 20px 0;
+}
+
+.influu-form .selectVue .v-select .open-indicator {
+  bottom: 14px;
+}
+
+.influu-form .selectVue .v-select.open .open-indicator {
+  bottom: 10px;
+}
+
+.influu-form .selectVue .iconSocial {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.influu-form .selectVue .iconSocial img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.influu-form .selectVue .dropdown-toggle {
+  border: 1px solid #e5ecf6;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.influu-form .selectVue .dropdown-toggle button.clear {
+  bottom: 14px;
+}
+
+.influu-form .selectVue ul.dropdown-menu {
+  border-color: #e5ecf6;
+  overflow: hidden;
+}
+
+.influu-form .selectVue ul.dropdown-menu li:hover a {
+  background-color: #fe1777;
+}
+
+.influu-form .selectVue ul.dropdown-menu > .highlight > a {
+  background: #fe1777;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

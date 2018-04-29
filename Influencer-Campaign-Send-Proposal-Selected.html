@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Font Icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Influencer-Campaign-Send-Proposal-Selected</title>
+</head>
+
+<body>
+
+  <h1 class="text-center">Influencer-Campaign-Send-Proposal-Selected</h1>
+
+  <!-- Modal -->
+  <div class="modal fade influu" id="modalEnviarProposta" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Criar proposta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="formulario">
+
+            <!-- Descrição -->
+            <div class="influu-form">
+              <textarea name="descricao" id="descricao" class="noResize"></textarea>
+              <label for="descricao">Descrição da proposta</label>
+            </div>
+
+            <!-- Select Social -->
+            <div class="influu-form">
+              <div class="selectVue">
+                <v-select :options="options" label="title" placeholder="Selecione uma rede social">
+                  <template slot="option" slot-scope="option">
+                    <span class="iconSocial">
+                      <img :src="option.icon" alt="Icone Social">
+                    </span>
+                    {{ option.title }}
+                  </template>
+                </v-select>
+              </div>
+            </div>
+
+            <!-- Btn enviar -->
+            <div class="d-flex">
+              <a href="#enviar" class="btn-enviar">Enviar proposta</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Modal -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+
+  <script src="js/theme.js"></script>
+
+  <!-- Vue.js + VueSelect -->
+  <script src="https://unpkg.com/vue@latest"></script>
+  <script src="https://unpkg.com/vue-select@latest"></script>
+
+  <script>
+    // $('.selectpicker').selectpicker({
+    //   style: 'btn-secondary'
+    // });
+
+    // Mostrar Modal
+    $('#modalEnviarProposta').modal({
+      show: true
+    });
+
+    // Select VUE.js
+    Vue.component('v-select', VueSelect.VueSelect)
+    new Vue({
+      el: '.selectVue',
+      data: {
+        options: [
+          {
+            title: 'Facebook',
+            icon: 'image/iconSocial_facebook.png'
+          },
+          {
+            title: 'Instagram',
+            icon: 'image/iconSocial_instagram.png'
+          },
+          {
+            title: 'Twitter',
+            icon: 'image/iconSocial_twitter.png'
+          },
+          {
+            title: 'Snapchat',
+            icon: 'image/iconSocial_snapchat.png'
+          },
+          {
+            title: 'YouTube',
+            icon: 'image/iconSocial_youtube.png'
+          }
+        ]
+      }
+    })
+  </script>
+</body>
+
+</html>

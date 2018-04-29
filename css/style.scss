@@ -1909,6 +1909,7 @@ $loadingRosa: #ff1777;
       }
     }
     &.vazio {
+      position: relative;
       height: calc(100% - 20px);
       border: 2px dashed #babfd3;
       background-color: transparent;
@@ -1944,6 +1945,9 @@ $loadingRosa: #ff1777;
     &.semImg {
       height: calc(100% - 20px);
       min-height: 400px;
+      @media screen and (min-width: $minDesktop) { // Desktop
+        min-height: 526px;
+      }
       // Alinhamento central
       display: -webkit-box !important;
       display: -ms-flexbox !important;
@@ -1964,6 +1968,25 @@ $loadingRosa: #ff1777;
           bottom: 20px;
           width: calc(100% - 60px);
           left: 30px;
+        }
+      }
+
+      &.envio {
+        .footer {
+          border-top: none;
+          left: 15px;
+          width: calc(100% - 30px);
+          > .btnConfirmar {
+            background-color: $rosaPadrao;
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 20px 20px;
+            width: 100%;
+            text-align: center;
+            border-radius: 4px;
+            text-decoration: none;
+          }
         }
       }
     }
@@ -2460,5 +2483,140 @@ $loadingRosa: #ff1777;
   }
   &::after {
     right: 0;
+  }
+}
+
+/* #######################################
+		MODAL INFLUU
+   ####################################### */
+
+.modal.influu {
+  .modal-header {
+    position: relative;
+    line-height: 1;
+    h5 {
+      font-size: 14px;
+      color: $primaria;
+    }
+    button.close {
+      position: absolute;
+      top: -25px;
+      right: -25px;
+      color: #fff;
+    }
+  }
+  .modal-body {
+    .formulario {
+
+    }
+  }
+  .modal-footer {
+    border-top-color: transparent;
+  }
+
+  &#modalEnviarProposta {
+    .modal-dialog {
+      max-width: 470px;
+    }
+    .modal-body {
+      .formulario {
+        .btn-enviar {
+          background-color: $rosaPadrao;
+          color: #fff;
+          font-size: 15px;
+          font-weight: bold;
+          padding: 15px 20px;
+          width: 100%;
+          text-align: center;
+          border-radius: 4px;
+          text-decoration: none;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+/* #######################################
+		INFLUU INPUT FORM
+   ####################################### */
+
+.influu-form {
+  position: relative;
+  width: 100%;
+
+  label {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-size: 11px;
+    color: $secundaria;
+  }
+  input, textarea {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid $corLinha;
+    border-radius: 4px;
+    padding: 24px 20px 20px;
+    font-size: 14px;
+    color: $primaria;
+  }
+  textarea.noResize {
+    resize: none;
+    min-height: 128px;
+  }
+
+  .selectVue {
+    margin: 20px 0;
+
+    .v-select {
+      .open-indicator {
+        bottom: 14px;
+      }
+      &.open {
+        .open-indicator {
+          bottom: 10px;
+        }
+      }
+    }
+
+    .iconSocial {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #fff;
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        vertical-align: top;
+      }
+    }
+    
+    .dropdown-toggle {
+      border: 1px solid $corLinha;
+      font-size: 14px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      button.clear {
+        bottom: 14px;
+      }
+    }
+
+    ul.dropdown-menu {
+      border-color: $corLinha;
+      overflow: hidden;
+      li:hover {
+        a {
+          background-color: $rosaPadrao;
+        }
+      }
+      > .highlight {
+        > a {
+          background:$rosaPadrao;
+          color:#fff
+        }
+      }
+    }
   }
 }
