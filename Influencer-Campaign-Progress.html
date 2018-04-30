@@ -390,27 +390,30 @@
 
       <!-- Redes Sociais -->
       <div class="filtro filtroSocial">
-        <div class="select">
-          <select class="selectpicker"> <!-- Tem um JS lá no final -->
-            <option selected>Todas as Redes Sociais</option>
-            <option data-thumbnail="image/iconSocial_instagram.png">Instagram</option>
-            <option data-thumbnail="image/iconSocial_facebook.png">Facebook</option>
-            <option data-thumbnail="image/iconSocial_youtube.png">YouTube</option>
-            <option data-thumbnail="image/iconSocial_twitter.png">Twitter</option>
-            <option data-thumbnail="image/iconSocial_snapchat.png">Snapchat</option>
-          </select>
+        <div class="influu-form">
+          <div class="selectVue selectVueSocial">
+            <v-select :options="options" label="title" placeholder="Selecione uma rede social">
+              <template slot="option" slot-scope="option">
+                <span class="iconSocial">
+                  <img :src="option.icon" alt="Icone Social">
+                </span>
+                {{ option.title }}
+              </template>
+            </v-select>
+          </div>
         </div>
       </div>
 
       <!-- Tipo Data -->
       <div class="filtro segundoFiltro">
-        <div class="select">
-          <select class="selectpicker"> <!-- Tem um JS lá no final -->
-            <option selected>Data (decrescente)</option>
-            <option>Data (crescente)</option>
-            <option>Likes (decrescente)</option>
-            <option>Likes (crescente)</option>
-          </select>
+        <div class="influu-form">
+          <div class="selectVue selectVueOrdenacao">
+            <v-select :options="options" label="title" v-model="selected">
+              <template slot="option" slot-scope="option">
+                {{ option.title }}
+              </template>
+            </v-select>
+          </div>
         </div>
       </div>
 
@@ -679,10 +682,65 @@
 
   <script src="js/theme.js"></script>
 
+  <!-- Vue.js + VueSelect -->
+  <script src="https://unpkg.com/vue@latest"></script>
+  <script src="https://unpkg.com/vue-select@latest"></script>
+
   <script>
     $('.selectpicker').selectpicker({
       style: 'btn-secondary'
     });
+
+    // Select VUE.js
+    Vue.component('v-select', VueSelect.VueSelect)
+    new Vue({
+      el: '.selectVueSocial',
+      data: {
+        options: [
+          {
+            title: 'Facebook',
+            icon: 'image/iconSocial_facebook.png'
+          },
+          {
+            title: 'Instagram',
+            icon: 'image/iconSocial_instagram.png'
+          },
+          {
+            title: 'Twitter',
+            icon: 'image/iconSocial_twitter.png'
+          },
+          {
+            title: 'Snapchat',
+            icon: 'image/iconSocial_snapchat.png'
+          },
+          {
+            title: 'YouTube',
+            icon: 'image/iconSocial_youtube.png'
+          }
+        ]
+      }
+    })
+
+    new Vue({
+      el: '.selectVueOrdenacao',
+      data: {
+        selected: 'Data decrescente',
+        options: [
+          {
+            title: 'Data crescente'
+          },
+          {
+            title: 'Data decrescente'
+          },
+          {
+            title: 'Likes crescente'
+          },
+          {
+            title: 'Likes decrescente'
+          }
+        ]
+      }
+    })
   </script>
 </body>
 

@@ -1510,13 +1510,6 @@ $loadingRosa: #ff1777;
       }
     }
     .filtro {
-      .select {
-        max-width: 100%;
-        padding-right: 0;
-        button.btn {
-          max-width: 100%;
-        }
-      }
       &.filtroSocial, &.segundoFiltro {
         width: 35%;
         margin-right: 2%;
@@ -2571,11 +2564,11 @@ $loadingRosa: #ff1777;
 
     .v-select {
       .open-indicator {
-        bottom: 14px;
+        bottom: 10px;
       }
       &.open {
         .open-indicator {
-          bottom: 10px;
+          bottom: 6px;
         }
       }
     }
@@ -2596,10 +2589,10 @@ $loadingRosa: #ff1777;
     .dropdown-toggle {
       border: 1px solid $corLinha;
       font-size: 14px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
       button.clear {
-        bottom: 14px;
+        bottom: 10px;
       }
     }
 
