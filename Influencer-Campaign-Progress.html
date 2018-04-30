@@ -472,13 +472,82 @@
 
     </div>
 
+    <!-- Mostrar mais informaçoes -->
     <div class="showMore">
       <div class="conteudo">
         <span class="txt">Mostrar mais</span>
+        <!-- <span class="txt">Mostrar menos</span> | Mostrar esse quando é aberto -->
         <span class="icon">
           <i class="fas fa-plus"></i>
+          <!-- <i class="fas fa-minus"></i> | Mostra esse quando aberto -->
         </span>
         <a href="#MoreMore" class="tudo"></a>
+      </div>
+    </div>
+
+    <!--
+      Mais informações | Dados da campanha | Só mostrar ao clica mais acima
+      ou seja, por padrão é um 'display: none' até clicar mais acima
+    -->
+    <div class="dadosCampanha">
+      <div class="listCards d-flex flex-md-row flex-wrap">
+
+        <!-- Card Likes -->
+        <div class="itemCard d-flex flex-row align-items-center">
+          <div class="icon azul">
+            <i class="fas fa-heart"></i>
+          </div>
+          <div class="infor">
+            <div class="valor">143.345</div>
+            <div class="nome">Likes</div>
+          </div>
+        </div>
+
+        <!-- Card Comentários -->
+        <div class="itemCard d-flex flex-row align-items-center">
+          <div class="icon rosa">
+            <i class="fas fa-comment"></i>
+          </div>
+          <div class="infor">
+            <div class="valor">170.456</div>
+            <div class="nome">Comentários</div>
+          </div>
+        </div>
+
+        <!-- Card Compartilhamentos -->
+        <div class="itemCard d-flex flex-row align-items-center">
+          <div class="icon azul">
+            <i class="fas fa-share"></i>
+          </div>
+          <div class="infor">
+            <div class="valor">206.869</div>
+            <div class="nome">Compartilhamentos</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Gráficos -->
+      <div class="graficos d-flex flex-column flex-md-row">
+        <!-- Idade & Gênero -->
+        <div class="cardGraf">
+          <div class="header">
+            <span>Idade & Gênero dividido</span>
+          </div>
+          <div class="areaGrafico d-flex justify-content-center align-items-center">
+            <div>GRAFICO AQUI</div>
+          </div>
+        </div>
+
+        <!-- Sexo divido -->
+        <div class="cardGraf">
+          <div class="header">
+            <span>Gênero dividido</span>
+          </div>
+          <div class="areaGrafico d-flex justify-content-center align-items-center">
+            <div>GRAFICO AQUI</div>
+          </div>
+        </div>
       </div>
     </div>
 

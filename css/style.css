@@ -2595,6 +2595,112 @@ body {
 }
 
 /* #######################################
+		DADOS DA CAMPANHA
+   ####################################### */
+.dadosCampanha {
+  padding-bottom: 20px;
+}
+
+.dadosCampanha > .listCards {
+  margin-bottom: 20px;
+}
+
+.dadosCampanha > .listCards > .itemCard {
+  background-color: #fff;
+  border: 1px solid #e5ecf6;
+  border-radius: 4px;
+  width: 100%;
+  padding: 20px;
+  max-width: 100%;
+  margin-bottom: 15px;
+}
+
+.dadosCampanha > .listCards > .itemCard:not(:last-child) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .dadosCampanha > .listCards > .itemCard {
+    max-width: 32%;
+    margin-bottom: 0px;
+  }
+  .dadosCampanha > .listCards > .itemCard:not(:last-of-type) {
+    margin-right: 2%;
+  }
+}
+
+.dadosCampanha > .listCards > .itemCard .icon {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #eeeeee;
+  color: #fff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.dadosCampanha > .listCards > .itemCard .icon.girar i {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.dadosCampanha > .listCards > .itemCard .icon.azul {
+  background-color: #01bee4;
+}
+
+.dadosCampanha > .listCards > .itemCard .icon.rosa {
+  background-color: #fe1777;
+}
+
+.dadosCampanha > .listCards > .itemCard .infor {
+  line-height: 1;
+}
+
+.dadosCampanha > .listCards > .itemCard .infor .valor {
+  font-size: 24px;
+  padding-bottom: 5px;
+}
+
+.dadosCampanha > .listCards > .itemCard .infor .nome {
+  font-size: 12px;
+  color: #9aa3c2;
+}
+
+.dadosCampanha > .graficos {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.dadosCampanha > .graficos .cardGraf {
+  width: 100%;
+  max-width: 49%;
+  background-color: #fff;
+  border: 1px solid #e5ecf6;
+  border-radius: 4px;
+}
+
+.dadosCampanha > .graficos .cardGraf:not(:last-of-type) {
+  margin-right: 2%;
+}
+
+.dadosCampanha > .graficos .cardGraf > .header {
+  padding: 25px 20px;
+  font-weight: bold;
+  color: #555566;
+  font-size: 14px;
+  border-bottom: 1px solid #e5ecf6;
+  line-height: 1;
+}
+
+.dadosCampanha > .graficos .cardGraf > .areaGrafico {
+  min-height: 100px;
+}
+
+/* #######################################
 		MODAL INFLUU
    ####################################### */
 .modal.influu .modal-header {
