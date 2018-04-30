@@ -1527,6 +1527,10 @@ body {
   margin: 0;
 }
 
+.subHeader.filtroBy .filtro.segundoFiltro button.clear {
+  display: none;
+}
+
 .subHeader.filtroBy .btnSubmit {
   width: 15%;
 }
