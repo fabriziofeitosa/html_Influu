@@ -1520,6 +1520,11 @@ $loadingRosa: #ff1777;
             width: 100%;
           }
         }
+        .influu-form {
+          .selectVue {
+            margin: 0;
+          }
+        }
       }
     }
     .btnSubmit {
@@ -2593,6 +2598,16 @@ $loadingRosa: #ff1777;
       padding-bottom: 5px;
       button.clear {
         bottom: 10px;
+      }
+      span.selected-tag {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        font-weight: normal;
+        max-width: calc(100% - 55px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
       }
     }
 

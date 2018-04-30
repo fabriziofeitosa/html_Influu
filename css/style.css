@@ -1523,6 +1523,10 @@ body {
   }
 }
 
+.subHeader.filtroBy .filtro.filtroSocial .influu-form .selectVue, .subHeader.filtroBy .filtro.segundoFiltro .influu-form .selectVue {
+  margin: 0;
+}
+
 .subHeader.filtroBy .btnSubmit {
   width: 15%;
 }
@@ -2693,6 +2697,17 @@ body {
 
 .influu-form .selectVue .dropdown-toggle button.clear {
   bottom: 10px;
+}
+
+.influu-form .selectVue .dropdown-toggle span.selected-tag {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: normal;
+  max-width: calc(100% - 55px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .influu-form .selectVue ul.dropdown-menu {
