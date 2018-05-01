@@ -2751,6 +2751,19 @@ body {
   margin-bottom: 10px;
 }
 
+.modal.influu#modalAddPost .modal-dialog {
+  max-width: 470px;
+}
+
+.modal.influu#modalAddPost .modal-body .btn-enviar {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.modal.influu#modalAddPost .modal-body .btn-enviar > a {
+  padding: 20px;
+}
+
 /* #######################################
 		INFLUU INPUT FORM
    ####################################### */
@@ -2772,14 +2785,36 @@ body {
   background-color: #fff;
   border: 1px solid #e5ecf6;
   border-radius: 4px;
-  padding: 24px 20px 20px;
   font-size: 14px;
   color: #555566;
+}
+
+.influu-form input {
+  padding: 24px 20px 10px;
+}
+
+.influu-form textarea {
+  padding: 24px 20px 20px;
 }
 
 .influu-form textarea.noResize {
   resize: none;
   min-height: 128px;
+}
+
+.influu-form .btn-influu {
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.influu-form .btn-influu.azul {
+  background-color: #01bee4;
 }
 
 .influu-form .selectVue {

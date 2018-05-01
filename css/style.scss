@@ -2640,6 +2640,20 @@ $loadingRosa: #ff1777;
       }
     }
   }
+  &#modalAddPost {
+    .modal-dialog {
+      max-width: 470px;
+    }
+    .modal-body {
+      .btn-enviar {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        > a {
+          padding: 20px;
+        }
+      }
+    }
+  }
 }
 
 /* #######################################
@@ -2662,13 +2676,32 @@ $loadingRosa: #ff1777;
     background-color: #fff;
     border: 1px solid $corLinha;
     border-radius: 4px;
-    padding: 24px 20px 20px;
     font-size: 14px;
     color: $primaria;
   }
-  textarea.noResize {
-    resize: none;
-    min-height: 128px;
+  input {
+    padding: 24px 20px 10px;
+  }
+  textarea {
+    padding: 24px 20px 20px;
+    &.noResize {
+      resize: none;
+      min-height: 128px;
+    }
+  }
+
+  .btn-influu {
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1;
+    &.azul {
+      background-color: $azulClaro;
+    }
   }
 
   .selectVue {
