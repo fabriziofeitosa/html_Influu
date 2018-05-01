@@ -1992,6 +1992,20 @@ $loadingRosa: #ff1777;
       }
     }
   }
+
+  // PRETO E BRANCO
+  &.expired {
+    .capa,
+    .redeSocial,
+    .foto, .infor, .dado,
+    .txt,
+    .footer
+    {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray; /* IE */
+    }
+  }
 }
 
 /* #######################################

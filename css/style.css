@@ -2046,6 +2046,17 @@ body {
   text-decoration: none;
 }
 
+.cardCampanha.expired .capa,
+.cardCampanha.expired .redeSocial,
+.cardCampanha.expired .foto, .cardCampanha.expired .infor, .cardCampanha.expired .dado,
+.cardCampanha.expired .txt,
+.cardCampanha.expired .footer {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  /* IE */
+}
+
 /* #######################################
 		FEED ATIVIDADES
    ####################################### */
