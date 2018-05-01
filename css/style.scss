@@ -1417,20 +1417,13 @@ $loadingRosa: #ff1777;
       .influu-form {
         .selectVue {
           margin: 0;
+          button.clear { display: none; }
         }
       }
-      /* .bootstrap-select {
-        width: 100%;
-        min-width: 130px;
-      } */
       @media screen and (max-width: $maxMobile) {
         max-width: 100%;
         width: 70%;
         padding-right: 10px;
-        /* button {
-          width: 100%;
-          max-width: 100%;
-        } */
       }
     }
     .botao {
@@ -1500,13 +1493,6 @@ $loadingRosa: #ff1777;
           height: 27px;
           line-height: 27px;
           font-size: 14px;
-        }
-      }
-    }
-    > .filtro {
-      .influu-form {
-        .selectVue {
-          button.clear { display: none; }
         }
       }
     }
