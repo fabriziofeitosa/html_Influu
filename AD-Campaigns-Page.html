@@ -361,12 +361,15 @@
           <!-- Meio DIV -->
           <div class="filtro d-flex flex-row">
             <div class="select">
-              <select class="selectpicker"> <!-- Tem um JS lá no final -->
-                <option selected>Todos os tipos</option>
-                <option value="1">Tipo 1</option>
-                <option value="2">Tipo 2</option>
-                <option value="3">Tipo 3</option>
-              </select>
+              <div class="influu-form">
+                <div class="selectVue selectTipo">
+                  <v-select :options="options" label="title" v-model="selected">
+                    <template slot="option" slot-scope="option">
+                      {{ option.title }}
+                    </template>
+                  </v-select>
+                </div>
+              </div>
             </div>
             <div class="botao">
               <button>Filtrar</button>
@@ -614,10 +617,39 @@
 
   <script src="js/theme.js"></script>
 
+  <!-- Vue.js + VueSelect -->
+  <script src="https://unpkg.com/vue@latest"></script>
+  <script src="https://unpkg.com/vue-select@latest"></script>
+
   <script>
     $('.selectpicker').selectpicker({
       style: 'btn-secondary'
     });
+
+    // Select VUE.js
+    Vue.component('v-select', VueSelect.VueSelect)
+    new Vue({
+      el: '.selectTipo',
+      data: {
+        selected: {
+          title: 'Todos'
+        },
+        options: [
+          {
+            title: 'Todos'
+          },
+          {
+            title: 'Tipo 1'
+          },
+          {
+            title: 'Tipo 2'
+          },
+          {
+            title: 'Tipo 3'
+          }
+        ]
+      }
+    })
   </script>
 </body>
 

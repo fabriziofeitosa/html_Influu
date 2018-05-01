@@ -1393,11 +1393,14 @@ body {
 
 .subHeader > .filtro .select {
   max-width: 130px;
+  /* .bootstrap-select {
+        width: 100%;
+        min-width: 130px;
+      } */
 }
 
-.subHeader > .filtro .select .bootstrap-select {
-  width: 100%;
-  min-width: 130px;
+.subHeader > .filtro .select .influu-form .selectVue {
+  margin: 0;
 }
 
 @media screen and (max-width: 767px) {
@@ -1405,10 +1408,10 @@ body {
     max-width: 100%;
     width: 70%;
     padding-right: 10px;
-  }
-  .subHeader > .filtro .select button {
-    width: 100%;
-    max-width: 100%;
+    /* button {
+          width: 100%;
+          max-width: 100%;
+        } */
   }
 }
 
@@ -1495,6 +1498,10 @@ body {
   height: 27px;
   line-height: 27px;
   font-size: 14px;
+}
+
+.subHeader.menor > .filtro .influu-form .selectVue button.clear {
+  display: none;
 }
 
 .subHeader.filtroBy .label {
