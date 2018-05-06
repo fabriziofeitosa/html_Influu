@@ -514,9 +514,11 @@
       }
     })
 
-    // Grafico Vertical
+    // Todos os Graficos
     var ctx = document.getElementById('graficoEngajamento').getContext('2d');
     var ctx2 = document.getElementById('graficoEngajamentoTotal').getContext('2d');
+    // var ctxMoney = document.getElementById('graficoDinheiro').getContext('2d');
+    // Horizontal 
     var chart = new Chart(ctx, {
       // The type of chart we want to create
       type: 'line',
@@ -526,15 +528,17 @@
         labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [{
           label: "Snapchat",
-          backgroundColor: '#fec047',
-          borderColor: '#fddd18',
+          backgroundColor: 'rgba(254, 192, 71, 0.8)',
+          borderColor: 'rgba(253, 221, 24, 0.8)',
           data: [0, 10, 5, 2, 20, 30, 45],
+          borderWidth: 5
         },
         {
           label: "Instagram",
           backgroundColor: '#ff9f89',
           borderColor: '#ff5f39',
-          data: [10, 25, 15, 20, 40, 50, 65],
+          data: [10, 25, 15, 20, 40, 50, 25],
+          borderWidth: 5
         }]
       },
 
@@ -545,7 +549,7 @@
         }
       }
     });
-    // And for a doughnut chart
+    // doughnut
     var myDoughnutChart = new Chart(ctx2, {
       type: 'doughnut',
       // The data for our dataset
@@ -559,6 +563,41 @@
       options: {
         responsive: true,
         cutoutPercentage: 90,
+        legend: {
+          display: false
+        }
+      }
+    });
+    // Money
+    var chartMoney = new Chart(ctxMoney, {
+      // The type of chart we want to create
+      type: 'line',
+
+      // The data for our dataset
+      data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+          label: "Snapchat",
+          backgroundColor: 'rgba(254, 192, 71, 0.5)',
+          borderColor: 'rgba(253, 221, 24, 0.5)',
+          data: [0, 10, 5, 2, 20, 30, 45],
+          borderWidth: 5,
+
+          pointRadius: 7,
+          pointHoverRadius: 10,
+          pointBackgroundColor: "#fff",
+          pointHoverBackgroundColor: "#fff"
+        },
+        {
+          label: "Instagram",
+          backgroundColor: '#ff9f89',
+          borderColor: '#ff5f39',
+          data: [10, 25, 15, 20, 40, 50, 25],
+        }]
+      },
+
+      // Configuration options go here
+      options: {
         legend: {
           display: false
         }
