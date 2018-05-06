@@ -1066,6 +1066,100 @@ body {
 }
 
 /* #######################################
+        BOX COM HEADER
+   ####################################### */
+.boxHeader {
+  background-color: #fff;
+  border: 1px solid #e5ecf6;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.boxHeader > .header {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 20px 25px;
+  line-height: 1;
+  border-bottom: 1px solid #e5ecf6;
+}
+
+.boxHeader > .corpo {
+  padding: 20px 25px;
+}
+
+/* #######################################
+        ESTATÍSTICAS PERFIL
+   ####################################### */
+.areaStatusPerfil {
+  color: #555566;
+}
+
+.areaStatusPerfil .totalEngajamento .legendas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.areaStatusPerfil .totalEngajamento .legendas ul li:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.areaStatusPerfil .totalEngajamento .legendas ul li .nome {
+  color: #9aa3c2;
+  font-size: 12px;
+}
+
+.areaStatusPerfil .totalEngajamento .legendas ul li .nome .ponto {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.areaStatusPerfil .totalEngajamento .legendas ul li .valor {
+  font-size: 24px;
+}
+
+.areaStatusPerfil .graficoEngajamentoTotal {
+  position: relative;
+  max-width: 60%;
+}
+
+@media screen and (max-width: 767px) {
+  .areaStatusPerfil .graficoEngajamentoTotal {
+    max-width: 100%;
+  }
+}
+
+.areaStatusPerfil .graficoEngajamentoTotal .valor {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 70px;
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
+@media screen and (max-width: 767px) {
+  .areaStatusPerfil .graficoEngajamentoTotal .valor {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+.areaStatusPerfil .graficoEngajamentoTotal .valor .numero {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.areaStatusPerfil .graficoEngajamentoTotal .valor .sub {
+  color: #9aa3c2;
+  font-size: 12px;
+}
+
+/* #######################################
         SOBRE A CAMPANHA
    ####################################### */
 .sobreCampanha .areaDeCard .inforBasicas,
