@@ -5,7 +5,7 @@ Author URI: http://fabriziofeitosa.me
 Version: 1.0
 */
 /* #######################################
-		CONFIGURAÇÕES
+        CONFIGURAÇÕES
    ####################################### */
 .noSelect {
   -webkit-touch-callout: none;
@@ -95,7 +95,7 @@ body {
 }
 
 /* #######################################
-		LOGIN
+        LOGIN
    ####################################### */
 #loginPrincipal {
   background-image: url(../image/loginbg.jpg);
@@ -181,7 +181,9 @@ body {
   transform: rotateY(180deg);
 }
 
-#loginPrincipal .flip-container, #loginPrincipal .front, #loginPrincipal .back {
+#loginPrincipal .flip-container,
+#loginPrincipal .front,
+#loginPrincipal .back {
   width: 100%;
   height: 100%;
   max-width: 435px;
@@ -194,7 +196,8 @@ body {
   position: relative;
 }
 
-#loginPrincipal .front, #loginPrincipal .back {
+#loginPrincipal .front,
+#loginPrincipal .back {
   backface-visibility: hidden;
   position: absolute;
   top: 0;
@@ -293,12 +296,14 @@ body {
   margin-bottom: 0px;
 }
 
-#loginPrincipal .step02 .corpo a, #loginPrincipal .step03 .corpo a {
+#loginPrincipal .step02 .corpo a,
+#loginPrincipal .step03 .corpo a {
   color: #fe2787;
   text-decoration: none;
 }
 
-#loginPrincipal .step02 .corpo .footer, #loginPrincipal .step03 .corpo .footer {
+#loginPrincipal .step02 .corpo .footer,
+#loginPrincipal .step03 .corpo .footer {
   position: absolute;
   left: 0px;
   bottom: 30px;
@@ -306,23 +311,27 @@ body {
   margin: 0 28px;
 }
 
-#loginPrincipal .step02 .corpo .footer .termoDeUso, #loginPrincipal .step03 .corpo .footer .termoDeUso {
+#loginPrincipal .step02 .corpo .footer .termoDeUso,
+#loginPrincipal .step03 .corpo .footer .termoDeUso {
   position: relative;
   z-index: 10;
 }
 
-#loginPrincipal .step02 .corpo .footer .termoDeUso label, #loginPrincipal .step03 .corpo .footer .termoDeUso label {
+#loginPrincipal .step02 .corpo .footer .termoDeUso label,
+#loginPrincipal .step03 .corpo .footer .termoDeUso label {
   cursor: pointer;
 }
 
-#loginPrincipal .step02 .corpo .footer .termoDeUso label span, #loginPrincipal .step03 .corpo .footer .termoDeUso label span {
+#loginPrincipal .step02 .corpo .footer .termoDeUso label span,
+#loginPrincipal .step03 .corpo .footer .termoDeUso label span {
   font-size: 13px;
   line-height: 24px;
   padding-left: 5px;
   font-weight: normal;
 }
 
-#loginPrincipal .step02 .corpo .footer .custom-control-label::before, #loginPrincipal .step03 .corpo .footer .custom-control-label::before {
+#loginPrincipal .step02 .corpo .footer .custom-control-label::before,
+#loginPrincipal .step03 .corpo .footer .custom-control-label::before {
   width: 20px;
   height: 20px;
   background-color: #fff;
@@ -330,20 +339,24 @@ body {
   border: 1px solid #e5ecf6;
 }
 
-#loginPrincipal .step02 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before, #loginPrincipal .step03 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+#loginPrincipal .step02 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before,
+#loginPrincipal .step03 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #fe2787;
 }
 
-#loginPrincipal .step02 .corpo .footer .custom-control-label::after, #loginPrincipal .step03 .corpo .footer .custom-control-label::after {
+#loginPrincipal .step02 .corpo .footer .custom-control-label::after,
+#loginPrincipal .step03 .corpo .footer .custom-control-label::after {
   width: 20px;
   height: 20px;
 }
 
-#loginPrincipal .step02 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after, #loginPrincipal .step03 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+#loginPrincipal .step02 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after,
+#loginPrincipal .step03 .corpo .footer .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
   border: 1px solid #fe2787;
 }
 
-#loginPrincipal .step02 .corpo .footer .custom-control-input:focus ~ .custom-control-label::before, #loginPrincipal .step03 .corpo .footer .custom-control-input:focus ~ .custom-control-label::before {
+#loginPrincipal .step02 .corpo .footer .custom-control-input:focus ~ .custom-control-label::before,
+#loginPrincipal .step03 .corpo .footer .custom-control-input:focus ~ .custom-control-label::before {
   box-shadow: 0 0 0 0;
 }
 
@@ -367,7 +380,7 @@ body {
 }
 
 /* #######################################
-		LOADING
+        LOADING
    ####################################### */
 #loading {
   height: auto;
@@ -394,7 +407,8 @@ body {
   animation: sk-rotate 2.0s infinite linear;
 }
 
-#loading #loader-wrapper .spinner .dot1, #loading #loader-wrapper .spinner .dot2 {
+#loading #loader-wrapper .spinner .dot1,
+#loading #loader-wrapper .spinner .dot2 {
   width: 60%;
   height: 60%;
   display: inline-block;
@@ -449,7 +463,7 @@ body {
 }
 
 /* #######################################
-		HEADER
+        HEADER
    ####################################### */
 .topo {
   z-index: 100;
@@ -669,7 +683,9 @@ body {
   color: #fff;
 }
 
-.topo > .conteudo > .notificacoes .box > .item .interacao .like, .topo > .conteudo > .notificacoes .box > .item .interacao .deslike, .topo > .conteudo > .notificacoes .box > .item .interacao .decisao {
+.topo > .conteudo > .notificacoes .box > .item .interacao .like,
+.topo > .conteudo > .notificacoes .box > .item .interacao .deslike,
+.topo > .conteudo > .notificacoes .box > .item .interacao .decisao {
   position: relative;
   width: 40px;
   height: 40px;
@@ -724,7 +740,8 @@ body {
   position: relative;
 }
 
-.topo > .conteudo > .perfil .foto, .topo > .conteudo > .perfil .infor {
+.topo > .conteudo > .perfil .foto,
+.topo > .conteudo > .perfil .infor {
   cursor: pointer;
 }
 
@@ -754,7 +771,8 @@ body {
   font-size: 8px;
 }
 
-.topo > .conteudo > .perfil .infor .nome, .topo > .conteudo > .perfil .infor .profissao {
+.topo > .conteudo > .perfil .infor .nome,
+.topo > .conteudo > .perfil .infor .profissao {
   display: block;
   font-weight: bold;
   line-height: 1.5;
@@ -966,12 +984,14 @@ body {
   font-size: 18px;
 }
 
-.topo > .lateral .itemMenu:hover .icon, .topo > .lateral .itemMenu:hover .titulo {
+.topo > .lateral .itemMenu:hover .icon,
+.topo > .lateral .itemMenu:hover .titulo {
   color: #fe1777;
 }
 
 @media screen and (max-width: 767px) {
-  .topo > .lateral .itemMenu:hover.clickMenu .icon, .topo > .lateral .itemMenu:hover.clickMenu .titulo {
+  .topo > .lateral .itemMenu:hover.clickMenu .icon,
+  .topo > .lateral .itemMenu:hover.clickMenu .titulo {
     color: #fff;
   }
 }
@@ -1024,7 +1044,7 @@ body {
 }
 
 /* #######################################
-		ÁREA DE CONTEUDO
+        ÁREA DE CONTEUDO
    ####################################### */
 .areaDeConteudo {
   z-index: 1;
@@ -1046,7 +1066,120 @@ body {
 }
 
 /* #######################################
-		CABEÇALHO
+        SOBRE A CAMPANHA
+   ####################################### */
+.sobreCampanha .areaDeCard .inforBasicas,
+.sobreCampanha .areaDeCard .detalhes {
+  color: #555566;
+  background-color: #fff;
+  border: 1px solid #e5ecf6;
+  border-radius: 4px;
+}
+
+.sobreCampanha .areaDeCard .inforBasicas > .header,
+.sobreCampanha .areaDeCard .detalhes > .header {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 20px 25px;
+  line-height: 1;
+  border-bottom: 1px solid #e5ecf6;
+}
+
+.sobreCampanha .areaDeCard .inforBasicas > .corpo,
+.sobreCampanha .areaDeCard .detalhes > .corpo {
+  padding: 20px 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .sobreCampanha .areaDeCard .inforBasicas {
+    margin-bottom: 20px;
+  }
+}
+
+.sobreCampanha .areaDeCard .inforBasicas .corpo table {
+  width: 100%;
+  font-size: 12px;
+}
+
+.sobreCampanha .areaDeCard .inforBasicas .corpo table th, .sobreCampanha .areaDeCard .inforBasicas .corpo table td {
+  padding: 10px 0;
+}
+
+.sobreCampanha .areaDeCard .inforBasicas .corpo table td {
+  color: #9aa3c2;
+}
+
+.sobreCampanha .areaDeCard .inforBasicas .corpo > .social {
+  margin-top: 20px;
+}
+
+.sobreCampanha .areaDeCard .inforBasicas .corpo > .social h6 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.sobreCampanha .areaDeCard .inforBasicas .corpo > .social .icon {
+  display: inline-block;
+}
+
+.sobreCampanha .areaDeCard .inforBasicas .corpo > .social .icon:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+.sobreCampanha .areaDeCard .detalhes .corpo {
+  font-size: 13px;
+  color: #9aa3c2;
+}
+
+.sobreCampanha .areaDeCard .detalhes .corpo h6 {
+  color: #555566;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .sobreCampanha .areaDeCard .detalhes .corpo .parteDois {
+    margin-top: 20px;
+  }
+}
+
+.sobreCampanha .areaDeCard .detalhes .corpo .valores .porView {
+  font-size: 24px;
+  color: #555566;
+}
+
+.sobreCampanha .areaDeCard .detalhes .corpo .valores .sub {
+  font-size: 10px;
+  font-weight: bold;
+  color: #07dbc2;
+}
+
+/* #######################################
+        ÍCONES SOCIAIS
+   ####################################### */
+.icones-group .icon {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.icones-group .icon img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+.icones-group .icon.desativado {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  /* IE */
+}
+
+/* #######################################
+        CABEÇALHO
    ####################################### */
 .cabecalho {
   position: relative;
@@ -1290,7 +1423,7 @@ body {
 }
 
 /* #######################################
-		SUBHEADER
+        SUBHEADER
    ####################################### */
 .subHeader {
   border: 1px solid #e5ecf6;
@@ -1370,7 +1503,8 @@ body {
   }
 }
 
-.subHeader > .filtro button.btn, .subHeader > .filtro button.btn:active {
+.subHeader > .filtro button.btn,
+.subHeader > .filtro button.btn:active {
   max-width: 130px;
   height: 45px;
   background-color: #fff;
@@ -1379,15 +1513,18 @@ body {
   font-size: 12px;
 }
 
-.subHeader > .filtro button.btn:focus, .subHeader > .filtro button.btn:active:focus {
+.subHeader > .filtro button.btn:focus,
+.subHeader > .filtro button.btn:active:focus {
   box-shadow: 0 0 0 0 transparent;
 }
 
-.subHeader > .filtro button.btn .filter-option, .subHeader > .filtro button.btn:active .filter-option {
+.subHeader > .filtro button.btn .filter-option,
+.subHeader > .filtro button.btn:active .filter-option {
   margin-top: 4px;
 }
 
-.subHeader > .filtro button.btn::after, .subHeader > .filtro button.btn:active::after {
+.subHeader > .filtro button.btn::after,
+.subHeader > .filtro button.btn:active::after {
   vertical-align: 7px;
 }
 
@@ -1457,7 +1594,8 @@ body {
   }
 }
 
-.subHeader > .pesquisa input, .subHeader > .pesquisa button {
+.subHeader > .pesquisa input,
+.subHeader > .pesquisa button {
   border: none;
   height: 45px;
 }
@@ -1554,7 +1692,7 @@ body {
 }
 
 /* #######################################
-		AREA DE CARD
+        AREA DE CARD
    ####################################### */
 .areaDeCard {
   margin-bottom: 20px;
@@ -1578,7 +1716,7 @@ body {
 }
 
 /* #######################################
-		CARD CAMPANHA
+        CARD CAMPANHA
    ####################################### */
 .cardCampanha {
   width: 100%;
@@ -2048,7 +2186,9 @@ body {
 
 .cardCampanha.expired .capa,
 .cardCampanha.expired .redeSocial,
-.cardCampanha.expired .foto, .cardCampanha.expired .infor, .cardCampanha.expired .dado,
+.cardCampanha.expired .foto,
+.cardCampanha.expired .infor,
+.cardCampanha.expired .dado,
 .cardCampanha.expired .txt,
 .cardCampanha.expired .footer {
   -webkit-filter: grayscale(100%);
@@ -2058,7 +2198,7 @@ body {
 }
 
 /* #######################################
-		FEED ATIVIDADES
+        FEED ATIVIDADES
    ####################################### */
 .feedAtividades {
   background-color: #fff;
@@ -2129,7 +2269,7 @@ body {
 }
 
 /* #######################################
-		BOTAO FLUTUANTE DE CRIAR CAMPANHA
+        BOTAO FLUTUANTE DE CRIAR CAMPANHA
    ####################################### */
 .btnCriarCampanha {
   position: fixed;
@@ -2164,7 +2304,7 @@ body {
 }
 
 /* #######################################
-		MODAL PADRAO
+        MODAL PADRAO
    ####################################### */
 .modalPadrao .modal-dialog {
   max-width: 804px;
@@ -2245,7 +2385,7 @@ body {
 }
 
 /* #######################################
-		MODAL CAMPANHA
+        MODAL CAMPANHA
    ####################################### */
 #criandoCampanha .tipoCampanha > .titulo {
   display: block;
@@ -2341,7 +2481,7 @@ body {
 }
 
 /* #######################################
-		INPUT GROUP
+        INPUT GROUP
    ####################################### */
 .input-group.influu {
   background-color: #fff;
@@ -2454,7 +2594,7 @@ body {
 }
 
 /* #######################################
-		INFOR CARDS
+        INFOR CARDS
    ####################################### */
 .inforCards {
   width: 100%;
@@ -2553,7 +2693,7 @@ body {
 }
 
 /* #######################################
-		SHOW MORE
+        SHOW MORE
    ####################################### */
 .showMore {
   width: 100%;
@@ -2605,7 +2745,7 @@ body {
 }
 
 /* #######################################
-		DADOS DA CAMPANHA
+        DADOS DA CAMPANHA
    ####################################### */
 .dadosCampanha {
   padding-bottom: 20px;
@@ -2721,7 +2861,7 @@ body {
 }
 
 /* #######################################
-		MODAL INFLUU
+        MODAL INFLUU
    ####################################### */
 .modal.influu .modal-header {
   position: relative;
@@ -2775,7 +2915,7 @@ body {
 }
 
 /* #######################################
-		INFLUU INPUT FORM
+        INFLUU INPUT FORM
    ####################################### */
 .influu-form {
   position: relative;
@@ -2790,7 +2930,8 @@ body {
   color: #9aa3c2;
 }
 
-.influu-form input, .influu-form textarea {
+.influu-form input,
+.influu-form textarea {
   width: 100%;
   background-color: #fff;
   border: 1px solid #e5ecf6;

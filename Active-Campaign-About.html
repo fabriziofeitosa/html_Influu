@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Font Icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Active-Campaign-About</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="topo">
+      <div class="conteudo d-flex flex-row justify-content-end">
+        <!-- Título da página -->
+        <div class="titulo mr-auto d-none d-md-block">Campanhas Ativas</div>
+
+        <!-- Notificações -->
+        <div class="notificacoes">
+          <label for="notifBox">
+            <i class="fas fa-bell"></i>
+            <div class="numb noSelect">
+              <span>3</span>
+            </div>
+          </label>
+          <input type="checkbox" name="notifBox" id="notifBox">
+          
+          <!-- Box com as notificações -->
+          <div class="box">
+            <div class="titulo">
+              <span>Notificações</span>
+            </div>
+
+            <!-- Mensagem Vazia | Coloquei um display: none -->
+            <div class="mensagemVazia" style="display: none;">
+              <span>Nenhuma notificação no momento.</span>
+            </div>
+
+            <!-- Item -->
+            <div class="item d-flex flex-row">
+              <div class="foto d-flex align-items-start"> <!-- Foto do perfil -->
+                <img src="image/perfil02.png" alt="Imagem de perfil">
+                <a href="#linkPerfil" class="tudo"></a> <!-- Link para o perfil da pessoa -->
+              </div>
+              <div class="txt"> <!-- Informações -->
+                <div class="nome">
+                  <a href="#linkPerfil" class="linkPerfil">Tamara Romanoff</a> <!-- Link para o perfil da pessoa -->
+                </div>
+                <div class="sobre">Companha: Aliquam nec mattis lorem, eget.</div>
+              </div>
+              <div class="interacao ml-auto d-flex flex-row align-items-start"> <!-- Interações | Likes/Aprovação -->
+                <div class="like">
+                  <div class="icon">
+                    <i class="fas fa-thumbs-up"></i>
+                  </div> <!-- LIKE -->
+                  <a href="#like" class="tudo"></a>
+                </div>
+                <div class="deslike">
+                  <div class="icon">
+                    <i class="fas fa-thumbs-down"></i>
+                  </div> <!-- DESLIKE -->
+                  <a href="#deslike" class="tudo"></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="item d-flex flex-row">
+              <div class="foto d-flex align-items-start"> <!-- Foto do perfil -->
+                <img src="image/perfil03.png" alt="Imagem de perfil">
+                <a href="#linkPerfil" class="tudo"></a> <!-- Link para o perfil da pessoa -->
+              </div>
+              <div class="txt"> <!-- Informações -->
+                <div class="nome">
+                  <a href="#linkPerfil" class="linkPerfil">Roberta Silva</a> <!-- Link para o perfil da pessoa -->
+                </div>
+                <div class="sobre">Companha: Aliquam nec mattis lorem, eget.</div>
+              </div>
+              <div class="interacao ml-auto d-flex flex-row align-items-start"> <!-- Interações | Likes/Aprovação -->
+                <div class="like">
+                  <div class="icon">
+                    <i class="fas fa-thumbs-up"></i>
+                  </div> <!-- LIKE -->
+                  <a href="#like" class="tudo"></a>
+                </div>
+                <div class="deslike">
+                  <div class="icon">
+                    <i class="fas fa-thumbs-down"></i>
+                  </div> <!-- DESLIKE -->
+                  <a href="#deslike" class="tudo"></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="item d-flex flex-row">
+              <div class="foto d-flex align-items-start"> <!-- Foto do perfil -->
+                <img src="image/perfil04.png" alt="Imagem de perfil">
+                <a href="#linkPerfil" class="tudo"></a> <!-- Link para o perfil da pessoa -->
+              </div>
+              <div class="txt"> <!-- Informações -->
+
+                <div class="sobre">Você aceitou <a class="linkPerfil" href="#linkPerfil">Mary Jane Stark</a> no projeto Título da Campanha. Verifique o <a href="#link">progresso dela na campanha</a>.</div>
+
+              </div>
+              <div class="interacao ml-auto d-flex flex-row align-items-start"> <!-- Interações | Likes/Aprovação -->
+                
+                <div class="decisao"> <!-- Decisão -->
+                  <div class="icon">
+                    <i class="fas fa-thumbs-up"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="footer">
+              <span>Ver todas as notificações</span>
+              <a href="#linkVerTodas" class="tudo"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Perfil -->
+        <div class="perfil d-none d-md-flex flex-row align-items-center">
+          <div class="foto">
+            <!-- Imagem de perfil -->
+            <img src="image/perfil.png" alt="Imagem de perfil">
+          </div>
+          <label class="infor" for="optPerfil">
+            <!-- Nome e Profissão -->
+            <span class="nome noSelect">John Doe</span>
+            <span class="profissao noSelect">Influuencer</span>
+            <div class="point">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </label>
+          <div class="box">
+            <div class="titulo">
+              <span>Sua conta</span>
+            </div>
+            <ul class="listConta">
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <i class="far fa-user"></i>
+                  </span>
+                  <span class="txt">Perfil</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <i class="fas fa-credit-card"></i>
+                  </span>
+                  <span class="txt">Pagamento</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <i class="fas fa-sign-out-alt"></i>
+                  </span>
+                  <span class="txt">Sair</span>
+                </a>
+              </li>
+            </ul>
+            <div class="titulo">
+              <span>Sobre Influu</span>
+            </div>
+            <ul class="listInfor">
+              <li>
+                <a href="#">Termos e condições</a>
+              </li>
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+              <li>
+                <a href="#">Website</a>
+              </li>
+              <li>
+                <a href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Lateral -->
+      <div class="lateral">
+        <div class="logo d-flex flex-row">
+          <div class="img"> <!-- max 70x70 px -->
+            <img src="image/iconLogo.png" alt="Logotipo">
+          </div>
+          <div class="name">INFLUU</div>
+        </div>
+
+        <!-- Itens de Menu | Abre e fecha -->
+        <div class="itemMenu clickMenu">
+          <div class="icon">
+            <i class="fas fa-bars iconAbrir"></i>
+            <i class="fas fa-times iconFechar"></i>
+          </div>
+          <div class="titulo noSelect d-none d-md-inline-block">
+            <span>Fechar Menu</span>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu">
+          <div class="icon">
+            <i class="far fa-user"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Perfil</span>
+            <!-- Quando NÃO TEM SubMenu, é adicionado esse link abaixo do título -->
+            <a href="#linkItemMenu" class="tudo"></a>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu optSub"> <!-- com subMenu add class 'optSub' -->
+          <div class="icon">
+            <i class="fas fa-bullhorn"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Campanhas</span>
+          </div>
+          <!-- SubMenu | adicionado sem o título ter link -->
+          <div class="subMenu">
+            <ul>
+              <li class="itemSub">
+                <span>Disponíveis</span>
+                <a href="#linkSubItem1" class="tudo"></a>
+              </li>
+              <li class="itemSub">
+                <span>Ativos</span>
+                <a href="#linkSubItem2" class="tudo"></a>
+              </li>
+              <li class="itemSub">
+                <span>Expirados</span>
+                <a href="#linkSubItem3" class="tudo"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu">
+          <div class="icon">
+            <i class="fas fa-history"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Histórico</span>
+            <!-- Quando NÃO TEM SubMenu, é adicionado esse link abaixo do título -->
+            <a href="#linkItemMenu" class="tudo"></a>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu">
+          <div class="icon">
+            <i class="fas fa-chart-pie"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Estatística</span>
+            <!-- Quando NÃO TEM SubMenu, é adicionado esse link abaixo do título -->
+            <a href="#linkItemMenu" class="tudo"></a>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu optSub"> <!-- com subMenu add class 'optSub' -->
+          <div class="icon">
+            <i class="fas fa-credit-card"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Pagamento</span>
+          </div>
+          <!-- SubMenu | adicionado sem o título ter link -->
+          <div class="subMenu">
+            <ul>
+              <li class="itemSub">
+                <span>Pendentes</span>
+                <a href="#linkSubItem1" class="tudo"></a>
+              </li>
+              <li class="itemSub">
+                <span>Histórico</span>
+                <a href="#linkSubItem2" class="tudo"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="areaDeConteudo sobreCampanha">
+    
+    <!-- CABEÇALHO -->
+    <div class="cabecalho quatroItens">
+
+      <!-- Ícones Sociais -->
+      <div class="social">
+        <div class="icon" style="background-color: #de3715;">
+          <i class="fab fa-youtube"></i>
+          <a href="#linkSocial" class="tudo"></a>
+        </div>
+        <div class="icon" style="background-color: #0254a8;">
+          <i class="fab fa-facebook-f"></i>
+          <a href="#linkSocial" class="tudo"></a>
+        </div>
+        <div class="icon" style="background-color: #00ace8;">
+          <i class="fab fa-twitter"></i>
+          <a href="#linkSocial" class="tudo"></a>
+        </div>
+        <div class="icon desativado" style="background-color: #ff9f40;"> <!-- Class 'desativado' -->
+          <i class="fab fa-instagram"></i>
+          <a href="#linkSocial" class="tudo"></a>
+          <span class="tooltiptext">Não ativado</span> <!--  Pendente de Ativação -->
+        </div>
+      </div>
+
+      <!-- Capa do perfil -->
+      <div class="capa" style="background-image: url(image/capaCampanha.jpg);">
+        <!-- A imagem vem como Background -->
+      </div>
+      
+      <!-- Opções do menu -->
+      <div class="optMenu">
+        <div class="row">
+          <div class="col-md-5">
+            <ul class="d-flex flex-column flex-md-row justify-content-md-around">
+              <li>
+                <a href="#link">Posts Ativos</a>
+              </li>
+              <li> <!-- Class para link ativado -->
+                <a href="#link">Posts Expirados</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-5 ml-auto">
+            <ul class="d-flex flex-column flex-md-row justify-content-md-around">
+              <li class="active">
+                <a href="#link">Sobre a Campanha</a>
+              </li>
+              <li>
+                <a href="#link">Em breve</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Autor do Perfil -->
+      <div class="autor">
+        <a class="autor-thumb" href="#linkPerfil">
+          <img src="image/campanhaIcon.png" alt="Imagem de Perfil">
+        </a>
+        <div class="autor-content">
+          <a href="#linkPerfil" class="nome">Título da Campanha</a>
+          <div class="sobre">Nome do Cliente</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="areaDeCard">
+      <div class="row">
+
+        <div class="col-12 col-md-4">
+          <div class="inforBasicas">
+            <div class="header">
+              <span class="titulo">Informações Básicas</span>
+            </div>
+            <div class="corpo">
+              <table>
+                <!-- Linha -->
+                <tr>
+                  <th>Título:</th>
+                  <td>Título da Campanha</td>
+                </tr>
+                <!-- Linha -->
+                <tr>
+                  <th>Cliente:</th>
+                  <td>Nome do Cliente</td>
+                </tr>
+                <!-- Linha -->
+                <tr>
+                  <th>Expira em:</th>
+                  <td>30 dias</td>
+                </tr>
+                <!-- Linha -->
+                <tr>
+                  <th>Fim da oferta:</th>
+                  <td>14/04/2018</td>
+                </tr>
+                <!-- Linha -->
+                <tr>
+                  <th>Tipo:</th>
+                  <td>CPV</td>
+                </tr>
+                <!-- Linha -->
+                <tr>
+                  <th>Acompanhamento</th>
+                  <td>Games, Style</td>
+                </tr>
+              </table>
+
+              <div class="social">
+                <h6>Redes Sociais ativas:</h6>
+                <div class="redes icones-group">
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_instagram.png" alt="Instagram">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_facebook.png" alt="Facebook">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_twitter.png" alt="Twitter">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_youtube.png" alt="YouTube">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                  <!-- Icone Social -->
+                  <div class="icon desativado">
+                    <img src="image/iconSocial_snapchat.png" alt="Snapchat">
+                    <a href="#linkSocial" class="tudo" title="Desativado"></a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-8">
+          <div class="detalhes">
+            <div class="header">
+              <span class="titulo">Detalhes</span>
+            </div>
+            <div class="corpo">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <h6>Detalhes da Campanha:</h6>
+                  <div class="txt">Integer et quam pharetra lectus feugiat tincidunt ut in erat. Aenean gravida aliquet nulla nec porttitor. Integer in commodo justo. Aenean a pharetra nibh, et tempor libero. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ac magna dui. Integer blandit mi turpis, sit amet elementum elit euismod a. Nullam sed enim eu erat fermentum semper. </div>
+                </div>
+                <div class="col-12 col-md-6 parteDois">
+                  <h6>Pagamento:</h6>
+                  <div class="valores">
+                    <div class="porView">R$ 0,10 por view</div>
+                    <div class="sub">+ R$ 300,00 (fixo)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+
+  <script src="js/theme.js"></script>
+</body>
+
+</html>

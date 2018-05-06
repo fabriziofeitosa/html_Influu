@@ -1129,6 +1129,115 @@ $loadingRosa: #ff1777;
 }
 
 /* #######################################
+        SOBRE A CAMPANHA
+   ####################################### */
+
+.sobreCampanha {
+    .areaDeCard {
+        .inforBasicas,
+        .detalhes {
+            color: $primaria;
+            background-color: #fff;
+            border: 1px solid $corLinha;
+            border-radius: 4px;
+            > .header {
+                font-weight: bold;
+                font-size: 14px;
+                padding: 20px 25px;
+                line-height: 1;
+                border-bottom: 1px solid $corLinha;
+            }
+            > .corpo {
+                padding: 20px 25px;
+            }
+        }
+
+        .inforBasicas {
+            @media screen and (max-width: $maxMobile) {
+                margin-bottom: 20px;
+            }
+            .corpo {
+                table {
+                    width: 100%;
+                    font-size: 12px;
+                    th, td {
+                        padding: 10px 0;
+                    }
+                    td {
+                        color: $secundaria;
+                    }
+                }
+                > .social {
+                    margin-top: 20px;
+                    h6 {
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 1;
+                    }
+                    .icon {
+                        display: inline-block;
+                        &:not(:last-of-type) {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .detalhes {
+            .corpo {
+                font-size: 13px;
+                color: $secundaria;
+                h6 {
+                    color: $primaria;
+                    font-size: 13px;
+                    font-weight: bold;
+                }
+                .parteDois {
+                    @media screen and (max-width: $maxMobile) {
+                        margin-top: 20px;
+                    }
+                }
+                .valores {
+                    .porView {
+                        font-size: 24px;
+                        color: $primaria;
+                    }
+                    .sub {
+                        font-size: 10px;
+                        font-weight: bold;
+                        color: #07dbc2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* #######################################
+        ÍCONES SOCIAIS
+   ####################################### */
+
+.icones-group {
+    .icon {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+            vertical-align: top;
+            max-width: 100%;
+        }
+
+        &.desativado {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+            filter: gray; /* IE */
+        }
+    }
+}
+
+/* #######################################
         CABEÇALHO
    ####################################### */
 
