@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/bootstrap-select.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Active-Campaigns</title>
+  <title>Statistics-Page</title>
 </head>
 
 <body>
@@ -394,7 +394,7 @@
 
         <!-- Engajamento -->
         <div class="col-12 col-md-8">
-          <div class="boxHeader">
+          <div class="boxHeader" id="engajamento">
             <div class="header">
               <span>Engajamento</span>
             </div>
@@ -408,7 +408,7 @@
 
         <!-- Total Engajamento -->
         <div class="col-12 col-md-4">
-          <div class="boxHeader">
+          <div class="boxHeader" id="totalEngajamento">
             <div class="header">
               <span>Engajamento Total</span>
             </div>
@@ -457,11 +457,43 @@
               </div>
               <!-- Gráfico -->
               <div class="graficoEngajamentoTotal">
-                <canvas id="graficoEngajamentoTotal"></canvas> <!-- Config no final do código -->
-                <div class="valor">
-                  <!-- Valor do meio -->
-                  <div class="numero">552.670</div>
-                  <div class="sub">Este Mês</div>
+                <div class="conteudo">
+                  <canvas id="graficoEngajamentoTotal"></canvas> <!-- Config no final do código -->
+                  <div class="valor">
+                    <!-- Valor do meio -->
+                    <div class="numero">552.670</div>
+                    <div class="sub">Este Mês</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Status do Meio -->
+        <div class="col-12">
+          <div class="row">
+            <!-- Total Engajamento -->
+            <div class="col-12 col-md-6">
+              <div class="boxMeio d-flex flex-row align-items-center">
+                <div class="icon azul">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <div class="dados">
+                  <h5>552.670 Engajamento Total<small>78.546 hoje</small></h5>
+                  <span>Esse Mês</span>
+                </div>
+              </div>
+            </div>
+            <!-- Total Engajamento -->
+            <div class="col-12 col-md-6">
+              <div class="boxMeio d-flex flex-row align-items-center">
+                <div class="icon rosa">
+                  <i class="far fa-money-bill-alt"></i>
+                </div>
+                <div class="dados">
+                  <h5>R$897,34 Total Ganho<small>R$ 47,05 hoje</small></h5>
+                  <span>Esse Mês</span>
                 </div>
               </div>
             </div>
