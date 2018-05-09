@@ -1099,6 +1099,33 @@ body {
   height: calc(100% - 20px);
 }
 
+.areaStatusPerfil #engajamento > .header .intervalo button.clear,
+.areaStatusPerfil #dinheiroRecebido > .header .intervalo button.clear {
+  display: none;
+}
+
+.areaStatusPerfil #engajamento > .header .legendas .item,
+.areaStatusPerfil #dinheiroRecebido > .header .legendas .item {
+  display: inline-block;
+  font-size: 9px;
+  font-weight: normal;
+  color: #9aa3c2;
+}
+
+.areaStatusPerfil #engajamento > .header .legendas .item:not(:last-child),
+.areaStatusPerfil #dinheiroRecebido > .header .legendas .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.areaStatusPerfil #engajamento > .header .legendas .item .ponto,
+.areaStatusPerfil #dinheiroRecebido > .header .legendas .item .ponto {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
 .areaStatusPerfil .totalEngajamento .legendas ul {
   list-style: none;
   padding: 0;
@@ -1193,10 +1220,16 @@ body {
 }
 
 .areaStatusPerfil .boxMeio .dados h5 {
-  font-size: 24px;
   font-weight: normal;
   line-height: 1;
   margin: 0;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .areaStatusPerfil .boxMeio .dados h5 {
+    font-size: 18px;
+  }
 }
 
 .areaStatusPerfil .boxMeio .dados h5 small {
@@ -1210,6 +1243,52 @@ body {
   font-size: 12px;
   line-height: 1;
   color: #9aa3c2;
+}
+
+.areaStatusPerfil .campanhaMais .cardCampanha > .header {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 20px 25px;
+  line-height: 1;
+  border-bottom: 1px solid #e5ecf6;
+}
+
+.areaStatusPerfil .campanhaMais .cardCampanha > .capa {
+  border-radius: 0;
+}
+
+.areaStatusPerfil #topClientes .listaClientes .item {
+  padding: 25px;
+  font-size: 13px;
+}
+
+.areaStatusPerfil #topClientes .listaClientes .item:not(:last-of-type) {
+  border-bottom: 1px solid #e5ecf6;
+}
+
+.areaStatusPerfil #topClientes .listaClientes .item .logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.areaStatusPerfil #topClientes .listaClientes .item .logo img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.areaStatusPerfil #topClientes .listaClientes .item .infor {
+  margin-left: 10px;
+}
+
+.areaStatusPerfil #topClientes .listaClientes .item .infor .nome {
+  font-weight: bold;
+}
+
+.areaStatusPerfil #topClientes .listaClientes .item .infor .sobre {
+  color: #9aa3c2;
+  font-size: 11px;
 }
 
 /* #######################################
@@ -3168,6 +3247,10 @@ body {
   overflow: hidden;
 }
 
+.influu-form .selectVue ul.dropdown-menu li {
+  font-weight: normal;
+}
+
 .influu-form .selectVue ul.dropdown-menu li:hover a {
   background-color: #fe1777;
 }
@@ -3175,5 +3258,52 @@ body {
 .influu-form .selectVue ul.dropdown-menu > .highlight > a {
   background: #fe1777;
   color: #fff;
+}
+
+.influu-form .selectVue.selectGrafico {
+  margin: 0;
+  max-width: 120px;
+  margin-right: 30px;
+  padding-top: 5px;
+  margin-bottom: -5px;
+}
+
+.influu-form .selectVue.selectGrafico .dropdown-toggle {
+  border: none;
+  padding: 0;
+}
+
+.influu-form .selectVue.selectGrafico .dropdown-toggle .form-control {
+  height: 14px;
+  cursor: pointer;
+}
+
+.influu-form .selectVue.selectGrafico span.selected-tag {
+  cursor: pointer;
+  max-width: calc(100% - 25px);
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: normal;
+  top: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  height: 14px;
+}
+
+.influu-form .selectVue.selectGrafico .open-indicator {
+  width: 7px;
+  height: 18px;
+  bottom: -2px;
+}
+
+.influu-form .selectVue.selectGrafico .open-indicator::before {
+  height: 7px;
+  width: 7px;
+}
+
+.influu-form .selectVue.selectGrafico .v-select.open .open-indicator {
+  bottom: -4px;
 }
 /*# sourceMappingURL=style.css.map */

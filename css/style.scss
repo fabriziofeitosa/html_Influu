@@ -1164,6 +1164,35 @@ $loadingRosa: #ff1777;
     #totalEngajamento {
         height: calc(100% - 20px);
     }
+
+    #engajamento,
+    #dinheiroRecebido {
+        > .header {
+            .intervalo {
+                button.clear {
+                    display: none;
+                }
+            }
+            .legendas {
+                .item {
+                    display: inline-block;
+                    font-size: 9px;
+                    font-weight: normal;
+                    color: $secundaria;
+                    &:not(:last-child) {
+                        margin-right: 10px;
+                    }
+                    .ponto {
+                        display: inline-block;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
     .totalEngajamento {
         .legendas {
             ul {
@@ -1244,10 +1273,13 @@ $loadingRosa: #ff1777;
             padding-left: 10px;
             max-width: calc(100% - 50px);
             h5 {
-                font-size: 24px;
                 font-weight: normal;
                 line-height: 1;
                 margin: 0;
+                font-size: 24px;
+                @media screen and (max-width: $maxMobile) {
+                    font-size: 18px;
+                }
                 small {
                     font-size: 10px;
                     color: $verde;
@@ -1262,6 +1294,52 @@ $loadingRosa: #ff1777;
             }
         }
     }
+    .campanhaMais {
+        .cardCampanha {
+            > .header {
+                font-weight: bold;
+                font-size: 14px;
+                padding: 20px 25px;
+                line-height: 1;
+                border-bottom: 1px solid #e5ecf6;
+            }
+            > .capa {
+                border-radius: 0;
+            }
+        }
+    }
+    #topClientes {
+        .listaClientes {
+            .item {
+                padding: 25px;
+                font-size: 13px;
+                &:not(:last-of-type) {
+                    border-bottom: 1px solid #e5ecf6;
+                }
+                .logo {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img {
+                        max-width: 100%;
+                        vertical-align: top;
+                    }
+                }
+                .infor {
+                    margin-left: 10px;
+                    .nome {
+                        font-weight: bold;
+                    }
+                    .sobre {
+                        color: $secundaria;
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 /* #######################################
@@ -2997,6 +3075,9 @@ $loadingRosa: #ff1777;
         ul.dropdown-menu {
             border-color: $corLinha;
             overflow: hidden;
+            li {
+                font-weight: normal;
+            }
             li:hover {
                 a {
                     background-color: $rosaPadrao;
@@ -3006,6 +3087,49 @@ $loadingRosa: #ff1777;
                 >a {
                     background: $rosaPadrao;
                     color: #fff
+                }
+            }
+        }
+
+        &.selectGrafico {
+            margin: 0;
+            max-width: 120px;
+            margin-right: 30px;
+            padding-top: 5px;
+            margin-bottom: -5px;
+            .dropdown-toggle {
+                border: none;
+                padding: 0;
+                .form-control {
+                    height: 14px;
+                    cursor: pointer;
+                }
+            }
+            span.selected-tag {
+                cursor: pointer;
+                max-width: calc(100% - 25px);
+                font-size: 10px;
+                text-transform: uppercase;
+                font-weight: normal;
+                top: 0;
+                border: none;
+                margin: 0;
+                padding: 0;
+                line-height: 1;
+                height: 14px;
+            }
+            .open-indicator {
+                width: 7px;
+                height: 18px;
+                bottom: -2px;
+                &::before {
+                    height: 7px;
+                    width: 7px;
+                }
+            }
+            .v-select.open {
+                .open-indicator {
+                    bottom: -4px;
                 }
             }
         }

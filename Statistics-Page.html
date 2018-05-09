@@ -395,8 +395,38 @@
         <!-- Engajamento -->
         <div class="col-12 col-md-8">
           <div class="boxHeader" id="engajamento">
-            <div class="header">
-              <span>Engajamento</span>
+            <div class="header d-flex justify-content-end">
+              <span class="mr-auto">Engajamento</span>
+
+              <!-- Intervalo SELECT -->
+              <div class="intervalo d-none d-md-block">
+                <div class="select">
+                  <div class="influu-form">
+                    <div class="selectVue selectGrafico selectGraficoEngajamento">
+                      <v-select :options="options" label="title" v-model="selected">
+                        <template slot="option" slot-scope="option">
+                          {{ option.title }}
+                        </template>
+                      </v-select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Legendas -->
+              <div class="legendas">
+                <!-- Snapchat -->
+                <div class="item">
+                  <div class="ponto" style="background-color: #fedc1b;"></div>
+                  <span>Snapchat</span>
+                </div>
+
+                <!-- Instagram -->
+                <div class="item">
+                  <div class="ponto" style="background-color: #ff5d3a;"></div>
+                  <span>Instagram</span>
+                </div>
+              </div>
             </div>
             <div class="corpo">
               <div class="graficoEngajamento">
@@ -500,6 +530,167 @@
           </div>
         </div>
 
+        <!-- Campanha mais Engajada + Top 3 Clientes -->
+        <div class="col-12 col-md-4 campanhaMais">
+          <!-- Card Campanha -->
+          <div class="cardCampanha">
+            <!-- Header -->
+            <div class="header">
+              <span>Campanha Mais Engajada</span>
+            </div>
+            <!-- Capa da Campanha -->
+            <div class="capa" style="background-image: url(image/capaCampanha.jpg)">
+              <!-- Imagem da capa como Background-->
+            </div>
+
+            <div class="conteudo">
+              <!-- A Campanha -->
+              <div class="campanha">
+                <a href="#" class="avatar">
+                  <img src="image/campanhaIcon.png" alt="Imagem da Campanha">
+                </a>
+                <a href="#" class="titulo">Campaign Title</a>
+                <a class="cliente">Nome do Cliente</a>
+              </div>
+              <!-- Informações -->
+              <div class="infor">
+                <div class="dados d-flex justify-content-center">
+                  <!-- Dinheiro -->
+                  <div class="item dinheiro">
+                    <div class="valor">R$ 555,00</div>
+                    <div class="nome">Dinheiro</div>
+                  </div>
+                  <!-- Views -->
+                  <div class="item views">
+                    <div class="valor">8549</div>
+                    <div class="nome">Views</div>
+                  </div>
+                  <!-- Validade -->
+                  <div class="item validade">
+                    <div class="valor">16/04/2018</div>
+                    <div class="nome">Validade</div>
+                  </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                  <div class="icon" style="background-color: #de3715;">
+                    <i class="fab fa-youtube"></i>
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+                  <div class="icon" style="background-color: #0254a8;">
+                    <i class="fab fa-facebook-f"></i>
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+                  <div class="icon" style="background-color: #00ace8;">
+                    <i class="fab fa-twitter"></i>
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+                  <div class="icon" style="background-color: #ff9f40;">
+                    <i class="fab fa-instagram"></i>
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+                  <div class="icon" style="background-color: #fffb00; color: #000;">
+                    <i class="fab fa-snapchat-ghost"></i>
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Top 3 Clientes -->
+          <div class="boxHeader" id="topClientes">
+            <div class="header">
+              <span>Top 3 Clientes</span>
+            </div>
+            <div class="listaClientes">
+
+              <!-- Item -->
+              <div class="item d-flex flex-row align-items-center">
+                <div class="logo">
+                  <img src="image/avatar_empresa01.jpg" alt="Logo da Empresa"> <!-- Logo -->
+                </div>
+                <div class="infor">
+                  <div class="nome">The Marina bar</div> <!-- Nome -->
+                  <div class="sobre">Restaurante / Bar</div> <!-- Sobre -->
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="item d-flex flex-row align-items-center">
+                <div class="logo">
+                  <img src="image/avatar_empresa02.jpg" alt="Logo da Empresa"> <!-- Logo -->
+                </div>
+                <div class="infor">
+                  <div class="nome">The Marina bar</div> <!-- Nome -->
+                  <div class="sobre">Restaurante / Bar</div> <!-- Sobre -->
+                </div>
+              </div>
+
+              <!-- Item -->
+              <div class="item d-flex flex-row align-items-center">
+                <div class="logo">
+                  <img src="image/avatar_empresa01.jpg" alt="Logo da Empresa"> <!-- Logo -->
+                </div>
+                <div class="infor">
+                  <div class="nome">The Marina bar</div> <!-- Nome -->
+                  <div class="sobre">Restaurante / Bar</div> <!-- Sobre -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Dinheiro Recebido + Medalhas -->
+        <div class="col-12 col-md-8">
+          <!-- Grafico Dinheiro Recebido -->
+          <div class="boxHeader" id="dinheiroRecebido">
+            <div class="header d-flex justify-content-end">
+              <span class="mr-auto">Dinheiro Recebido</span>
+          
+              <!-- Intervalo SELECT -->
+              <div class="intervalo d-none d-md-block">
+                <div class="select">
+                  <div class="influu-form">
+                    <div class="selectVue selectGrafico selectGraficoDinheiro">
+                      <v-select :options="options" label="title" v-model="selected">
+                        <template slot="option" slot-scope="option">
+                          {{ option.title }}
+                        </template>
+                      </v-select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Legendas -->
+              <div class="legendas">
+                <!-- Snapchat -->
+                <div class="item">
+                  <div class="ponto" style="background-color: #37a9ff;"></div>
+                  <span>CPI</span>
+                </div>
+          
+                <!-- Instagram -->
+                <div class="item">
+                  <div class="ponto" style="background-color: #08dfc0;"></div>
+                  <span>CPC</span>
+                </div>
+              </div>
+            </div>
+            <div class="corpo">
+              <div class="graficoEngajamento">
+                <canvas id="graficoDinheiro"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <!-- Medalhas -->
+          <div class="medalhas">
+            MEDALHAS
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -523,8 +714,29 @@
   <script>
     // Select VUE.js
     Vue.component('v-select', VueSelect.VueSelect)
+    // Select Intervalo Engajamento
     new Vue({
-      el: '.selectGraficoAno',
+      el: '.selectGraficoEngajamento',
+      data: {
+        selected: {
+          title: 'Ultimos 3 Meses'
+        },
+        options: [
+          {
+            title: 'Ultimo Mês'
+          },
+          {
+            title: 'Ultimos 2 Meses'
+          },
+          {
+            title: 'Ultimos 3 Meses'
+          }
+        ]
+      }
+    })
+
+    new Vue({
+      el: '.selectGraficoDinheiro',
       data: {
         selected: {
           title: 'Ano Atual (2018)'
@@ -534,13 +746,10 @@
             title: 'Ano Atual (2018)'
           },
           {
-            title: '2017'
+            title: 'Ano 2017'
           },
           {
-            title: '2016'
-          },
-          {
-            title: '2015'
+            title: 'Ano 2016'
           }
         ]
       }
@@ -549,7 +758,7 @@
     // Todos os Graficos
     var ctx = document.getElementById('graficoEngajamento').getContext('2d');
     var ctx2 = document.getElementById('graficoEngajamentoTotal').getContext('2d');
-    // var ctxMoney = document.getElementById('graficoDinheiro').getContext('2d');
+    var ctxMoney = document.getElementById('graficoDinheiro').getContext('2d');
     // Horizontal 
     var chart = new Chart(ctx, {
       // The type of chart we want to create
@@ -609,9 +818,9 @@
       data: {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [{
-          label: "Snapchat",
-          backgroundColor: 'rgba(254, 192, 71, 0.5)',
-          borderColor: 'rgba(253, 221, 24, 0.5)',
+          label: "CPI",
+          backgroundColor: 'rgba(58, 168, 253, 0.5)',
+          borderColor: 'rgba(58, 168, 253, 1)',
           data: [0, 10, 5, 2, 20, 30, 45],
           borderWidth: 5,
 
@@ -621,10 +830,16 @@
           pointHoverBackgroundColor: "#fff"
         },
         {
-          label: "Instagram",
-          backgroundColor: '#ff9f89',
-          borderColor: '#ff5f39',
+          label: "CPC",
+          backgroundColor: 'rgba(8, 220, 195, 0.5)',
+          borderColor: 'rgba(8, 220, 195, 1)',
           data: [10, 25, 15, 20, 40, 50, 25],
+          borderWidth: 5,
+
+          pointRadius: 7,
+          pointHoverRadius: 10,
+          pointBackgroundColor: "#fff",
+          pointHoverBackgroundColor: "#fff"
         }]
       },
 
