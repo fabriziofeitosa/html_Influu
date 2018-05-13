@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/bootstrap-select.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Statistics-Page</title>
+  <title>Profile-Page</title>
 </head>
 
 <body>
@@ -389,348 +389,170 @@
 
     </div>
 
-    <div class="areaStatusPerfil">
+    <div class="areaPagPerfil">
       <div class="row">
 
-        <!-- Engajamento -->
-        <div class="col-12 col-md-8">
-          <div class="boxHeader" id="engajamento">
-            <div class="header d-flex justify-content-end">
-              <span class="mr-auto">Engajamento</span>
-
-              <!-- Intervalo SELECT -->
-              <div class="intervalo d-none d-md-block">
-                <div class="select">
-                  <div class="influu-form">
-                    <div class="selectVue selectGrafico selectGraficoEngajamento">
-                      <v-select :options="options" label="title" v-model="selected">
-                        <template slot="option" slot-scope="option">
-                          {{ option.title }}
-                        </template>
-                      </v-select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Legendas -->
-              <div class="legendas">
-                <!-- Snapchat -->
-                <div class="item">
-                  <div class="ponto" style="background-color: #fedc1b;"></div>
-                  <span>Snapchat</span>
-                </div>
-
-                <!-- Instagram -->
-                <div class="item">
-                  <div class="ponto" style="background-color: #ff5d3a;"></div>
-                  <span>Instagram</span>
-                </div>
-              </div>
-            </div>
-            <div class="corpo">
-              <div class="graficoEngajamento">
-                <canvas id="graficoEngajamento"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Total Engajamento -->
+        <!-- ESQUERDA -->
         <div class="col-12 col-md-4">
-          <div class="boxHeader" id="totalEngajamento">
-            <div class="header">
-              <span>Engajamento Total</span>
-            </div>
-            <div class="totalEngajamento corpo d-flex flex-column flex-md-row justify-content-md-between">
-              <!-- Legendas -->
-              <div class="legendas">
-                <ul>
-
-                  <!-- item -->
-                  <li>
-                    <div class="nome">
-                      <div class="ponto" style="background-color: #7a5bc3;"></div> <!-- Define a cor aqui -->
-                      <span>Facebook</span>
-                    </div>
-                    <div class="valor">45.345</div> <!-- Valor -->
-                  </li>
-
-                  <!-- item -->
-                  <li>
-                    <div class="nome">
-                      <div class="ponto" style="background-color: #0adcc1;"></div> <!-- Define a cor aqui -->
-                      <span>Twitter</span>
-                    </div>
-                    <div class="valor">45.345</div> <!-- Valor -->
-                  </li>
-
-                  <!-- item -->
-                  <li>
-                    <div class="nome">
-                      <div class="ponto" style="background-color: #ff5d3a;"></div> <!-- Define a cor aqui -->
-                      <span>Instagram</span>
-                    </div>
-                    <div class="valor">45.345</div> <!-- Valor -->
-                  </li>
-
-                  <!-- item -->
-                  <li>
-                    <div class="nome">
-                      <div class="ponto" style="background-color: #fedc1b;"></div> <!-- Define a cor aqui -->
-                      <span>Snapchat</span>
-                    </div>
-                    <div class="valor">45.345</div> <!-- Valor -->
-                  </li>
-
-                </ul>
-              </div>
-              <!-- Gráfico -->
-              <div class="graficoEngajamentoTotal">
-                <div class="conteudo">
-                  <canvas id="graficoEngajamentoTotal"></canvas> <!-- Config no final do código -->
-                  <div class="valor">
-                    <!-- Valor do meio -->
-                    <div class="numero">552.670</div>
-                    <div class="sub">Este Mês</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Status do Meio -->
-        <div class="col-12">
-          <div class="row">
-            <!-- Total Engajamento -->
-            <div class="col-12 col-md-6">
-              <div class="boxMeio d-flex flex-row align-items-center">
-                <div class="icon azul">
-                  <i class="fas fa-comments"></i>
-                </div>
-                <div class="dados">
-                  <h5>552.670 Engajamento Total<small>78.546 hoje</small></h5>
-                  <span>Esse Mês</span>
-                </div>
-              </div>
-            </div>
-            <!-- Total Ganho -->
-            <div class="col-12 col-md-6">
-              <div class="boxMeio d-flex flex-row align-items-center">
-                <div class="icon rosa">
-                  <i class="far fa-money-bill-alt"></i>
-                </div>
-                <div class="dados">
-                  <h5>R$897,34 Total Ganho<small>R$ 47,05 hoje</small></h5>
-                  <span>Esse Mês</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Campanha mais Engajada + Top 3 Clientes -->
-        <div class="col-12 col-md-4 campanhaMais">
-          <!-- Card Campanha -->
-          <div class="cardCampanha">
-            <!-- Header -->
-            <div class="header">
-              <span>Campanha Mais Engajada</span>
-            </div>
-            <!-- Capa da Campanha -->
-            <div class="capa" style="background-image: url(image/capaCampanha.jpg)">
-              <!-- Imagem da capa como Background-->
-            </div>
-
-            <div class="conteudo">
-              <!-- A Campanha -->
-              <div class="campanha">
-                <a href="#" class="avatar">
-                  <img src="image/campanhaIcon.png" alt="Imagem da Campanha">
-                </a>
-                <a href="#" class="titulo">Campaign Title</a>
-                <a class="cliente">Nome do Cliente</a>
-              </div>
-              <!-- Informações -->
-              <div class="infor">
-                <div class="dados d-flex justify-content-center">
-                  <!-- Dinheiro -->
-                  <div class="item dinheiro">
-                    <div class="valor">R$ 555,00</div>
-                    <div class="nome">Dinheiro</div>
-                  </div>
-                  <!-- Views -->
-                  <div class="item views">
-                    <div class="valor">8549</div>
-                    <div class="nome">Views</div>
-                  </div>
-                  <!-- Validade -->
-                  <div class="item validade">
-                    <div class="valor">16/04/2018</div>
-                    <div class="nome">Validade</div>
-                  </div>
-                </div>
-                <div class="social d-flex justify-content-center">
-                  <div class="icon" style="background-color: #de3715;">
-                    <i class="fab fa-youtube"></i>
-                    <a href="#linkSocial" class="tudo"></a>
-                  </div>
-                  <div class="icon" style="background-color: #0254a8;">
-                    <i class="fab fa-facebook-f"></i>
-                    <a href="#linkSocial" class="tudo"></a>
-                  </div>
-                  <div class="icon" style="background-color: #00ace8;">
-                    <i class="fab fa-twitter"></i>
-                    <a href="#linkSocial" class="tudo"></a>
-                  </div>
-                  <div class="icon" style="background-color: #ff9f40;">
-                    <i class="fab fa-instagram"></i>
-                    <a href="#linkSocial" class="tudo"></a>
-                  </div>
-                  <div class="icon" style="background-color: #fffb00; color: #000;">
-                    <i class="fab fa-snapchat-ghost"></i>
-                    <a href="#linkSocial" class="tudo"></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Top 3 Clientes -->
-          <div class="boxHeader" id="topClientes">
-            <div class="header">
-              <span>Top 3 Clientes</span>
-            </div>
-            <div class="listaClientes">
-
-              <!-- Item -->
-              <div class="item d-flex flex-row align-items-center">
-                <div class="logo">
-                  <img src="image/avatar_empresa01.jpg" alt="Logo da Empresa"> <!-- Logo -->
-                </div>
-                <div class="infor">
-                  <div class="nome">The Marina bar</div> <!-- Nome -->
-                  <div class="sobre">Restaurante / Bar</div> <!-- Sobre -->
-                </div>
-              </div>
-
-              <!-- Item -->
-              <div class="item d-flex flex-row align-items-center">
-                <div class="logo">
-                  <img src="image/avatar_empresa02.jpg" alt="Logo da Empresa"> <!-- Logo -->
-                </div>
-                <div class="infor">
-                  <div class="nome">The Marina bar</div> <!-- Nome -->
-                  <div class="sobre">Restaurante / Bar</div> <!-- Sobre -->
-                </div>
-              </div>
-
-              <!-- Item -->
-              <div class="item d-flex flex-row align-items-center">
-                <div class="logo">
-                  <img src="image/avatar_empresa01.jpg" alt="Logo da Empresa"> <!-- Logo -->
-                </div>
-                <div class="infor">
-                  <div class="nome">The Marina bar</div> <!-- Nome -->
-                  <div class="sobre">Restaurante / Bar</div> <!-- Sobre -->
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- Dinheiro Recebido + Medalhas -->
-        <div class="col-12 col-md-8">
-          <!-- Grafico Dinheiro Recebido -->
-          <div class="boxHeader" id="dinheiroRecebido">
-            <div class="header d-flex justify-content-end">
-              <span class="mr-auto">Dinheiro Recebido</span>
-          
-              <!-- Intervalo SELECT -->
-              <div class="intervalo d-none d-md-block">
-                <div class="select">
-                  <div class="influu-form">
-                    <div class="selectVue selectGrafico selectGraficoDinheiro">
-                      <v-select :options="options" label="title" v-model="selected">
-                        <template slot="option" slot-scope="option">
-                          {{ option.title }}
-                        </template>
-                      </v-select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Legendas -->
-              <div class="legendas">
-                <!-- Snapchat -->
-                <div class="item">
-                  <div class="ponto" style="background-color: #37a9ff;"></div>
-                  <span>CPI</span>
-                </div>
-          
-                <!-- Instagram -->
-                <div class="item">
-                  <div class="ponto" style="background-color: #08dfc0;"></div>
-                  <span>CPC</span>
-                </div>
-              </div>
-            </div>
-            <div class="corpo">
-              <div class="graficoEngajamento">
-                <canvas id="graficoDinheiro"></canvas>
-              </div>
-            </div>
-          </div>
 
           <!-- Medalhas -->
-          <div class="medalhas">
-            <ul>
+          <div class="boxHeader medalhas">
+            <div class="header d-flex justify-content-end">
+              <span class="mr-auto">Distintivos do John</span>
+            </div>
+            <div class="corpo">
+              <ul class="listaDeMedalhas">
 
-              <!-- Item -->
-              <li class="item d-flex flex-column flex-md-row justify-content-md-start">
-                <div class="iconInfor d-flex flex-row align-items-center">
-                  <div class="icon d-flex align-items-center">
-                    <img src="image/iconMedalha01.png" alt="Icone da Medalha">
+                <!-- Item -->
+                <li class="item">
+                  <div class="img">
+                    <img src="image/iconMedalha01.png" alt="Ícone da Medalha">
                   </div>
-                  <div class="infor">
-                    <!-- Nome e Sobre -->
-                    <div class="nome">Top Influuencer</div>
-                    <div class="sobre">Você inicio mais de 80 campanhas.</div>
-                  </div>
-                </div>
-                <div class="barra ml-auto d-flex align-items-center">
-                  <div class="barraVazia">
-                    <!-- Porcentagem a seguir -->
-                    <div class="valor" style="width: 100%;"></div>
-                  </div>
-                </div>
-              </li>
+                  <div class="bolha laranja">2</div>
+                  <a href="#linkMedalha" class="tudo"></a>
+                </li>
 
-              <!-- Item -->
-              <li class="item d-flex flex-column flex-md-row justify-content-md-start">
-                <div class="iconInfor d-flex flex-row align-items-center">
-                  <div class="icon d-flex align-items-center">
-                    <img src="image/iconMedalha01.png" alt="Icone da Medalha">
+                <!-- Item -->
+                <li class="item">
+                  <div class="img">
+                    <img src="image/iconMedalha02.png" alt="Ícone da Medalha">
                   </div>
-                  <div class="infor">
-                    <!-- Nome e Sobre -->
-                    <div class="nome">Top Influuencer</div>
-                    <div class="sobre">Você inicio mais de 80 campanhas.</div>
-                  </div>
-                </div>
-                <div class="barra ml-auto d-flex align-items-center">
-                  <div class="barraVazia">
-                    <!-- Porcentagem a seguir -->
-                    <div class="valor" style="width: 50%;"></div>
-                  </div>
-                </div>
-              </li>
+                  <!-- <div class="bolha laranja">2</div> -->
+                  <a href="#linkMedalha" class="tudo"></a>
+                </li>
 
-            </ul>
+                <!-- Item -->
+                <li class="item">
+                  <div class="img">
+                    <img src="image/iconMedalha03.png" alt="Ícone da Medalha">
+                  </div>
+                  <div class="bolha azul">3</div>
+                  <a href="#linkMedalha" class="tudo"></a>
+                </li>
+
+                <!-- Item -->
+                <li class="item">
+                  <div class="img">
+                    <img src="image/iconMedalha01.png" alt="Ícone da Medalha">
+                  </div>
+                  <!-- <div class="bolha laranja">2</div> -->
+                  <a href="#linkMedalha" class="tudo"></a>
+                </li>
+                
+                <!-- Item -->
+                <li class="item">
+                  <div class="img">
+                    <img src="image/iconMedalha02.png" alt="Ícone da Medalha">
+                  </div>
+                  <!-- <div class="bolha laranja">2</div> -->
+                  <a href="#linkMedalha" class="tudo"></a>
+                </li>
+                
+                <!-- Item -->
+                <li class="item">
+                  <div class="img">
+                    <img src="image/iconMedalha03.png" alt="Ícone da Medalha">
+                  </div>
+                  <!-- <div class="bolha azul">3</div> -->
+                  <a href="#linkMedalha" class="tudo"></a>
+                </li>
+
+                
+
+              </ul>
+            </div>
           </div>
+
+          <!-- Introdução -->
+          <div class="boxHeader introducao">
+            <div class="header d-flex justify-content-end">
+              <span class="mr-auto">Introdução</span>
+            </div>
+            <div class="corpo">
+              <div class="infor">
+
+                <div class="item">
+                  <div class="titulo">Sobre:</div>
+                  <div class="txt">Olá, eu sou o John Doe. Tenho 36 anos e trabalho no YouTube pelo canal "John John".</div>
+                </div>
+
+                <div class="item">
+                  <div class="titulo">Acompanhamento:</div>
+                  <div class="txt">Comédia, Jogos</div>
+                </div>
+
+                <div class="item">
+                  <div class="titulo">Membro desde:</div>
+                  <div class="txt">12 de Dezembro de 2017</div>
+                </div>
+
+              </div>
+
+              <div class="social">
+                <h6>Outras Redes Sociais:</h6>
+                <div class="redes icones-group">
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_instagram.png" alt="Instagram">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_facebook.png" alt="Facebook">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_twitter.png" alt="Twitter">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_youtube.png" alt="YouTube">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ALERTA/AVISO -->
+          <div class="alerta">
+            <div class="icon">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <h3>Importante!</h3>
+            <div class="txt">Preencha todas as informações do seu perfil para uma melhor experiência na plataforma Influu.</div>
+          </div>
+
+        </div>
+
+        <!-- DIREITA -->
+        <div class="col-12 col-md-8">
+
+          <!-- Total Ganho -->
+          <div class="boxMeio d-flex flex-column flex-md-row justify-content-md-between">
+            <div class="d-flex flex-row align-items-center">
+              <div class="icon rosa">
+                <i class="far fa-money-bill-alt"></i>
+              </div>
+              <div class="dados">
+                <h5>R$897,34 Total Ganho
+                  <small>R$ 47,05 hoje</small>
+                </h5>
+                <span>Esse Mês</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center">
+              <a href="#sacarDinheiro" class="btn-sacar">Sacar Dinheiro</a>
+            </div>
+          </div>
+
         </div>
 
       </div>

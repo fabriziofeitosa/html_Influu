@@ -1376,6 +1376,190 @@ body {
 }
 
 /* #######################################
+        PAG PERFIL
+   ####################################### */
+.areaPagPerfil .medalhas .corpo .listaDeMedalhas {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.areaPagPerfil .medalhas .corpo .listaDeMedalhas .item {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.areaPagPerfil .medalhas .corpo .listaDeMedalhas .item .img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+
+.areaPagPerfil .medalhas .corpo .listaDeMedalhas .item .img img {
+  max-width: 100%;
+}
+
+.areaPagPerfil .medalhas .corpo .listaDeMedalhas .item .bolha {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  font-size: 9px;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #fe1777;
+  color: #fff;
+}
+
+.areaPagPerfil .medalhas .corpo .listaDeMedalhas .item .bolha.azul {
+  background-color: #01bee4;
+}
+
+.areaPagPerfil .medalhas .corpo .listaDeMedalhas .item .bolha.laranja {
+  background-color: #ff5c39;
+}
+
+.areaPagPerfil .introducao .corpo {
+  padding: 20px 25px;
+}
+
+.areaPagPerfil .introducao .corpo .infor {
+  margin-bottom: 40px;
+}
+
+.areaPagPerfil .introducao .corpo .infor .item {
+  font-size: 13px;
+  margin-bottom: 30px;
+}
+
+.areaPagPerfil .introducao .corpo .infor .item .titulo {
+  font-weight: bold;
+  color: #555566;
+}
+
+.areaPagPerfil .introducao .corpo .infor .item .txt {
+  color: #9aa3c2;
+}
+
+.areaPagPerfil .introducao .corpo .social h6 {
+  font-size: 14px;
+  margin-top: 20px;
+  color: #555566;
+}
+
+.areaPagPerfil .introducao .corpo .social .icon {
+  display: inline-block;
+}
+
+.areaPagPerfil .introducao .corpo .social .redes {
+  margin-top: 15px;
+}
+
+.areaPagPerfil .alerta {
+  background-color: #01bee4;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.areaPagPerfil .alerta .icon {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.areaPagPerfil .alerta h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1;
+  margin: 20px 0;
+}
+
+.areaPagPerfil .alerta .txt {
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.areaPagPerfil .boxMeio {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #e5ecf6;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.areaPagPerfil .boxMeio .icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 24px;
+}
+
+.areaPagPerfil .boxMeio .icon.rosa {
+  background-color: #fe1777;
+}
+
+.areaPagPerfil .boxMeio .icon.azul {
+  background-color: #01bee4;
+}
+
+.areaPagPerfil .boxMeio .dados {
+  padding-left: 10px;
+  max-width: calc(100% - 50px);
+}
+
+.areaPagPerfil .boxMeio .dados h5 {
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  font-size: 24px;
+}
+
+.areaPagPerfil .boxMeio .dados h5 small {
+  font-size: 10px;
+  color: #07debf;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.areaPagPerfil .boxMeio .dados span {
+  font-size: 12px;
+  line-height: 1;
+  color: #9aa3c2;
+}
+
+.areaPagPerfil .boxMeio .btn-sacar {
+  text-decoration: none;
+  background-color: #01bee4;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .areaPagPerfil .boxMeio .btn-sacar {
+    margin-top: 15px;
+    width: 100%;
+  }
+}
+
+/* #######################################
         SOBRE A CAMPANHA
    ####################################### */
 .sobreCampanha .areaDeCard .inforBasicas,
