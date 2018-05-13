@@ -1515,6 +1515,19 @@ $loadingRosa: #ff1777;
             text-transform: uppercase;
             line-height: 1.5;
         }
+        .btn-acao {
+            width: 50%;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 1;
+            background-color: #fff;
+            color: $azulClaro;
+            padding: 15px 25px;
+            margin: 0 auto;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
     }
     .boxMeio {
         background-color: #fff;
@@ -1572,6 +1585,72 @@ $loadingRosa: #ff1777;
             @media screen and (max-width: $maxMobile) {
                 margin-top: 15px;
                 width: 100%;
+            }
+        }
+    }
+    .ultimosPosts {
+        .corpo {
+            padding-bottom: 0;
+        }
+        .btn-grupo {
+            text-align: center;
+            > .item {
+                text-decoration: none;
+                display: inline-block;
+                text-transform: uppercase;
+                color: $primaria;
+                background-color: $corLinha;
+                font-size: 14px;
+                text-align: center;
+                font-weight: normal;
+                line-height: 1;
+                padding: 15px 25px;
+                border-radius: 40px;
+                @media screen and (max-width: $maxMobile) {
+                    margin-bottom: 15px;
+                }
+                &.ativo {
+                    color: #fff;
+                    background-color: $rosaPadrao;
+                }
+            }
+        }
+        .postagens {
+            padding: 20px 0 0 0;
+            .post {
+                position: relative;
+                display: inline-block;
+                background-position: center center !important;
+                background-size: cover !important;
+                margin-bottom: 20px;
+                border: 1px solid $corLinha;
+                // Mobile 
+                width: 100%;
+                // Mobile 2
+                @media screen and (min-width: 500px) and (max-width: 991px) {
+                    width: 47.5%;
+                    &:not(:nth-child(2n)) {
+                        margin-right: calc(5% - 5px);
+                    }
+                }
+                // Desktop
+                @media screen and (min-width: 992px) {
+                    width: 30%;
+                    &:not(:nth-child(3n)) {
+                        margin-right: calc(5% - 5px);
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    padding-top: 100%;
+                    float: left;
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
             }
         }
     }
