@@ -3511,6 +3511,189 @@ $loadingRosa: #ff1777;
             }
         }
     }
+
+    &#modalParticiparCampanha {
+        .modal-dialog {
+            max-width: 770px;
+        }
+        .modal-body {
+            color: $primaria;
+            padding: 20px;
+            .header {
+                padding-bottom: 10px;
+                .titulo {
+                    .nome {
+                        margin: 0;
+                        line-height: 1;
+                    }
+                    .sub {
+                        color: $secundaria;
+                        font-size: 12px;
+                    }
+                }
+                .redesSociais {
+                    @media screen and (max-width: $maxMobile) {
+                        margin-top: 15px;
+                    }
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            .capa {
+                margin: 0 -20px;
+                background-position: center center;
+                background-size: cover;
+                width: calc(100% + 40px);
+                &::before {
+                    content: '';
+                    padding-top: 33.33%;
+                    float: left;
+                }
+                &::after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                }
+            }
+        }
+        .principal {
+            margin-top: 20px;
+            border-right: 1px solid $corLinha;
+            padding-right: 30px;
+            @media screen and (max-width: $maxMobile) {
+                border-right: none;
+                padding-right: 0;
+                padding-bottom: 20px;
+                border-bottom: 1px solid $corLinha;
+            }
+            .autor {
+                padding-bottom: 20px;
+                .avatar {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    img {
+                        max-width: 100%;
+                        vertical-align: top;
+                    }
+                }
+                .infor {
+                    padding-left: 10px;
+                    .nome {
+                        font-size: 12px;
+                        a {
+                            font-size: 14px;
+                            color: $primaria;
+                            font-weight: bold;
+                            text-decoration: none;
+                        }
+                        .oferta {
+                            color: $laranja;
+                            font-weight: bold;
+                        }
+                    }
+                    .tags {
+                        .tagList {
+                            padding: 0;
+                            margin: 0;
+                            list-style: none;
+                            .tag {
+                                text-transform: uppercase;
+                                font-size: 11px;
+                                background-color: $corLinha;
+                                display: inline-block;
+                                color: #fff;
+                                padding: 5px 10px;
+                                border-radius: 4px;
+                                font-weight: bold;
+                                margin-right: -4px;
+                                &:not(:first-child) {
+                                    margin-left: 5px;
+                                }
+                                &.azul {
+                                    background-color: $azulClaro;
+                                }
+                                &.rosa {
+                                    background-color: $rosaPadrao;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .desc {
+                color: $secundaria;
+                font-size: 14px;
+                p {
+                    margin: 0;
+                }
+            }
+        }
+        .informacoes {
+            margin-top: 20px;
+            .formaPagamento {
+                .titulo {
+                    color: $secundaria;
+                    font-size: 12px;
+                }
+                .valor {
+                    color: $primaria;
+                    font-weight: normal;
+                    small {
+                        padding-top: 5px;
+                        display: block;
+                        color: $verde;
+                        font-size: 10px;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .dados {
+                padding: 10px 0 20px 0;
+                .item {
+                    color: $secundaria;
+                    &:not(:last-child) {
+                        padding-bottom: 10px;
+                    }
+                    .icon {
+                        width: 20px;
+                    }
+                    .txt {
+                        padding-left: 10px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            .btns {
+                a {
+                    text-decoration: none;
+                    display: block;
+                    background-color: $corLinha;
+                    color: #fff;
+                    font-weight: bold;
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    border-radius: 4px;
+                    font-size: 11px;
+                    padding: 7px 20px;
+                    @media screen and (max-width: $maxMobile) {
+                        font-size: 13px;
+                        padding: 12px 20px;
+                    }
+                    &.azul {
+                        background-color: $azulClaro;
+                    }
+                    &.rosa {
+                        background-color: $rosaPadrao;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /* #######################################

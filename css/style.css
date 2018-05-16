@@ -3753,6 +3753,221 @@ body {
   border-radius: 4px;
 }
 
+.modal.influu#modalParticiparCampanha .modal-dialog {
+  max-width: 770px;
+}
+
+.modal.influu#modalParticiparCampanha .modal-body {
+  color: #555566;
+  padding: 20px;
+}
+
+.modal.influu#modalParticiparCampanha .modal-body .header {
+  padding-bottom: 10px;
+}
+
+.modal.influu#modalParticiparCampanha .modal-body .header .titulo .nome {
+  margin: 0;
+  line-height: 1;
+}
+
+.modal.influu#modalParticiparCampanha .modal-body .header .titulo .sub {
+  color: #9aa3c2;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal.influu#modalParticiparCampanha .modal-body .header .redesSociais {
+    margin-top: 15px;
+  }
+}
+
+.modal.influu#modalParticiparCampanha .modal-body .header .redesSociais .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.modal.influu#modalParticiparCampanha .modal-body .capa {
+  margin: 0 -20px;
+  background-position: center center;
+  background-size: cover;
+  width: calc(100% + 40px);
+}
+
+.modal.influu#modalParticiparCampanha .modal-body .capa::before {
+  content: '';
+  padding-top: 33.33%;
+  float: left;
+}
+
+.modal.influu#modalParticiparCampanha .modal-body .capa::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.modal.influu#modalParticiparCampanha .principal {
+  margin-top: 20px;
+  border-right: 1px solid #e5ecf6;
+  padding-right: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal.influu#modalParticiparCampanha .principal {
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5ecf6;
+  }
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor {
+  padding-bottom: 20px;
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor .avatar img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor .infor {
+  padding-left: 10px;
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor .infor .nome {
+  font-size: 12px;
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor .infor .nome a {
+  font-size: 14px;
+  color: #555566;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor .infor .nome .oferta {
+  color: #ff5c39;
+  font-weight: bold;
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor .infor .tags .tagList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor .infor .tags .tagList .tag {
+  text-transform: uppercase;
+  font-size: 11px;
+  background-color: #e5ecf6;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-right: -4px;
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor .infor .tags .tagList .tag:not(:first-child) {
+  margin-left: 5px;
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor .infor .tags .tagList .tag.azul {
+  background-color: #01bee4;
+}
+
+.modal.influu#modalParticiparCampanha .principal .autor .infor .tags .tagList .tag.rosa {
+  background-color: #fe1777;
+}
+
+.modal.influu#modalParticiparCampanha .principal .desc {
+  color: #9aa3c2;
+  font-size: 14px;
+}
+
+.modal.influu#modalParticiparCampanha .principal .desc p {
+  margin: 0;
+}
+
+.modal.influu#modalParticiparCampanha .informacoes {
+  margin-top: 20px;
+}
+
+.modal.influu#modalParticiparCampanha .informacoes .formaPagamento .titulo {
+  color: #9aa3c2;
+  font-size: 12px;
+}
+
+.modal.influu#modalParticiparCampanha .informacoes .formaPagamento .valor {
+  color: #555566;
+  font-weight: normal;
+}
+
+.modal.influu#modalParticiparCampanha .informacoes .formaPagamento .valor small {
+  padding-top: 5px;
+  display: block;
+  color: #07debf;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.modal.influu#modalParticiparCampanha .informacoes .dados {
+  padding: 10px 0 20px 0;
+}
+
+.modal.influu#modalParticiparCampanha .informacoes .dados .item {
+  color: #9aa3c2;
+}
+
+.modal.influu#modalParticiparCampanha .informacoes .dados .item:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.modal.influu#modalParticiparCampanha .informacoes .dados .item .icon {
+  width: 20px;
+}
+
+.modal.influu#modalParticiparCampanha .informacoes .dados .item .txt {
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.modal.influu#modalParticiparCampanha .informacoes .btns a {
+  text-decoration: none;
+  display: block;
+  background-color: #e5ecf6;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 11px;
+  padding: 7px 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal.influu#modalParticiparCampanha .informacoes .btns a {
+    font-size: 13px;
+    padding: 12px 20px;
+  }
+}
+
+.modal.influu#modalParticiparCampanha .informacoes .btns a.azul {
+  background-color: #01bee4;
+}
+
+.modal.influu#modalParticiparCampanha .informacoes .btns a.rosa {
+  background-color: #fe1777;
+}
+
 /* #######################################
         INFLUU INPUT FORM
    ####################################### */

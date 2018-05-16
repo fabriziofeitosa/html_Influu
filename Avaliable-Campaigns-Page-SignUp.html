@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Font Icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Avaliable-Campaigns-Page-SignUp</title>
+</head>
+
+<body>
+
+  <h1 class="text-center">Avaliable-Campaigns-Page-SignUp</h1>
+
+  <!-- Modal -->
+  <div class="modal fade influu" id="modalParticiparCampanha" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+
+          <div class="header d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+            <!-- Titulo -->
+            <div class="titulo">
+              <h2 class="nome">Nome da Oferta</h2>
+              <div class="sub">Sábado às 14h</div>
+            </div>
+            <!-- Social -->
+            <div class="redesSociais">
+              <div class="icones-group inline">
+
+                <!-- item -->
+                <div class="icon">
+                  <img src="image/iconSocial_instagram.png" alt="Instagram">
+                  <a href="#linkSocial" class="tudo"></a>
+                </div>
+
+                <!-- item -->
+                <div class="icon">
+                  <img src="image/iconSocial_facebook.png" alt="Instagram">
+                  <a href="#linkSocial" class="tudo"></a>
+                </div>
+
+                <!-- item -->
+                <div class="icon desativado">
+                  <img src="image/iconSocial_youtube.png" alt="Instagram">
+                  <a href="#linkSocial" class="tudo"></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Capa -->
+          <div class="capa" style="background-image: url(image/capaCampanha.jpg)"></div>
+
+          <!-- Informações -->
+          <div class="row">
+            <div class="col-12 col-md-7">
+              <div class="principal">
+                <!-- Informações do Autor -->
+                <div class="autor d-flex flex-row">
+                  <div class="avatar">
+                    <img src="image/campanhaIcon.png" alt="Icone da Campanha">
+                  </div>
+                  <div class="infor">
+                    <div class="nome">
+                      <div>
+                        <!-- Autor / Oferta -->
+                        <a href="#autor">Nome Cliente</a> criador da <span class="oferta">Nome Oferta</span>
+                      </div>
+                    </div>
+                    <div class="tags">
+                      <ul class="tagList">
+                          <!-- TAGs-->
+                        <li class="tag azul">Game</li>
+                        <li class="tag rosa">CPV</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Descrição -->
+                <div class="desc">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, quod ab quibusdam molestias a dolor quo aut sunt accusantium natus sapiente error dolorum officiis dolore obcaecati numquam ipsum pariatur ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quidem quis placeat consequuntur excepturi unde dolores quas! Dicta suscipit in quo provident atque porro, velit voluptatem, reiciendis non temporibus maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-5">
+              <div class="informacoes">
+                <!-- Forma de pagamento -->
+                <div class="formaPagamento">
+                  <span class="titulo">Forma de pagamento</span>
+                  <h4 class="valor">R$ 0,10 por view
+                    <small>+ R$ 300,00 (fixo)</small>
+                  </h4>
+                </div>
+
+                <!-- Dados -->
+                <div class="dados">
+                  <!-- Item -->
+                  <div class="item d-flex flex-row align-items-center">
+                    <div class="icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="txt">
+                      <span>Expira em: 30 dias</span>
+                    </div>
+                  </div>
+
+                  <!-- Item -->
+                  <div class="item d-flex flex-row align-items-center">
+                    <div class="icon">
+                      <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="txt">
+                      <span>Final da oferta: 14/04/2018</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- BTNs -->
+                <div class="btns">
+                  <a href="#social" class="btn-social azul">Conectar outra rede social</a>
+                  <a href="#participar" class="btn-participar rosa">Participar da Campanha</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Modal -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+
+  <script src="js/theme.js"></script>
+
+  <!-- Vue.js + VueSelect -->
+  <script src="https://unpkg.com/vue@latest"></script>
+  <script src="https://unpkg.com/vue-select@latest"></script>
+
+  <script>
+
+    // Mostrar Modal
+    $('#modalParticiparCampanha').modal({
+      show: true
+    });
+
+  </script>
+</body>
+
+</html>
