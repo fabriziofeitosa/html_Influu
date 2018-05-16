@@ -3527,6 +3527,121 @@ body {
   padding: 20px;
 }
 
+.modal.influu#modalSacarDinheiro .modal-dialog {
+  max-width: 375px;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body {
+  font-size: 13px;
+  color: #555566;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .dinheiroAtual {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5ecf6;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .dinheiroAtual .txt {
+  color: #9aa3c2;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .dinheiroAtual .valor {
+  color: #555566;
+  font-weight: bold;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .qtdSacar {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5ecf6;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .qtdSacar .txt {
+  font-weight: bold;
+  display: inline-block;
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .modal.influu#modalSacarDinheiro .modal-body .qtdSacar .txt {
+    margin-bottom: 10px;
+  }
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .qtdSacar .valor {
+  display: inline-block;
+  width: 50%;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .qtdSacar .valor .inputValor {
+  max-width: 100px;
+  background-color: #fff;
+  border: 1px solid #e5ecf6;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .modal.influu#modalSacarDinheiro .modal-body .qtdSacar .valor .inputValor {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .modal.influu#modalSacarDinheiro .modal-body .qtdSacar .txt,
+  .modal.influu#modalSacarDinheiro .modal-body .qtdSacar .valor {
+    width: 100%;
+  }
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .qtdSacar button.btn-influu {
+  background-color: #fe1777;
+  color: #fff;
+  min-height: 40px;
+  border: none;
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .modal.influu#modalSacarDinheiro .modal-body .qtdSacar button.btn-influu {
+    padding: 0 20px;
+  }
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .qtdSacar .input-group-prepend button {
+  border-radius: 4px 0 0 4px;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .qtdSacar .input-group-append button {
+  border-radius: 0 4px 4px 0;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .tipoTrans {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5ecf6;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .tipoTrans .tipo .desc {
+  color: #9aa3c2;
+  padding: 10px 0;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .btn-final {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.modal.influu#modalSacarDinheiro .modal-body .btn-final .enviar {
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  background-color: #01bee4;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
 /* #######################################
         INFLUU INPUT FORM
    ####################################### */
@@ -3535,7 +3650,7 @@ body {
   width: 100%;
 }
 
-.influu-form label {
+.influu-form > label {
   position: absolute;
   top: 5px;
   left: 20px;
@@ -3692,5 +3807,57 @@ body {
 
 .influu-form .selectVue.selectGrafico .v-select.open .open-indicator {
   bottom: -4px;
+}
+
+.influu-form .radio {
+  position: relative;
+  display: flex;
+}
+
+.influu-form .radio .bola {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ff5c39;
+}
+
+.influu-form .radio .bola .ponto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 8px;
+  height: 8px;
+  background-color: #ff5c39;
+  border-radius: 50%;
+}
+
+.influu-form .radio input[type='radio'] {
+  position: absolute;
+  left: -9999px;
+  width: auto;
+  display: inline-block;
+}
+
+.influu-form .radio input[type='radio']:checked + .bola .ponto {
+  display: inline-block;
+}
+
+.influu-form .radio label {
+  cursor: pointer;
+  margin: 0;
+  width: 100%;
+  color: #9aa3c2;
+}
+
+.influu-form .radio label span {
+  max-width: calc(100% - 18px);
+  padding-left: 10px;
 }
 /*# sourceMappingURL=style.css.map */

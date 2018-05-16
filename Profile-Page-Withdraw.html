@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Font Icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Profile-Page-Withdraw</title>
+</head>
+
+<body>
+
+  <h1 class="text-center">Profile-Page-Withdraw</h1>
+
+  <!-- Modal -->
+  <div class="modal fade influu" id="modalSacarDinheiro" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Sacar dinheiro</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- Dinheiro Atual -->
+          <div class="dinheiroAtual d-flex flex-row justify-content-between">
+            <div class="txt">Dinheiro atual</div>
+            <div class="valor">R$ 897,34</div>
+          </div>
+
+          <!-- Quantidade à sacar -->
+          <div class="qtdSacar d-flex flex-column flex-md-row align-items-md-center">
+            <div class="txt">Quantidade à sacar</div>
+            <div class="valor">
+              <div class="d-flex flex-nowrap justify-content-center">
+                <div class="input-group-prepend">
+                  <button class="btn-influu" type="button">-</button>
+                </div>
+                <input type="text" class="inputValor" placeholder="R$ 300" aria-label="" aria-describedby="basic-addon1">
+                <div class="input-group-append">
+                  <button class="btn-influu" type="button">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tipo de transferência -->
+          <div class="tipoTrans">
+
+            <!-- TIPO 01 -->
+            <div class="tipo direct">
+              <div class="influu-form">
+                <div class="radio">
+                  <label for="inputTransDirect" class="d-flex align-items-start">
+                    <input type="radio" name="tipoTrans" id="inputTransDirect"> <!-- INPUT -->
+                    <div class="bola"> <!-- INPUT PERSONALIZADO -->
+                      <div class="ponto"></div>
+                    </div>
+                    <span>Transferência Direta Banco</span> <!-- LABEL-->
+                  </label>
+                </div>
+              </div>
+
+              <!-- ESSA DESCRIÇÃO SÓ DEVE APARECER CASO ESSE MÉTODO SEJA ESCOLHIDO! -->
+              <div class="desc">Aliquam ac massa ut risus placerat efficitur. Fusce sed elit lacus. Cras at quam eu dui cursus dictum. In suscipit. </div>
+            </div>
+
+            <!-- TIPO 02 -->
+            <div class="tipo direct">
+              <div class="influu-form">
+                <div class="radio">
+                  <label for="inputTransPaypal" class="d-flex align-items-start">
+                    <input type="radio" name="tipoTrans" id="inputTransPaypal"> <!-- INPUT -->
+                    <div class="bola"> <!-- INPUT PERSONALIZADO -->
+                      <div class="ponto"></div>
+                    </div>
+                    <span>PayPal</span> <!-- LABEL-->
+                  </label>
+                </div>
+              </div>
+
+              <!-- ESSA DESCRIÇÃO SÓ DEVE APARECER CASO ESSE MÉTODO SEJA ESCOLHIDO! -->
+              <div class="desc">Aliquam ac massa ut risus placerat efficitur. Fusce sed elit lacus. Cras at quam eu dui cursus dictum. In suscipit. </div>
+            </div>
+
+          </div>
+
+          <!-- BTN -->
+          <div class="btn-final">
+            <button class="enviar">Confirmar retirada</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fim Modal -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+
+  <script src="js/theme.js"></script>
+
+  <!-- Vue.js + VueSelect -->
+  <script src="https://unpkg.com/vue@latest"></script>
+  <script src="https://unpkg.com/vue-select@latest"></script>
+
+  <script>
+
+    // Mostrar Modal
+    $('#modalSacarDinheiro').modal({
+      show: true
+    });
+
+  </script>
+</body>
+
+</html>

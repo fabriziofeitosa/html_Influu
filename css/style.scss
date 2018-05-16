@@ -3319,6 +3319,101 @@ $loadingRosa: #ff1777;
             }
         }
     }
+    &#modalSacarDinheiro {
+        .modal-dialog {
+            max-width: 375px;
+        }
+        .modal-body {
+            font-size: 13px;
+            color: $primaria;
+            .dinheiroAtual {
+                padding: 20px 0;
+                border-bottom: 1px solid $corLinha;
+                .txt {
+                    color: $secundaria;
+                }
+                .valor {
+                    color: $primaria;
+                    font-weight: bold;
+                }
+            }
+            .qtdSacar {
+                padding: 20px 0;
+                border-bottom: 1px solid $corLinha;
+                .txt {
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 50%;
+                    @media screen and (max-width: $maxMobile) {
+                        margin-bottom: 10px;
+                    }
+                }
+                .valor {
+                    display: inline-block;
+                    width: 50%;
+                    .inputValor {
+                        max-width: 100px;
+                        background-color: #fff;
+                        border: 1px solid $corLinha;
+                        text-align: center;
+                        @media screen and (max-width: $maxMobile) {
+                            max-width: 100%;
+                        }
+                    }
+                }
+                @media screen and (max-width: $maxMobile) {
+                    .txt,
+                    .valor { width: 100%; }
+                }
+                button.btn-influu {
+                    background-color: $rosaPadrao;
+                    color: #fff;
+                    min-height: 40px;
+                    border: none;
+                    cursor: pointer;
+                    padding: 0 15px;
+                    @media screen and (max-width: $maxMobile) {
+                        padding: 0 20px;
+                    }
+                }
+                .input-group-prepend {
+                    button {
+                        border-radius: 4px 0 0 4px;
+                    }
+                }
+                .input-group-append {
+                    button {
+                        border-radius: 0 4px 4px 0;
+                    }
+                }
+            }
+            .tipoTrans {
+                padding: 20px 0;
+                border-bottom: 1px solid $corLinha;
+                .tipo {
+                    .desc {
+                        color: $secundaria;
+                        padding: 10px 0;
+                    }
+                }
+            }
+            .btn-final {
+                margin-top: 20px;
+                width: 100%;
+                .enviar {
+                    cursor: pointer;
+                    border: none;
+                    width: 100%;
+                    background-color: $azulClaro;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 14px;
+                    padding: 15px 20px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
 }
 
 /* #######################################
@@ -3328,7 +3423,7 @@ $loadingRosa: #ff1777;
 .influu-form {
     position: relative;
     width: 100%;
-    label {
+    > label {
         position: absolute;
         top: 5px;
         left: 20px;
@@ -3469,6 +3564,51 @@ $loadingRosa: #ff1777;
                 .open-indicator {
                     bottom: -4px;
                 }
+            }
+        }
+    }
+    .radio {
+        position: relative;
+        display: flex;
+        .bola {
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            text-align: center;
+            border-radius: 50%;
+            border: 1px solid $laranja;
+            .ponto {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                display: none;
+                width: 8px;
+                height: 8px;
+                background-color: $laranja;
+                border-radius: 50%;
+            }
+        }
+        input[type='radio'] {
+            position: absolute;
+            left: -9999px;
+            width: auto;
+            display: inline-block;
+            &:checked + .bola .ponto {
+                display: inline-block;
+            }
+        }
+        label {
+            cursor: pointer;
+            margin: 0;
+            width: 100%;
+            color: $secundaria;
+            span {
+                max-width: calc(100% - 18px);
+                padding-left: 10px;
             }
         }
     }
