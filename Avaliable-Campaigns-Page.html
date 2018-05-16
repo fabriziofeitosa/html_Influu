@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Font Icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Avaliable-Campaigns-Page</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="topo">
+      <div class="conteudo d-flex flex-row justify-content-end">
+        <!-- Título da página -->
+        <div class="titulo mr-auto d-none d-md-block">Campanhas Disponíveis</div>
+
+        <!-- Notificações -->
+        <div class="notificacoes">
+          <label for="notifBox">
+            <i class="fas fa-bell"></i>
+            <div class="numb noSelect">
+              <span>3</span>
+            </div>
+          </label>
+          <input type="checkbox" name="notifBox" id="notifBox">
+          
+          <!-- Box com as notificações -->
+          <div class="box">
+            <div class="titulo">
+              <span>Notificações</span>
+            </div>
+
+            <!-- Mensagem Vazia | Coloquei um display: none -->
+            <div class="mensagemVazia" style="display: none;">
+              <span>Nenhuma notificação no momento.</span>
+            </div>
+
+            <!-- Item -->
+            <div class="item d-flex flex-row">
+              <div class="foto d-flex align-items-start"> <!-- Foto do perfil -->
+                <img src="image/perfil02.png" alt="Imagem de perfil">
+                <a href="#linkPerfil" class="tudo"></a> <!-- Link para o perfil da pessoa -->
+              </div>
+              <div class="txt"> <!-- Informações -->
+                <div class="nome">
+                  <a href="#linkPerfil" class="linkPerfil">Tamara Romanoff</a> <!-- Link para o perfil da pessoa -->
+                </div>
+                <div class="sobre">Companha: Aliquam nec mattis lorem, eget.</div>
+              </div>
+              <div class="interacao ml-auto d-flex flex-row align-items-start"> <!-- Interações | Likes/Aprovação -->
+                <div class="like">
+                  <div class="icon">
+                    <i class="fas fa-thumbs-up"></i>
+                  </div> <!-- LIKE -->
+                  <a href="#like" class="tudo"></a>
+                </div>
+                <div class="deslike">
+                  <div class="icon">
+                    <i class="fas fa-thumbs-down"></i>
+                  </div> <!-- DESLIKE -->
+                  <a href="#deslike" class="tudo"></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="item d-flex flex-row">
+              <div class="foto d-flex align-items-start"> <!-- Foto do perfil -->
+                <img src="image/perfil03.png" alt="Imagem de perfil">
+                <a href="#linkPerfil" class="tudo"></a> <!-- Link para o perfil da pessoa -->
+              </div>
+              <div class="txt"> <!-- Informações -->
+                <div class="nome">
+                  <a href="#linkPerfil" class="linkPerfil">Roberta Silva</a> <!-- Link para o perfil da pessoa -->
+                </div>
+                <div class="sobre">Companha: Aliquam nec mattis lorem, eget.</div>
+              </div>
+              <div class="interacao ml-auto d-flex flex-row align-items-start"> <!-- Interações | Likes/Aprovação -->
+                <div class="like">
+                  <div class="icon">
+                    <i class="fas fa-thumbs-up"></i>
+                  </div> <!-- LIKE -->
+                  <a href="#like" class="tudo"></a>
+                </div>
+                <div class="deslike">
+                  <div class="icon">
+                    <i class="fas fa-thumbs-down"></i>
+                  </div> <!-- DESLIKE -->
+                  <a href="#deslike" class="tudo"></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item -->
+            <div class="item d-flex flex-row">
+              <div class="foto d-flex align-items-start"> <!-- Foto do perfil -->
+                <img src="image/perfil04.png" alt="Imagem de perfil">
+                <a href="#linkPerfil" class="tudo"></a> <!-- Link para o perfil da pessoa -->
+              </div>
+              <div class="txt"> <!-- Informações -->
+
+                <div class="sobre">Você aceitou <a class="linkPerfil" href="#linkPerfil">Mary Jane Stark</a> no projeto Título da Campanha. Verifique o <a href="#link">progresso dela na campanha</a>.</div>
+
+              </div>
+              <div class="interacao ml-auto d-flex flex-row align-items-start"> <!-- Interações | Likes/Aprovação -->
+                
+                <div class="decisao"> <!-- Decisão -->
+                  <div class="icon">
+                    <i class="fas fa-thumbs-up"></i>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="footer">
+              <span>Ver todas as notificações</span>
+              <a href="#linkVerTodas" class="tudo"></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Perfil -->
+        <div class="perfil d-none d-md-flex flex-row align-items-center">
+          <div class="foto">
+            <!-- Imagem de perfil -->
+            <img src="image/perfil.png" alt="Imagem de perfil">
+          </div>
+          <label class="infor" for="optPerfil">
+            <!-- Nome e Profissão -->
+            <span class="nome noSelect">John Doe</span>
+            <span class="profissao noSelect">Influuencer</span>
+            <div class="point">
+              <i class="fas fa-chevron-down"></i>
+            </div>
+          </label>
+          <div class="box">
+            <div class="titulo">
+              <span>Sua conta</span>
+            </div>
+            <ul class="listConta">
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <i class="far fa-user"></i>
+                  </span>
+                  <span class="txt">Perfil</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <i class="fas fa-credit-card"></i>
+                  </span>
+                  <span class="txt">Pagamento</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span class="icon">
+                    <i class="fas fa-sign-out-alt"></i>
+                  </span>
+                  <span class="txt">Sair</span>
+                </a>
+              </li>
+            </ul>
+            <div class="titulo">
+              <span>Sobre Influu</span>
+            </div>
+            <ul class="listInfor">
+              <li>
+                <a href="#">Termos e condições</a>
+              </li>
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+              <li>
+                <a href="#">Website</a>
+              </li>
+              <li>
+                <a href="#">Contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Lateral -->
+      <div class="lateral">
+        <div class="logo d-flex flex-row">
+          <div class="img"> <!-- max 70x70 px -->
+            <img src="image/iconLogo.png" alt="Logotipo">
+          </div>
+          <div class="name">INFLUU</div>
+        </div>
+
+        <!-- Itens de Menu | Abre e fecha -->
+        <div class="itemMenu clickMenu">
+          <div class="icon">
+            <i class="fas fa-bars iconAbrir"></i>
+            <i class="fas fa-times iconFechar"></i>
+          </div>
+          <div class="titulo noSelect d-none d-md-inline-block">
+            <span>Fechar Menu</span>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu">
+          <div class="icon">
+            <i class="far fa-user"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Perfil</span>
+            <!-- Quando NÃO TEM SubMenu, é adicionado esse link abaixo do título -->
+            <a href="#linkItemMenu" class="tudo"></a>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu optSub"> <!-- com subMenu add class 'optSub' -->
+          <div class="icon">
+            <i class="fas fa-bullhorn"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Campanhas</span>
+          </div>
+          <!-- SubMenu | adicionado sem o título ter link -->
+          <div class="subMenu">
+            <ul>
+              <li class="itemSub">
+                <span>Disponíveis</span>
+                <a href="#linkSubItem1" class="tudo"></a>
+              </li>
+              <li class="itemSub">
+                <span>Ativos</span>
+                <a href="#linkSubItem2" class="tudo"></a>
+              </li>
+              <li class="itemSub">
+                <span>Expirados</span>
+                <a href="#linkSubItem3" class="tudo"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu">
+          <div class="icon">
+            <i class="fas fa-history"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Histórico</span>
+            <!-- Quando NÃO TEM SubMenu, é adicionado esse link abaixo do título -->
+            <a href="#linkItemMenu" class="tudo"></a>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu">
+          <div class="icon">
+            <i class="fas fa-chart-pie"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Estatística</span>
+            <!-- Quando NÃO TEM SubMenu, é adicionado esse link abaixo do título -->
+            <a href="#linkItemMenu" class="tudo"></a>
+          </div>
+        </div>
+
+        <!-- Itens de Menu -->
+        <div class="itemMenu optSub"> <!-- com subMenu add class 'optSub' -->
+          <div class="icon">
+            <i class="fas fa-credit-card"></i>
+            <a href="#linkItemMenu" class="tudo"></a> <!-- link principal somente no icone -->
+          </div>
+          <div class="titulo noSelect">
+            <span>Pagamento</span>
+          </div>
+          <!-- SubMenu | adicionado sem o título ter link -->
+          <div class="subMenu">
+            <ul>
+              <li class="itemSub">
+                <span>Pendentes</span>
+                <a href="#linkSubItem1" class="tudo"></a>
+              </li>
+              <li class="itemSub">
+                <span>Histórico</span>
+                <a href="#linkSubItem2" class="tudo"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="areaDeConteudo">
+
+    <div class="subHeader d-flex flex-column flex-md-row align-items-md-center justify-content-md-between flex-md-wrap">
+
+      <!-- Primeira DIV -->
+      <div class="campanhas d-flex flex-column flex-xl-row align-items-xl-center justify-content-xl-between">
+        <div class="txt">Campanhas Disponíveis</div>
+        <div class="social d-lg-block d-flex justify-content-between justify-content-md-start">
+          <div class="icon" style="background-color: #de3715;">
+            <i class="fab fa-youtube"></i>
+            <a href="#linkSocial" class="tudo"></a>
+          </div>
+          <div class="icon" style="background-color: #0254a8;">
+            <i class="fab fa-facebook-f"></i>
+            <a href="#linkSocial" class="tudo"></a>
+          </div>
+          <div class="icon desativado" style="background-color: #00ace8;"> <!-- Class 'desativado' -->
+            <i class="fab fa-twitter"></i>
+            <a href="#linkSocial" class="tudo"></a>
+          </div>
+          <div class="icon desativado" style="background-color: #ff9f40;"> <!-- Class 'desativado' -->
+            <i class="fab fa-instagram"></i>
+            <a href="#linkSocial" class="tudo"></a>
+          </div>
+          <div class="icon desativado" style="background-color: #fffb00; color: #000;"> <!-- Class 'desativado' -->
+            <i class="fab fa-snapchat-ghost"></i>
+            <a href="#linkSocial" class="tudo"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meio DIV -->
+      <div class="filtro d-flex flex-row">
+        <div class="select">
+          <div class="influu-form">
+            <div class="selectVue selectTipo">
+              <v-select :options="options" label="title" v-model="selected">
+                <template slot="option" slot-scope="option">
+                  {{ option.title }}
+                </template>
+              </v-select>
+            </div>
+          </div>
+        </div>
+        <div class="botao">
+          <button>Filtrar</button>
+        </div>
+      </div>
+
+      <!-- Pesquisa -->
+      <div class="pesquisa d-flex flex-row">
+        <input class="inputPesquisa" type="text" placeholder="Procurar por campanha..">
+        <button class="inputButton">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="areaDeCard">
+      <div class="row">
+
+        <!-- CARD -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="cardCampanha campDisponivel">
+            <!-- Capa da Campanha -->
+            <div class="capa" style="background-image: url(image/capaCampanha.jpg)">
+              <!-- Imagem da capa como Background-->
+            </div>
+
+            <div class="conteudo">
+              <!-- A Campanha -->
+              <div class="campanha">
+                <a href="#" class="avatar">
+                  <img src="image/campanhaIcon.png" alt="Imagem da Campanha">
+                </a>
+                <a href="#" class="titulo">Campaign Title</a>
+                <a class="cliente">Nome do Cliente</a>
+              </div>
+
+              <!-- Forma de pagamento -->
+              <div class="formaPagamento">
+                <span class="titulo">Forma de pagamento</span>
+                <h4 class="valor">R$ 0,10 por view <small>+ R$ 300,00 (fixo)</small></h4 class="valor">
+              </div>
+
+              <!-- TAGs -->
+              <div class="tags">
+                <ul class="tagList">
+                  <li class="tag azul">Game</li>
+                  <li class="tag rosa">CPV</li>
+                </ul>
+              </div>
+
+              <!-- Texto & Autor -->
+              <div class="desc">
+                <div class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam illum rem modi vitae aliquam saepe fugiat? Debitis ratione nobis reprehenderit sequi distinctio eligendi sunt inventore, voluptate atque obcaecati accusantium. lorem</div>
+                <div class="autor text-uppercase">
+                  Por <a href="#autor">Nome Cliente</a> - Expira em: 30 dias
+                </div>
+              </div>
+
+              <!-- Button Participar -->
+              <div class="btn-participar d-flex">
+                <a href="#participar" class="button">Participar</a>
+              </div>
+
+              <div class="iconesSociais">
+                <div class="icones-group inline">
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_instagram.png" alt="Instagram">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                  <!-- Icone Social -->
+                  <div class="icon desativado">
+                    <img src="image/iconSocial_facebook.png" alt="Instagram">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- FIM DO CARD -->
+
+        <!-- CARD -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="cardCampanha campDisponivel">
+            <!-- Capa da Campanha -->
+            <div class="capa" style="background-image: url(image/capaCampanha.jpg)">
+              <!-- Imagem da capa como Background-->
+            </div>
+
+            <div class="conteudo">
+              <!-- A Campanha -->
+              <div class="campanha">
+                <a href="#" class="avatar">
+                  <img src="image/campanhaIcon.png" alt="Imagem da Campanha">
+                </a>
+                <a href="#" class="titulo">Campaign Title</a>
+                <a class="cliente">Nome do Cliente</a>
+              </div>
+
+              <!-- Forma de pagamento -->
+              <div class="formaPagamento">
+                <span class="titulo">Forma de pagamento</span>
+                <h4 class="valor">R$ 0,10 por view <small>+ R$ 300,00 (fixo)</small></h4 class="valor">
+              </div>
+
+              <!-- TAGs -->
+              <div class="tags">
+                <ul class="tagList">
+                  <li class="tag azul">Game</li>
+                  <li class="tag rosa">CPV</li>
+                </ul>
+              </div>
+
+              <!-- Texto & Autor -->
+              <div class="desc">
+                <div class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam illum rem modi vitae aliquam saepe fugiat? Debitis ratione nobis reprehenderit sequi distinctio eligendi sunt inventore, voluptate atque obcaecati accusantium. lorem</div>
+                <div class="autor text-uppercase">
+                  Por <a href="#autor">Nome Cliente</a> - Expira em: 30 dias
+                </div>
+              </div>
+
+              <!-- Button Participar -->
+              <div class="btn-participar d-flex">
+                <a href="#participar" class="button">Participar</a>
+              </div>
+
+              <div class="iconesSociais">
+                <div class="icones-group inline">
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_instagram.png" alt="Instagram">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                  <!-- Icone Social -->
+                  <div class="icon desativado">
+                    <img src="image/iconSocial_facebook.png" alt="Instagram">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- FIM DO CARD -->
+
+        <!-- CARD -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="cardCampanha campDisponivel">
+            <!-- Capa da Campanha -->
+            <div class="capa" style="background-image: url(image/capaCampanha.jpg)">
+              <!-- Imagem da capa como Background-->
+            </div>
+
+            <div class="conteudo">
+              <!-- A Campanha -->
+              <div class="campanha">
+                <a href="#" class="avatar">
+                  <img src="image/campanhaIcon.png" alt="Imagem da Campanha">
+                </a>
+                <a href="#" class="titulo">Campaign Title</a>
+                <a class="cliente">Nome do Cliente</a>
+              </div>
+
+              <!-- Forma de pagamento -->
+              <div class="formaPagamento">
+                <span class="titulo">Forma de pagamento</span>
+                <h4 class="valor">R$ 0,10 por view <small>+ R$ 300,00 (fixo)</small></h4 class="valor">
+              </div>
+
+              <!-- TAGs -->
+              <div class="tags">
+                <ul class="tagList">
+                  <li class="tag azul">Game</li>
+                  <li class="tag rosa">CPV</li>
+                </ul>
+              </div>
+
+              <!-- Texto & Autor -->
+              <div class="desc">
+                <div class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam illum rem modi vitae aliquam saepe fugiat? Debitis ratione nobis reprehenderit sequi distinctio eligendi sunt inventore, voluptate atque obcaecati accusantium. lorem</div>
+                <div class="autor text-uppercase">
+                  Por <a href="#autor">Nome Cliente</a> - Expira em: 30 dias
+                </div>
+              </div>
+
+              <!-- Button Participar -->
+              <div class="btn-participar d-flex">
+                <a href="#participar" class="button">Participar</a>
+              </div>
+
+              <div class="iconesSociais">
+                <div class="icones-group inline">
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_instagram.png" alt="Instagram">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                  <!-- Icone Social -->
+                  <div class="icon desativado">
+                    <img src="image/iconSocial_facebook.png" alt="Instagram">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- FIM DO CARD -->
+
+        <!-- CARD -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="cardCampanha campDisponivel">
+            <!-- Capa da Campanha -->
+            <div class="capa" style="background-image: url(image/capaCampanha.jpg)">
+              <!-- Imagem da capa como Background-->
+            </div>
+
+            <div class="conteudo">
+              <!-- A Campanha -->
+              <div class="campanha">
+                <a href="#" class="avatar">
+                  <img src="image/campanhaIcon.png" alt="Imagem da Campanha">
+                </a>
+                <a href="#" class="titulo">Campaign Title</a>
+                <a class="cliente">Nome do Cliente</a>
+              </div>
+
+              <!-- Forma de pagamento -->
+              <div class="formaPagamento">
+                <span class="titulo">Forma de pagamento</span>
+                <h4 class="valor">R$ 0,10 por view <small>+ R$ 300,00 (fixo)</small></h4 class="valor">
+              </div>
+
+              <!-- TAGs -->
+              <div class="tags">
+                <ul class="tagList">
+                  <li class="tag azul">Game</li>
+                  <li class="tag rosa">CPV</li>
+                </ul>
+              </div>
+
+              <!-- Texto & Autor -->
+              <div class="desc">
+                <div class="txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quibusdam illum rem modi vitae aliquam saepe fugiat? Debitis ratione nobis reprehenderit sequi distinctio eligendi sunt inventore, voluptate atque obcaecati accusantium. lorem</div>
+                <div class="autor text-uppercase">
+                  Por <a href="#autor">Nome Cliente</a> - Expira em: 30 dias
+                </div>
+              </div>
+
+              <!-- Button Participar -->
+              <div class="btn-participar d-flex">
+                <a href="#participar" class="button">Participar</a>
+              </div>
+
+              <div class="iconesSociais">
+                <div class="icones-group inline">
+
+                  <!-- Icone Social -->
+                  <div class="icon">
+                    <img src="image/iconSocial_instagram.png" alt="Instagram">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                  <!-- Icone Social -->
+                  <div class="icon desativado">
+                    <img src="image/iconSocial_facebook.png" alt="Instagram">
+                    <a href="#linkSocial" class="tudo"></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- FIM DO CARD -->
+
+      </div>
+    </div>
+
+    <div class="carregarMais">
+      <div class="icon">
+        <i class="fas fa-ellipsis-h fa-spin"></i>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+
+  <script src="js/theme.js"></script>
+
+  <!-- Vue.js + VueSelect -->
+  <script src="https://unpkg.com/vue@latest"></script>
+  <script src="https://unpkg.com/vue-select@latest"></script>
+
+  <script>
+    // Select VUE.js
+    Vue.component('v-select', VueSelect.VueSelect)
+    new Vue({
+      el: '.selectTipo',
+      data: {
+        selected: {
+          title: 'Todos'
+        },
+        options: [
+          {
+            title: 'Todos'
+          },
+          {
+            title: 'Tipo 1'
+          },
+          {
+            title: 'Tipo 2'
+          },
+          {
+            title: 'Tipo 3'
+          }
+        ]
+      }
+    })
+  </script>
+</body>
+
+</html>

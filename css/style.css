@@ -1791,6 +1791,11 @@ body {
   /* IE */
 }
 
+.icones-group.inline .icon {
+  display: inline-block;
+  margin-right: 5px;
+}
+
 /* #######################################
         CABEÇALHO
    ####################################### */
@@ -2795,6 +2800,112 @@ body {
   text-align: center;
   border-radius: 4px;
   text-decoration: none;
+}
+
+.cardCampanha.campDisponivel .conteudo {
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cardCampanha.campDisponivel .conteudo .formaPagamento > .titulo {
+  font-size: 12px;
+  color: #9aa3c2;
+}
+
+.cardCampanha.campDisponivel .conteudo .formaPagamento > .valor {
+  color: #555566;
+  font-weight: normal;
+}
+
+.cardCampanha.campDisponivel .conteudo .formaPagamento > .valor small {
+  color: #07debf;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .cardCampanha.campDisponivel .conteudo .formaPagamento > .valor small {
+    display: block;
+  }
+}
+
+.cardCampanha.campDisponivel .conteudo .tags {
+  margin: 15px 0;
+}
+
+.cardCampanha.campDisponivel .conteudo .tags .tagList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cardCampanha.campDisponivel .conteudo .tags .tagList .tag {
+  text-transform: uppercase;
+  font-size: 11px;
+  background-color: #e5ecf6;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  margin-right: -4px;
+}
+
+.cardCampanha.campDisponivel .conteudo .tags .tagList .tag:not(:first-child) {
+  margin-left: 5px;
+}
+
+.cardCampanha.campDisponivel .conteudo .tags .tagList .tag.azul {
+  background-color: #01bee4;
+}
+
+.cardCampanha.campDisponivel .conteudo .tags .tagList .tag.rosa {
+  background-color: #fe1777;
+}
+
+.cardCampanha.campDisponivel .conteudo .desc {
+  color: #9aa3c2;
+}
+
+.cardCampanha.campDisponivel .conteudo .desc > .txt {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.cardCampanha.campDisponivel .conteudo .desc > .autor {
+  font-size: 10px;
+}
+
+.cardCampanha.campDisponivel .conteudo .desc > .autor a {
+  color: #555566;
+  text-decoration: none;
+}
+
+.cardCampanha.campDisponivel .conteudo .btn-participar {
+  padding: 20px 0;
+  border-bottom: 1px solid #e5ecf6;
+}
+
+.cardCampanha.campDisponivel .conteudo .btn-participar .button {
+  text-decoration: none;
+  background-color: #01bee4;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.cardCampanha.campDisponivel .conteudo .iconesSociais {
+  padding-top: 20px;
+}
+
+.cardCampanha.campDisponivel .conteudo .iconesSociais .icon {
+  width: 30px;
+  height: 30px;
 }
 
 .cardCampanha.expired .capa,

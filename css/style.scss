@@ -1787,6 +1787,12 @@ $loadingRosa: #ff1777;
             filter: gray; /* IE */
         }
     }
+    &.inline {
+        .icon {
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
 }
 
 /* #######################################
@@ -2646,7 +2652,98 @@ $loadingRosa: #ff1777;
                 }
             }
         }
-    } // PRETO E BRANCO
+    }
+    // Campanhas Disponíveis
+    &.campDisponivel {
+        .conteudo {
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            .formaPagamento {
+                > .titulo {
+                    font-size: 12px;
+                    color: $secundaria;
+                }
+                > .valor {
+                    color: $primaria;
+                    font-weight: normal;
+                    small {
+                        color: $verde;
+                        font-size: 10px;
+                        font-weight: bold;
+                        @media screen and (max-width: $maxMobile) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .tags {
+                margin: 15px 0;
+                .tagList {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    .tag {
+                        text-transform: uppercase;
+                        font-size: 11px;
+                        background-color: $corLinha;
+                        display: inline-block;
+                        color: #fff;
+                        padding: 5px 10px;
+                        border-radius: 4px;
+                        font-weight: bold;
+                        margin-right: -4px;
+                        &:not(:first-child) {
+                            margin-left: 5px;
+                        }
+                        &.azul {
+                            background-color: $azulClaro;
+                        }
+                        &.rosa {
+                            background-color: $rosaPadrao;
+                        }
+                    }
+                }
+            }
+            .desc {
+                color: $secundaria;
+                > .txt {
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                }
+                > .autor {
+                    font-size: 10px;
+                    a {
+                        color: $primaria;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .btn-participar {
+                padding: 20px 0;
+                border-bottom: 1px solid $corLinha;
+                .button {
+                    text-decoration: none;
+                    background-color: $azulClaro;
+                    color: #fff;
+                    font-weight: bold;
+                    font-size: 14px;
+                    text-align: center;
+                    width: 100%;
+                    padding: 15px 20px;
+                    border-radius: 4px;
+                }
+            }
+            .iconesSociais {
+                padding-top: 20px;
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    // PRETO E BRANCO
     &.expired {
         .capa,
         .redeSocial,
