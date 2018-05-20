@@ -4083,13 +4083,16 @@ body {
   color: #9aa3c2;
 }
 
-.modal.influu#modalParticiparCampanhaSocial .modal-body .listSocial {
+/* #######################################
+        BOTÕES DE REDES SOCIAIS HORIZONTAL
+   ####################################### */
+.listSocial {
   padding: 0;
   list-style: none;
   margin: 0;
 }
 
-.modal.influu#modalParticiparCampanhaSocial .modal-body .listSocial .botao {
+.listSocial .botao {
   position: relative;
   background-color: #fe2787;
   color: #fff;
@@ -4097,18 +4100,34 @@ body {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  margin-bottom: 10px;
   padding: 0px 10px;
+  margin-bottom: 10px;
 }
 
-.modal.influu#modalParticiparCampanhaSocial .modal-body .listSocial .botao .icon {
+.listSocial .botao:last-child {
+  margin-bottom: 0px;
+}
+
+.listSocial .botao .icon {
   font-size: 24px;
   margin-right: 30px;
 }
 
-.modal.influu#modalParticiparCampanhaSocial .modal-body .listSocial .botao .frase {
+@media screen and (max-width: 767px) {
+  .listSocial .botao .icon {
+    margin-right: 20px;
+  }
+}
+
+.listSocial .botao .frase {
   font-weight: bold;
   font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .listSocial .botao .frase {
+    font-size: 12px;
+  }
 }
 
 /* #######################################
@@ -4213,6 +4232,18 @@ body {
   white-space: nowrap;
 }
 
+.influu-form .selectVue .open-indicator {
+  width: 7px;
+  height: 18px;
+  bottom: -2px;
+  right: 15px;
+}
+
+.influu-form .selectVue .open-indicator::before {
+  height: 7px;
+  width: 7px;
+}
+
 .influu-form .selectVue ul.dropdown-menu {
   border-color: #e5ecf6;
   overflow: hidden;
@@ -4278,6 +4309,22 @@ body {
   bottom: -4px;
 }
 
+.influu-form .selectVue.comLabel .dropdown-toggle {
+  height: 57px;
+  padding: 0;
+}
+
+.influu-form .selectVue.comLabel .dropdown-toggle span.selected-tag {
+  left: 12px;
+  top: 17px;
+}
+
+.influu-form .selectVue.comLabel .dropdown-toggle input.form-control {
+  height: 54px;
+  padding-left: 18px;
+  padding-top: 11px;
+}
+
 .influu-form .radio {
   position: relative;
   display: flex;
@@ -4328,6 +4375,26 @@ body {
 .influu-form .radio label span {
   max-width: calc(100% - 18px);
   padding-left: 10px;
+}
+
+.influu-form .botao {
+  display: block;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  line-break: 1;
+  background-color: #9aa3c2;
+  color: #fff;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.influu-form .botao.rosa {
+  background-color: #fe1777;
 }
 
 /* #######################################
@@ -4517,5 +4584,49 @@ nav.areaPaginas .paginacao .pagItem.desativado .pagLink {
 
 nav.areaPaginas .paginacao .pagItem:not(:disabled):not(.desativado) .pagLink {
   cursor: pointer;
+}
+
+/* #######################################
+        CONFIGURAÇÕES DE PERFIL
+   ####################################### */
+.areaHistoricoConta .conteudo .influu-form {
+  margin-bottom: 20px;
+}
+
+.areaHistoricoConta .conteudo .influu-form .selectVue {
+  margin-top: 0;
+}
+
+.areaHistoricoConta .conteudo .influu-form .selectVue button.clear {
+  display: none;
+}
+
+.areaHistoricoConta .informacoesPessoais .dataNascimento {
+  position: relative;
+}
+
+.areaHistoricoConta .informacoesPessoais .dataNascimento .calendario {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  color: #9aa3c2;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.areaHistoricoConta .informacoesPessoais .redesSociais {
+  margin: 0 -25px;
+  border-top: 1px solid #e5ecf6;
+  border-bottom: 1px solid #e5ecf6;
+  padding: 25px 10px;
+}
+
+.areaHistoricoConta .informacoesPessoais .footer {
+  padding: 20px 0px 0px 0px;
+}
+
+.areaHistoricoConta .informacoesPessoais .footer .influu-form {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

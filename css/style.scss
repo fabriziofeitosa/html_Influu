@@ -3790,29 +3790,44 @@ $loadingRosa: #ff1777;
                 font-size: 14px;
                 color: $secundaria;
             }
-            .listSocial {
-                padding: 0;
-                list-style: none;
-                margin: 0;
-                .botao {
-                    position: relative;
-                    background-color: #fe2787; // Cor Padrão
-                    color: #fff;
-                    border-radius: 4px;
-                    height: 50px;
-                    line-height: 50px;
-                    text-align: center;
-                    margin-bottom: 10px;
-                    padding: 0px 10px;
-                    .icon {
-                        font-size: 24px;
-                        margin-right: 30px;
-                    }
-                    .frase {
-                        font-weight: bold;
-                        font-size: 14px;
-                    }
-                }
+        }
+    }
+}
+
+/* #######################################
+        BOTÕES DE REDES SOCIAIS HORIZONTAL
+   ####################################### */
+
+.listSocial {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    .botao {
+        position: relative;
+        background-color: #fe2787; // Cor Padrão
+        color: #fff;
+        border-radius: 4px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        padding: 0px 10px;
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        .icon {
+            font-size: 24px;
+            margin-right: 30px;
+            @media screen and (max-width: $maxMobile) {
+                margin-right: 20px;
+
+            }
+        }
+        .frase {
+            font-weight: bold;
+            font-size: 14px;
+            @media screen and (max-width: $maxMobile) {
+                font-size: 12px;
             }
         }
     }
@@ -3907,6 +3922,16 @@ $loadingRosa: #ff1777;
                 white-space: nowrap;
             }
         }
+        .open-indicator {
+            width: 7px;
+            height: 18px;
+            bottom: -2px;
+            right: 15px;
+            &::before {
+                height: 7px;
+                width: 7px;
+            }
+        }
         ul.dropdown-menu {
             border-color: $corLinha;
             overflow: hidden;
@@ -3968,6 +3993,22 @@ $loadingRosa: #ff1777;
                 }
             }
         }
+        // Com Label
+        &.comLabel {
+            .dropdown-toggle {
+                height: 57px;
+                padding: 0;
+                span.selected-tag {
+                    left: 12px;
+                    top: 17px;
+                }
+                input.form-control {
+                    height: 54px;
+                    padding-left: 18px;
+                    padding-top: 11px;
+                }
+            }
+        }
     }
     .radio {
         position: relative;
@@ -4012,6 +4053,29 @@ $loadingRosa: #ff1777;
                 max-width: calc(100% - 18px);
                 padding-left: 10px;
             }
+        }
+    }
+    // Checkbox
+    .checkbox {
+
+    }
+    // Botões
+    .botao {
+        display: block;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: bold;
+        line-break: 1;
+        background-color: $secundaria;
+        color: #fff;
+        padding: 15px 20px;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        &.rosa {
+            background-color: $rosaPadrao;
         }
     }
 }
@@ -4190,6 +4254,48 @@ nav.areaPaginas {
                 .pagLink {
                     cursor: pointer;
                 }
+            }
+        }
+    }
+}
+
+/* #######################################
+        CONFIGURAÇÕES DE PERFIL
+   ####################################### */
+
+.areaHistoricoConta {
+    .conteudo {
+        .influu-form {
+            margin-bottom: 20px;
+            .selectVue {
+                margin-top: 0;
+                button.clear { display: none; }
+            }
+        }
+    }
+    .informacoesPessoais {
+        .dataNascimento {
+            position: relative;
+            .calendario {
+                position: absolute;
+                top: 14px;
+                right: 14px;
+                color: $secundaria;
+                font-size: 24px;
+                line-height: 1;
+                cursor: pointer;
+            }
+        }
+        .redesSociais {
+            margin: 0 -25px;
+            border-top: 1px solid $corLinha;
+            border-bottom: 1px solid $corLinha;
+            padding: 25px 10px;
+        }
+        .footer {
+            padding: 20px 0px 0px 0px;
+            .influu-form {
+                margin: 0;
             }
         }
     }
