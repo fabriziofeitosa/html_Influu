@@ -4734,6 +4734,12 @@ nav.areaPaginas .paginacao .pagItem:not(:disabled):not(.desativado) .pagLink {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 767px) {
+  .areaHistoricoConta .informacoesPessoais .redesSociais .ultimoItem {
+    margin-bottom: 10px;
+  }
+}
+
 .areaHistoricoConta .mudarSenha .checkLembrar {
   padding-bottom: 20px;
 }
