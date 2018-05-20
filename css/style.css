@@ -4464,4 +4464,58 @@ body {
   color: #fe1777;
   text-decoration: none;
 }
+
+.areaHistoricoConta nav.areaPaginas {
+  padding-bottom: 20px;
+}
+
+/* #######################################
+        PAGINAÇÃO
+   ####################################### */
+nav.areaPaginas {
+  display: block;
+  margin: 8px 0;
+}
+
+nav.areaPaginas .paginacao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.areaPaginas .paginacao .pagItem .pagLink {
+  position: relative;
+  display: block;
+  padding: 15px 20px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #555566;
+  background-color: #fff;
+  border: 1px solid #e5ecf6;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+nav.areaPaginas .paginacao .pagItem:not(:last-child) .pagLink {
+  margin-right: 8px;
+}
+
+nav.areaPaginas .paginacao .pagItem.ativado .pagLink {
+  background-color: #fe1777;
+  color: #fff;
+}
+
+nav.areaPaginas .paginacao .pagItem.desativado .pagLink {
+  color: #e5ecf6;
+  pointer-events: none;
+  cursor: auto;
+}
+
+nav.areaPaginas .paginacao .pagItem:not(:disabled):not(.desativado) .pagLink {
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
