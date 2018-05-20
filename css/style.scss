@@ -2541,6 +2541,55 @@ $loadingRosa: #ff1777;
                 }
             }
         }
+        &.vazio {
+            position: relative;
+            height: calc(100% - 20px);
+            border: 2px dashed #babfd3;
+            background-color: transparent;
+            padding: 50px 15px;
+            .area {
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                .icon {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    background-color: $azulClaro;
+                    color: #fff;
+                    font-size: 30px;
+                    margin-bottom: 20px;
+                    border-radius: 50%;
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                    transform: rotate(-45deg);
+                    .plus {
+                        position: absolute;
+                        font-size: 9px;
+                        top: 17px;
+                        right: 17px;
+                        -webkit-transform: rotate(45deg);
+                        -moz-transform: rotate(45deg);
+                        -o-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+                .txt {
+                    h6 {
+                        font-size: 16px;
+                        color: #555566;
+                        margin: 0;
+                    }
+                    .sub {
+                        font-size: 13px;
+                        color: #9aa3c2;
+                    }
+                }
+            }
+        }
     }
     &.areaCampanha {
         position: relative;
