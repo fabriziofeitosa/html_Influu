@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/bootstrap-select.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Influuencer-Settings-Personal-Information</title>
+  <title>Influuencer-Settings-Payment-Information</title>
 </head>
 
 <body>
@@ -335,8 +335,8 @@
             </div>
             <div class="corpo">
               <ul class="optList">
-                <!-- item | Class 'active' -->
-                <li class="item active">
+                <!-- item -->
+                <li class="item">
                   <a href="#">Informações Pessoais</a>
                 </li>
                 <!-- item -->
@@ -347,8 +347,8 @@
                 <li class="item">
                   <a href="#">Mudar Senha</a>
                 </li>
-                <!-- item -->
-                <li class="item">
+                <!-- item | Class 'active' -->
+                <li class="item active">
                   <a href="#">Informações de Pagamento</a>
                 </li>
               </ul>
@@ -359,46 +359,46 @@
         <!-- ÁREA DE CONTEUDO -->
         <div class="col-12 col-md-9 conteudo">
           
-          <div class="boxHeader informacoesPessoais">
-            <div class="header">Informações Pessoais</div>
+          <div class="boxHeader informacoesDePagamento">
+            <div class="header">Informações de Pagamento</div>
             <div class="corpo">
 
               <div class="row">
-                <!-- Nome -->
+                <!-- Nome Completo -->
                 <div class="col-12 col-md-6">
                   <div class="influu-form">
                     <input type="text">
-                    <label for="">Nome</label>
+                    <label for="">Nome Completo</label>
                   </div>
                 </div>
-                <!-- Sobrenome -->
+                <!-- RG -->
                 <div class="col-12 col-md-6">
                   <div class="influu-form">
                     <input type="text">
-                    <label for="">Sobrenome</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <!-- Nome -->
-                <div class="col-12 col-md-6">
-                  <div class="influu-form">
-                    <input type="text">
-                    <label for="">E-mail</label>
-                  </div>
-                </div>
-                <!-- Sobrenome -->
-                <div class="col-12 col-md-6">
-                  <div class="influu-form">
-                    <input type="text">
-                    <label for="">Website</label>
+                    <label for="">RG</label>
                   </div>
                 </div>
               </div>
 
               <div class="row">
-                <!-- Nome -->
+                <!-- CPF -->
+                <div class="col-12 col-md-6">
+                  <div class="influu-form">
+                    <input type="text">
+                    <label for="">CPF</label>
+                  </div>
+                </div>
+                <!-- Orgão Emissor -->
+                <div class="col-12 col-md-6">
+                  <div class="influu-form">
+                    <input type="text">
+                    <label for="">Orgão Emissor</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <!-- Data de Nascimento -->
                 <div class="col-12 col-md-6">
                   <div class="influu-form dataNascimento">
                     <input type="text">
@@ -409,7 +409,7 @@
                     </div>
                   </div>
                 </div>
-                <!-- Sobrenome -->
+                <!-- Telefone de contato -->
                 <div class="col-12 col-md-6">
                   <div class="influu-form">
                     <input type="text">
@@ -419,138 +419,55 @@
               </div>
 
               <div class="row">
-                <!-- Seu País -->
+                <!-- Email de Cobrança -->
                 <div class="col-12 col-md-4">
                   <div class="influu-form">
-                    <div class="selectVue comLabel selectPais">
-                      <v-select :options="options" label="title" placeholder="">
-                        <template slot="option" slot-scope="option">
-                          {{ option.title }}
-                        </template>
-                      </v-select>
-                    </div>
-                    <label for="">País</label>
+                    <input type="text">
+                    <label for="">Email de Cobrança</label>
                   </div>
                 </div>
-                <!-- Seu Estado -->
+                <!-- Banco -->
                 <div class="col-12 col-md-4">
                   <div class="influu-form">
-                    <div class="selectVue comLabel selectEstado">
+                    <div class="selectVue comLabel selectBanco">
                       <v-select :options="options" label="title" placeholder="">
                         <template slot="option" slot-scope="option">
                           {{ option.title }}
                         </template>
                       </v-select>
                     </div>
-                    <label for="">Estado</label>
+                    <label for="">Banco</label>
                   </div>
                 </div>
-                <!-- Sua Cidade -->
+                <!-- Tipo de conta -->
                 <div class="col-12 col-md-4">
                   <div class="influu-form">
-                    <div class="selectVue comLabel selectCidade">
+                    <div class="selectVue comLabel selectTipoDeConta">
                       <v-select :options="options" label="title" placeholder="">
                         <template slot="option" slot-scope="option">
                           {{ option.title }}
                         </template>
                       </v-select>
                     </div>
-                    <label for="">Cidade</label>
+                    <label for="">Tipo de conta</label>
                   </div>
                 </div>
               </div>
 
               <div class="row">
-                <!-- Nome -->
+                <!-- Número da Agência -->
                 <div class="col-12 col-md-6">
                   <div class="influu-form">
-                    <textarea name="" id="" rows="4" style="height: 133px;"></textarea>
-                    <label for="">Escreva resumidamente sobre você</label>
+                    <input type="text">
+                    <label for="">Número da Agência</label>
                   </div>
                 </div>
-                <!-- Sobrenome -->
+                <!-- Número da Conta -->
                 <div class="col-12 col-md-6">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="influu-form">
-                        <input type="text" placeholder="Ex.: YouTuber">
-                        <label for="">Sua Ocupação</label>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="influu-form">
-                        <input type="text" placeholder="Ex.: Jogos, Musica...">
-                        <label for="">Acompanhamento</label>
-                      </div>
-                    </div>
+                  <div class="influu-form">
+                    <input type="text">
+                    <label for="">Número da Conta</label>
                   </div>
-                </div>
-              </div>
-
-              <div class="row redesSociais">
-                <div class="col-12 col-md-6">
-                  <ul class="listSocial">
-
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #00a0d2">
-                      <div class="icon">
-                        <i class="fab fa-wordpress-simple"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o WordPress</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #ef5d2e">
-                      <div class="icon">
-                        <i class="fab fa-instagram"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o Instagram</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #e03612">
-                      <div class="icon">
-                        <i class="fab fa-youtube"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o YouTube</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-                  
-                  </ul>
-                </div>
-                <div class="col-12 col-md-6">
-                  <ul class="listSocial">
-                  
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #00b2ee">
-                      <div class="icon">
-                        <i class="fab fa-twitter"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o Twitter</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-                  
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #0153a5">
-                      <div class="icon">
-                        <i class="fab fa-facebook-f"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o Facebook</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-                  
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #cc2129">
-                      <div class="icon">
-                        <i class="fab fa-pinterest"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o Pinterest</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-                  
-                  </ul>
                 </div>
               </div>
 
@@ -599,69 +516,40 @@
     Vue.component('v-select', VueSelect.VueSelect)
     // Pais
     new Vue({
-      el: '.selectPais',
+      el: '.selectBanco',
       data: {
         selected: {
-          title: 'Brasil'
+          title: '001 - Santander Brasil'
         },
         options: [
           {
-            title: 'Brasil'
+            title: '001 - Santander Brasil'
           },
           {
-            title: 'EUA'
+            title: '002 - Banco do Brasil'
           },
           {
-            title: 'Japão'
+            title: '003 - Caixa Econômica'
           },
           {
-            title: 'Canadá'
+            title: '004 - Bradesco'
           }
         ]
       }
     })
     // Estado
     new Vue({
-      el: '.selectEstado',
+      el: '.selectTipoDeConta',
       data: {
         selected: {
-          title: 'Ceará'
+          title: 'Conta Corrente'
         },
         options: [
           {
-            title: 'Ceará'
+            title: 'Conta Corrente'
           },
           {
-            title: 'Bahia'
-          },
-          {
-            title: 'Rio de janeiro'
-          },
-          {
-            title: 'São Paulo'
-          }
-        ]
-      }
-    })
-    // Cidade
-    new Vue({
-      el: '.selectCidade',
-      data: {
-        selected: {
-          title: 'Fotaleza'
-        },
-        options: [
-          {
-            title: 'Fortaleza'
-          },
-          {
-            title: 'Recife'
-          },
-          {
-            title: 'São Paulo'
-          },
-          {
-            title: 'Rio de Janeiro'
+            title: 'Poupança'
           }
         ]
       }

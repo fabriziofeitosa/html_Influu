@@ -4377,6 +4377,103 @@ body {
   padding-left: 10px;
 }
 
+.influu-form .checkbox {
+  margin: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.influu-form .checkbox input[type='checkbox'] {
+  position: absolute;
+  left: -9999px;
+  width: auto;
+  display: inline-block;
+}
+
+.influu-form .checkbox.normal .quadro {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border: 1px solid #e5ecf6;
+}
+
+.influu-form .checkbox.normal .quadro .ponto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: none;
+  width: 8px;
+  height: 8px;
+  background-color: #ff5c39;
+}
+
+.influu-form .checkbox.normal .frase {
+  cursor: pointer;
+  color: #9aa3c2;
+  padding-left: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  max-width: calc(100% - 30px);
+}
+
+.influu-form .checkbox.normal input[type='checkbox']:checked + .quadro {
+  border: 1px solid #ff5c39;
+}
+
+.influu-form .checkbox.normal input[type='checkbox']:checked + .quadro .ponto {
+  display: inline-block;
+}
+
+.influu-form .checkbox.ios {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.influu-form .checkbox.ios input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.influu-form .checkbox.ios input + i {
+  border: 2px solid #e5ecf6;
+  background-color: #e5ecf6;
+  width: 65px;
+  height: 30px;
+  padding: 2px;
+  float: left;
+  border-radius: 20px;
+  transition: all .25s;
+}
+
+.influu-form .checkbox.ios input + i:after {
+  content: ' ';
+  background-color: #fff;
+  float: left;
+  width: 22px;
+  height: 100%;
+  border-radius: inherit;
+  transition: inherit;
+}
+
+.influu-form .checkbox.ios input:checked + i {
+  border-color: #fe1777;
+  background-color: #fe1777;
+}
+
+.influu-form .checkbox.ios input:checked + i:after {
+  background-color: #fff;
+  margin-left: calc(100% - 22px);
+}
+
 .influu-form .botao {
   display: block;
   border: none;
@@ -4395,6 +4492,12 @@ body {
 
 .influu-form .botao.rosa {
   background-color: #fe1777;
+}
+
+@media screen and (max-width: 767px) {
+  .influu-form .botao {
+    margin-bottom: 10px;
+  }
 }
 
 /* #######################################
@@ -4430,6 +4533,10 @@ body {
 }
 
 .areaHistoricoConta .optList .item a:hover {
+  color: #fe1777;
+}
+
+.areaHistoricoConta .optList .item.active a {
   color: #fe1777;
 }
 
@@ -4601,11 +4708,15 @@ nav.areaPaginas .paginacao .pagItem:not(:disabled):not(.desativado) .pagLink {
   display: none;
 }
 
-.areaHistoricoConta .informacoesPessoais .dataNascimento {
+.areaHistoricoConta .conteudo .footer .influu-form {
+  margin: 0;
+}
+
+.areaHistoricoConta .conteudo .dataNascimento {
   position: relative;
 }
 
-.areaHistoricoConta .informacoesPessoais .dataNascimento .calendario {
+.areaHistoricoConta .conteudo .dataNascimento .calendario {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -4620,13 +4731,32 @@ nav.areaPaginas .paginacao .pagItem:not(:disabled):not(.desativado) .pagLink {
   border-top: 1px solid #e5ecf6;
   border-bottom: 1px solid #e5ecf6;
   padding: 25px 10px;
+  margin-bottom: 20px;
 }
 
-.areaHistoricoConta .informacoesPessoais .footer {
-  padding: 20px 0px 0px 0px;
+.areaHistoricoConta .mudarSenha .checkLembrar {
+  padding-bottom: 20px;
 }
 
-.areaHistoricoConta .informacoesPessoais .footer .influu-form {
-  margin: 0;
+.areaHistoricoConta .mudarSenha .checkLembrar .lembrarSenha {
+  font-size: 13px;
+  font-weight: bold;
+  color: #9aa3c2;
+  text-decoration: none;
+}
+
+.areaHistoricoConta .configConta .selectGrop {
+  padding: 10px 0;
+}
+
+.areaHistoricoConta .configConta .selectGrop .conteudo .titulo {
+  font-weight: bold;
+  color: #555566;
+  font-size: 14px;
+}
+
+.areaHistoricoConta .configConta .selectGrop .conteudo .txt {
+  color: #9aa3c2;
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */

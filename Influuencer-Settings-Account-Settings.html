@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/bootstrap-select.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Influuencer-Settings-Personal-Information</title>
+  <title>Influuencer-Settings-Account-Settings</title>
 </head>
 
 <body>
@@ -335,12 +335,12 @@
             </div>
             <div class="corpo">
               <ul class="optList">
-                <!-- item | Class 'active' -->
-                <li class="item active">
-                  <a href="#">Informações Pessoais</a>
-                </li>
                 <!-- item -->
                 <li class="item">
+                  <a href="#">Informações Pessoais</a>
+                </li>
+                <!-- item | Class 'active' -->
+                <li class="item active">
                   <a href="#">Configuração de Conta</a>
                 </li>
                 <!-- item -->
@@ -359,198 +359,73 @@
         <!-- ÁREA DE CONTEUDO -->
         <div class="col-12 col-md-9 conteudo">
           
-          <div class="boxHeader informacoesPessoais">
-            <div class="header">Informações Pessoais</div>
+          <div class="boxHeader configConta">
+            <div class="header">Configuração de Conta</div>
             <div class="corpo">
 
               <div class="row">
-                <!-- Nome -->
+                <!-- Quem pode ver -->
                 <div class="col-12 col-md-6">
                   <div class="influu-form">
-                    <input type="text">
-                    <label for="">Nome</label>
-                  </div>
-                </div>
-                <!-- Sobrenome -->
-                <div class="col-12 col-md-6">
-                  <div class="influu-form">
-                    <input type="text">
-                    <label for="">Sobrenome</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <!-- Nome -->
-                <div class="col-12 col-md-6">
-                  <div class="influu-form">
-                    <input type="text">
-                    <label for="">E-mail</label>
-                  </div>
-                </div>
-                <!-- Sobrenome -->
-                <div class="col-12 col-md-6">
-                  <div class="influu-form">
-                    <input type="text">
-                    <label for="">Website</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <!-- Nome -->
-                <div class="col-12 col-md-6">
-                  <div class="influu-form dataNascimento">
-                    <input type="text">
-                    <label for="">Data de Nascimento</label>
-                    <!-- Calendario -->
-                    <div class="calendario">
-                      <i class="far fa-calendar-alt"></i>
-                    </div>
-                  </div>
-                </div>
-                <!-- Sobrenome -->
-                <div class="col-12 col-md-6">
-                  <div class="influu-form">
-                    <input type="text">
-                    <label for="">Telefone de contato</label>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <!-- Seu País -->
-                <div class="col-12 col-md-4">
-                  <div class="influu-form">
-                    <div class="selectVue comLabel selectPais">
-                      <v-select :options="options" label="title" placeholder="">
+                    <div class="selectVue comLabel selectVerCampanhas">
+                      <v-select :options="options" label="title" v-model="selected">
                         <template slot="option" slot-scope="option">
                           {{ option.title }}
                         </template>
                       </v-select>
                     </div>
-                    <label for="">País</label>
+                    <label for="">Quem pode ver suas campanhas ativas?</label>
                   </div>
                 </div>
-                <!-- Seu Estado -->
-                <div class="col-12 col-md-4">
+
+                <!-- Quem pode ver Posts -->
+                <div class="col-12 col-md-6">
                   <div class="influu-form">
-                    <div class="selectVue comLabel selectEstado">
-                      <v-select :options="options" label="title" placeholder="">
+                    <div class="selectVue comLabel selectVerPosts">
+                      <v-select :options="options" label="title" v-model="selected">
                         <template slot="option" slot-scope="option">
                           {{ option.title }}
                         </template>
                       </v-select>
                     </div>
-                    <label for="">Estado</label>
-                  </div>
-                </div>
-                <!-- Sua Cidade -->
-                <div class="col-12 col-md-4">
-                  <div class="influu-form">
-                    <div class="selectVue comLabel selectCidade">
-                      <v-select :options="options" label="title" placeholder="">
-                        <template slot="option" slot-scope="option">
-                          {{ option.title }}
-                        </template>
-                      </v-select>
-                    </div>
-                    <label for="">Cidade</label>
+                    <label for="">Quem pode ver seus posts?</label>
                   </div>
                 </div>
               </div>
 
-              <div class="row">
-                <!-- Nome -->
-                <div class="col-12 col-md-6">
-                  <div class="influu-form">
-                    <textarea name="" id="" rows="4" style="height: 133px;"></textarea>
-                    <label for="">Escreva resumidamente sobre você</label>
+              <div class="row selectGrop">
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                  <!-- Texto -->
+                  <div class="conteudo">
+                    <h6 class="titulo">Som de Notificações</h6>
+                    <p class="txt">Um som será tocado toda vez que você receber uma nova notificação de atividade</p>
                   </div>
-                </div>
-                <!-- Sobrenome -->
-                <div class="col-12 col-md-6">
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="influu-form">
-                        <input type="text" placeholder="Ex.: YouTuber">
-                        <label for="">Sua Ocupação</label>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="influu-form">
-                        <input type="text" placeholder="Ex.: Jogos, Musica...">
-                        <label for="">Acompanhamento</label>
-                      </div>
+                  <!-- Checkbox -->
+                  <div class="check">
+                    <div class="influu-form">
+                      <label class="checkbox ios">
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="row redesSociais">
-                <div class="col-12 col-md-6">
-                  <ul class="listSocial">
-
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #00a0d2">
-                      <div class="icon">
-                        <i class="fab fa-wordpress-simple"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o WordPress</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #ef5d2e">
-                      <div class="icon">
-                        <i class="fab fa-instagram"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o Instagram</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #e03612">
-                      <div class="icon">
-                        <i class="fab fa-youtube"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o YouTube</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-                  
-                  </ul>
-                </div>
-                <div class="col-12 col-md-6">
-                  <ul class="listSocial">
-                  
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #00b2ee">
-                      <div class="icon">
-                        <i class="fab fa-twitter"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o Twitter</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-                  
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #0153a5">
-                      <div class="icon">
-                        <i class="fab fa-facebook-f"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o Facebook</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-                  
-                    <!-- Item | Setando cores no final da linha -->
-                    <li class="botao d-flex flex-row justify-content-center" style="background-color: #cc2129">
-                      <div class="icon">
-                        <i class="fab fa-pinterest"></i>
-                      </div>
-                      <div class="frase text-uppercase">Entrar com o Pinterest</div>
-                      <a href="#linkSocial" class="tudo"></a>
-                    </li>
-                  
-                  </ul>
+                <div class="col-12 d-flex justify-content-between align-items-center">
+                  <!-- Texto -->
+                  <div class="conteudo">
+                    <h6 class="titulo">Notificações por E-mail</h6>
+                    <p class="txt">Enviaremos um e-mail para sua conta toda vez que você receber uma nova notificação de atividade</p>
+                  </div>
+                  <!-- Checkbox -->
+                  <div class="check">
+                    <div class="influu-form">
+                      <label class="checkbox ios">
+                        <input type="checkbox">
+                        <i></i>
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -558,7 +433,7 @@
                 <!-- Restaurar -->
                 <div class="col-12 col-md-6">
                   <div class="influu-form">
-                    <button class="botao">Restaurar atributos</button>
+                    <button class="botao">Restaurar Atributos</button>
                   </div>
                 </div>
                 <!-- Salvar -->
@@ -599,69 +474,34 @@
     Vue.component('v-select', VueSelect.VueSelect)
     // Pais
     new Vue({
-      el: '.selectPais',
+      el: '.selectVerCampanhas',
       data: {
         selected: {
-          title: 'Brasil'
+          title: 'Somente Eu'
         },
         options: [
           {
-            title: 'Brasil'
+            title: 'Todos'
           },
           {
-            title: 'EUA'
-          },
-          {
-            title: 'Japão'
-          },
-          {
-            title: 'Canadá'
+            title: 'Somente Eu'
           }
         ]
       }
     })
     // Estado
     new Vue({
-      el: '.selectEstado',
+      el: '.selectVerPosts',
       data: {
         selected: {
-          title: 'Ceará'
+          title: 'Todos'
         },
         options: [
           {
-            title: 'Ceará'
+            title: 'Todos'
           },
           {
-            title: 'Bahia'
-          },
-          {
-            title: 'Rio de janeiro'
-          },
-          {
-            title: 'São Paulo'
-          }
-        ]
-      }
-    })
-    // Cidade
-    new Vue({
-      el: '.selectCidade',
-      data: {
-        selected: {
-          title: 'Fotaleza'
-        },
-        options: [
-          {
-            title: 'Fortaleza'
-          },
-          {
-            title: 'Recife'
-          },
-          {
-            title: 'São Paulo'
-          },
-          {
-            title: 'Rio de Janeiro'
+            title: 'Somente Eu'
           }
         ]
       }

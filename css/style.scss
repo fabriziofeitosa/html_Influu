@@ -4057,7 +4057,96 @@ $loadingRosa: #ff1777;
     }
     // Checkbox
     .checkbox {
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        input[type='checkbox'] {
+            position: absolute;
+            left: -9999px;
+            width: auto;
+            display: inline-block;
+        }
 
+        // Estilo Normal
+        &.normal {
+            .quadro {
+                cursor: pointer;
+                position: relative;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                text-align: center;
+                border: 1px solid $corLinha;
+                .ponto {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    display: none;
+                    width: 8px;
+                    height: 8px;
+                    background-color: $laranja;
+                }
+            }
+            .frase {
+                cursor: pointer;
+                color: $secundaria;
+                padding-left: 10px;
+                font-size: 13px;
+                line-height: 18px;
+                max-width: calc(100% - 30px);
+            }
+            input[type='checkbox'] {
+                &:checked + .quadro {
+                    border: 1px solid $laranja;
+                    .ponto {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        // Estulo iOS
+        &.ios {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            input {
+                position: absolute;
+                visibility: hidden;
+                & + i {
+                    border: 2px solid $corLinha;
+                    background-color: $corLinha;
+                    width: 65px;
+                    height: 30px;
+                    padding: 2px;
+                    float: left;
+                    border-radius: 20px;
+                    transition: all .25s;
+                    &:after {
+                        content: ' ';
+                        background-color: #fff;
+                        float: left;
+                        width: 22px;
+                        height: 100%;
+                        border-radius: inherit;
+                        transition: inherit;
+                    }
+                }
+                &:checked + i {
+                    border-color: $rosaPadrao;
+                    background-color: $rosaPadrao;
+                    
+                    &:after {
+                        background-color: #fff;
+                        margin-left: calc(100% - 22px);
+                    }
+                }
+            }
+        }
     }
     // Botões
     .botao {
@@ -4076,6 +4165,9 @@ $loadingRosa: #ff1777;
         text-decoration: none;
         &.rosa {
             background-color: $rosaPadrao;
+        }
+        @media screen and (max-width: $maxMobile) {
+            margin-bottom: 10px;
         }
     }
 }
@@ -4108,6 +4200,11 @@ $loadingRosa: #ff1777;
                 text-decoration: none;
                 color: $secundaria;
                 &:hover {
+                    color: $rosaPadrao;
+                }
+            }
+            &.active {
+                a {
                     color: $rosaPadrao;
                 }
             }
@@ -4272,8 +4369,11 @@ nav.areaPaginas {
                 button.clear { display: none; }
             }
         }
-    }
-    .informacoesPessoais {
+        .footer {
+            .influu-form {
+                margin: 0;
+            }
+        }
         .dataNascimento {
             position: relative;
             .calendario {
@@ -4286,16 +4386,40 @@ nav.areaPaginas {
                 cursor: pointer;
             }
         }
+    }
+    .informacoesPessoais {
         .redesSociais {
             margin: 0 -25px;
             border-top: 1px solid $corLinha;
             border-bottom: 1px solid $corLinha;
             padding: 25px 10px;
+            margin-bottom: 20px;
         }
-        .footer {
-            padding: 20px 0px 0px 0px;
-            .influu-form {
-                margin: 0;
+    }
+    .mudarSenha {
+        .checkLembrar {
+            padding-bottom: 20px;
+            .lembrarSenha {
+                font-size: 13px;
+                font-weight: bold;
+                color: $secundaria;
+                text-decoration: none;
+            }
+        }
+    }
+    .configConta {
+        .selectGrop {
+            padding: 10px 0;
+            .conteudo {
+                .titulo {
+                    font-weight: bold;
+                    color: $primaria;
+                    font-size: 14px;
+                }
+                .txt {
+                    color: $secundaria;
+                    font-size: 12px;
+                }
             }
         }
     }
