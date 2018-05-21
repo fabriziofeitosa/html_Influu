@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/bootstrap-select.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Influencer-Campaign-Progress</title>
+  <title>AD-Campaign-Page</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     <div class="topo">
       <div class="conteudo d-flex flex-row justify-content-end">
         <!-- Título da página -->
-        <div class="titulo mr-auto d-none d-md-block">Campanhas Ativas</div>
+        <div class="titulo mr-auto d-none d-md-block">Título da Campanha - Todos os Posts</div>
 
         <!-- Notificações -->
         <div class="notificacoes">
@@ -350,20 +350,20 @@
           <div class="col-md-5">
             <ul class="d-flex flex-column flex-md-row justify-content-md-around">
               <li class="active"> <!-- Class para link ativado -->
-                <a href="#link">Posts Ativos</a>
+                <a href="#link">Todos os Posts</a>
               </li>
               <li>
-                <a href="#link">Posts Expirados</a>
+                <a href="#link">Posts Pendentes</a>
               </li>
             </ul>
           </div>
           <div class="col-md-5 ml-auto">
             <ul class="d-flex flex-column flex-md-row justify-content-md-around">
               <li>
-                <a href="#link">Sobre a Campanha</a>
+                <a href="#link">Pedidos</a>
               </li>
               <li>
-                <a href="#link">Em breve</a>
+                <a href="#link">Sobre a Campanha</a>
               </li>
             </ul>
           </div>
@@ -383,7 +383,7 @@
 
     </div>
 
-    <div class="subHeader filtroBy d-flex flex-column flex-md-row align-items-md-center justify-content-md-center flex-wrap flex-md-nowrap">
+    <div class="subHeader filtroBy filtroInfluuencers d-flex flex-column flex-md-row align-items-md-center justify-content-md-center flex-wrap flex-md-nowrap">
 
       <!-- Label -->
       <div class="label">Filtrar por:</div>
@@ -392,7 +392,23 @@
       <div class="filtro filtroSocial">
         <div class="influu-form">
           <div class="selectVue selectVueSocial">
-            <v-select :options="options" label="title" placeholder="Selecione uma rede social">
+            <v-select :options="options" label="title" placeholder="Rede social">
+              <template slot="option" slot-scope="option">
+                <span class="iconSocial">
+                  <img :src="option.icon" alt="Icone Social">
+                </span>
+                {{ option.title }}
+              </template>
+            </v-select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista de Influuencers -->
+      <div class="filtro filtroDeInfluuencers">
+        <div class="influu-form">
+          <div class="selectVue selectInfluuencers">
+            <v-select :options="options" label="title" placeholder="Influuencers">
               <template slot="option" slot-scope="option">
                 <span class="iconSocial">
                   <img :src="option.icon" alt="Icone Social">
@@ -854,6 +870,30 @@
           },
           {
             title: 'Likes decrescente'
+          }
+        ]
+      }
+    })
+
+    new Vue({
+      el: '.selectInfluuencers',
+      data: {
+        options: [
+          {
+            title: 'Todos',
+            icon: 'image/iconLogo.png'
+          },
+          {
+            title: 'Lucia',
+            icon: 'image/perfil02.png'
+          },
+          {
+            title: 'Júlia',
+            icon: 'image/perfil03.png'
+          },
+          {
+            title: 'Simoní',
+            icon: 'image/perfil04.png'
           }
         ]
       }
