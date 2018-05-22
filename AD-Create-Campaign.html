@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <!-- Font Icon -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/pickdate.css"></link>
+
   <!-- Style -->
-  <link rel="stylesheet" href="css/bootstrap-select.min.css">
   <link rel="stylesheet" href="css/style.css">
 
   <title>AD-Campaigns-Page</title>
@@ -321,19 +323,20 @@
 
         <!-- Data / Hora -->
         <div class="col-12 col-md-4">
-          <div class="influu-form">
+          <div class="influu-form input-append date form_datetime">
             <label for="">Data/Hora</label>
-            <input type="text" placeholder="00/00/0000 às 12h00">
+            <input type="text" class="date-input">
             <!-- Mensagem de Erro -->
             <div class="error">Informe uma data válida.</div>
             <!-- Icon atributo / Calendário -->
             <div class="iconAtributo">
               <div>
-                <a href="#" class="icon">
+                <div href="#" class="icon date-button">
                   <i class="far fa-calendar-alt"></i>
-                </a>
+                </div>
               </div>
             </div>
+            <div id="date-picker"> </div>
           </div>
         </div>
 
@@ -664,6 +667,8 @@
   <script src="js/bootstrap-select.js"></script>
 
   <script src="js/theme.js"></script>
+
+  <script src="js/pickadate.js"></script>
 
   <!-- Vue.js + VueSelect -->
   <script src="https://unpkg.com/vue@latest"></script>
