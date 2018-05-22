@@ -1880,6 +1880,22 @@ $loadingRosa: #ff1777;
             margin-right: 5px;
         }
     }
+    // Com Checkbox
+    &.checkbox {
+        .icon {
+            cursor: pointer;
+            margin-bottom: 0;
+            input[type='checkbox'] {
+                position: absolute;
+                left: -9999px;
+                &:not(:checked) + img {
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    filter: gray; /* IE */
+                }
+            }
+        }
+    }
 }
 
 /* #######################################
@@ -3963,6 +3979,12 @@ $loadingRosa: #ff1777;
             min-height: 128px;
         }
     }
+    .error {
+        display: none;
+        font-size: 10px;
+        color: red;
+        margin: 5px 0; 
+    }
     .btn-influu {
         width: 100%;
         padding: 15px 20px;
@@ -4267,6 +4289,110 @@ $loadingRosa: #ff1777;
             margin-bottom: 10px;
         }
     }
+
+    // Help
+    .help {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -25%);
+        transform: translate(0, -25%);
+        right: 15px;
+        z-index: 10;
+        color: $secundaria;
+        cursor: help;
+        height: 100%;
+        // padding-top: 14px;
+        > div {
+            position: relative;
+        }
+        .tooltiptext {
+            width: 180px;
+            visibility: hidden;
+            padding: 8px 10px;
+            background-color: $rosaPadrao;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 1;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            right: 24px;
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: calc(50% - 5px);
+                right: -4px;
+                width: 10px;
+                height: 10px;
+                background-color: $rosaPadrao;
+                -webkit-transform: rotate(45deg);
+                /* prefixo para browsers webkit */
+                -moz-transform: rotate(45deg);
+                /* prefixo para browsers gecko */
+                -o-transform: rotate(45deg);
+                /* prefixo para opera */
+                transform: rotate(45deg);
+            }
+        }
+        &:hover {
+            .tooltiptext {
+                visibility: visible;
+            }
+        }
+    }
+
+    // Icon de Atributo dentro do input
+    .iconAtributo {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translate(0, -25%);
+        transform: translate(0, -25%);
+        right: 15px;
+        z-index: 10;
+        color: $secundaria;
+        cursor: pointer;
+        height: 100%;
+        > div {
+            position: relative;
+        }
+        .icon {
+            font-size: 24px;
+            line-height: 1;
+            color: $secundaria;
+            text-decoration: none;
+        }
+    }
+
+    // Input sem Label
+    &.semLabel {
+        input {
+            padding: 17px 20px 17px;
+        }
+    }
+
+    // Inválido 
+    &.invalid {
+        input,
+        textarea {
+            border-color: red !important;
+        }
+        label {
+            color: red !important;
+        }
+        .help {
+            color: red !important;
+        }
+        .error {
+            display: block;
+        }
+    }
 }
 
 /* #######################################
@@ -4523,6 +4649,91 @@ nav.areaPaginas {
                     font-size: 12px;
                 }
             }
+        }
+    }
+}
+
+/* #######################################
+        CRIAR CAMPANHA
+   ####################################### */
+
+.criarCampanha {
+    border: 1px solid $corLinha;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 16px;
+    // Espaço
+    .influu-form {
+        margin-bottom: 20px;
+        .selectVue {
+            margin: 0;
+        }
+    }
+    .dataFim {
+        border: 1px solid $corLinha;
+        border-radius: 4px;
+        color: $secundaria;
+        font-size: 14px;
+        height: calc(100% - 20px);
+        min-height: 57px;
+        margin-bottom: 20px;
+        padding: 7px 20px 0 20px;
+        text-align: center;
+        @media screen and (max-width: $maxMobile) {
+            text-align: left;
+        }
+        .titulo {
+            font-size: 12px;
+            font-weight: bold;
+            color: $primaria;
+        }
+    }
+    .tipoCampanha,
+    .redesSociais {
+        .titulo {
+            .nome {
+                font-size: 18px;
+                font-weight: bold;
+                color: $primaria;
+                line-height: 1.2;
+            }
+            .sub {
+                color: $secundaria;
+                font-size: 12px;
+                line-height: 1.5;
+            }
+        }
+    }
+    .redesSociais {
+        @media screen and (max-width: $maxMobile) {
+            padding-top: 20px;
+        }
+        .listRedesSociais {
+            padding: 10px 0;
+            .icones-group {
+                .icon {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+    .help {
+        font-size: 14px;
+    }
+    .labelInline {
+        min-height: 57px;
+        .titulo {
+            font-size: 18px;
+            font-weight: bold;
+            color: $primaria;
+            line-height: 1.2;
+        }
+        .sub {
+            font-weight: normal;
+            color: $secundaria;
+            font-size: 12px;
+            line-height: 1.5;
         }
     }
 }

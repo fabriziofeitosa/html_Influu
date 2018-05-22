@@ -1902,6 +1902,23 @@ body {
   margin-right: 5px;
 }
 
+.icones-group.checkbox .icon {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.icones-group.checkbox .icon input[type='checkbox'] {
+  position: absolute;
+  left: -9999px;
+}
+
+.icones-group.checkbox .icon input[type='checkbox']:not(:checked) + img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+  /* IE */
+}
+
 /* #######################################
         CABEÇALHO
    ####################################### */
@@ -4271,6 +4288,13 @@ body {
   min-height: 128px;
 }
 
+.influu-form .error {
+  display: none;
+  font-size: 10px;
+  color: red;
+  margin: 5px 0;
+}
+
 .influu-form .btn-influu {
   width: 100%;
   padding: 15px 20px;
@@ -4602,6 +4626,108 @@ body {
   }
 }
 
+.influu-form .help {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  right: 15px;
+  z-index: 10;
+  color: #9aa3c2;
+  cursor: help;
+  height: 100%;
+}
+
+.influu-form .help > div {
+  position: relative;
+}
+
+.influu-form .help .tooltiptext {
+  width: 180px;
+  visibility: hidden;
+  padding: 8px 10px;
+  background-color: #fe1777;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  right: 24px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.influu-form .help .tooltiptext::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(50% - 5px);
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #fe1777;
+  -webkit-transform: rotate(45deg);
+  /* prefixo para browsers webkit */
+  -moz-transform: rotate(45deg);
+  /* prefixo para browsers gecko */
+  -o-transform: rotate(45deg);
+  /* prefixo para opera */
+  transform: rotate(45deg);
+}
+
+.influu-form .help:hover .tooltiptext {
+  visibility: visible;
+}
+
+.influu-form .iconAtributo {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  right: 15px;
+  z-index: 10;
+  color: #9aa3c2;
+  cursor: pointer;
+  height: 100%;
+}
+
+.influu-form .iconAtributo > div {
+  position: relative;
+}
+
+.influu-form .iconAtributo .icon {
+  font-size: 24px;
+  line-height: 1;
+  color: #9aa3c2;
+  text-decoration: none;
+}
+
+.influu-form.semLabel input {
+  padding: 17px 20px 17px;
+}
+
+.influu-form.invalid input,
+.influu-form.invalid textarea {
+  border-color: red !important;
+}
+
+.influu-form.invalid label {
+  color: red !important;
+}
+
+.influu-form.invalid .help {
+  color: red !important;
+}
+
+.influu-form.invalid .error {
+  display: block;
+}
+
 /* #######################################
         HISTÓRICO CONTA
    ####################################### */
@@ -4866,5 +4992,99 @@ nav.areaPaginas .paginacao .pagItem:not(:disabled):not(.desativado) .pagLink {
 .areaHistoricoConta .configConta .selectGrop .conteudo .txt {
   color: #9aa3c2;
   font-size: 12px;
+}
+
+/* #######################################
+        CRIAR CAMPANHA
+   ####################################### */
+.criarCampanha {
+  border: 1px solid #e5ecf6;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.criarCampanha .influu-form {
+  margin-bottom: 20px;
+}
+
+.criarCampanha .influu-form .selectVue {
+  margin: 0;
+}
+
+.criarCampanha .dataFim {
+  border: 1px solid #e5ecf6;
+  border-radius: 4px;
+  color: #9aa3c2;
+  font-size: 14px;
+  height: calc(100% - 20px);
+  min-height: 57px;
+  margin-bottom: 20px;
+  padding: 7px 20px 0 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .criarCampanha .dataFim {
+    text-align: left;
+  }
+}
+
+.criarCampanha .dataFim .titulo {
+  font-size: 12px;
+  font-weight: bold;
+  color: #555566;
+}
+
+.criarCampanha .tipoCampanha .titulo .nome,
+.criarCampanha .redesSociais .titulo .nome {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555566;
+  line-height: 1.2;
+}
+
+.criarCampanha .tipoCampanha .titulo .sub,
+.criarCampanha .redesSociais .titulo .sub {
+  color: #9aa3c2;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 767px) {
+  .criarCampanha .redesSociais {
+    padding-top: 20px;
+  }
+}
+
+.criarCampanha .redesSociais .listRedesSociais {
+  padding: 10px 0;
+}
+
+.criarCampanha .redesSociais .listRedesSociais .icones-group .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.criarCampanha .help {
+  font-size: 14px;
+}
+
+.criarCampanha .labelInline {
+  min-height: 57px;
+}
+
+.criarCampanha .labelInline .titulo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555566;
+  line-height: 1.2;
+}
+
+.criarCampanha .labelInline .sub {
+  font-weight: normal;
+  color: #9aa3c2;
+  font-size: 12px;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

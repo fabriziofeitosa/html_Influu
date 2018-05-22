@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- Font Icon -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+  <!-- Style -->
+  <link rel="stylesheet" href="css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>AD-Campaigns-Page</title>
+</head>
+
+<body>
+
+  <!-- MODALS -->
+  <div class="modal fade modalPadrao" id="criandoCampanha" tabindex="-1" role="dialog" aria-labelledby="criandoCampanha" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+
+        <!-- CAPA / Inserir imagem-->
+        <div class="capa">
+          <!-- Ou permite a Imagem ou a Div a seguir dela -->
+          <!-- <img src="image/capa.jpg" alt="Capa Exemplo"> -->
+
+          <!-- Div caso não tenha imagem -->
+          <div class="semImg d-flex flex-column justify-content-center align-items-center">
+            <div class="titulo">Inserir Imagem</div>
+            <div class="sub">Adicione uma imagem a sua campanha</div>
+          </div>
+
+          <a href="#" class="tudo"></a> <!-- link ? -->
+        </div>
+  
+        <!-- CORPO DO MODAL -->
+        <div class="modal-body">
+          <form action="#" method="POST">
+            <div class="row">
+
+              <!-- Título -->
+              <div class="col-12">
+                <div class="input-group influu">
+                  <!-- Título -->
+                  <label class="titulo" for="inputTitulo">Campanha:</label>
+                  <!-- Input -->
+                  <input type="text" class="form-control" id="inputTitulo">
+                  <!-- Help -->
+                  <div class="help d-none d-lg-block">
+                    <div>
+                      <i class="far fa-question-circle"></i>
+                      <div class="tooltiptext">Informe o nome da Campanha que deseja criar</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- URL Direcionamento -->
+              <div class="col-12">
+                <div class="input-group influu invalid"> <!-- class 'invalid' -->
+                  <!-- Título -->
+                  <label class="titulo" for="inputTitulo">URL Direcionamento:</label>
+                  <!-- Input -->
+                  <input type="text" class="form-control" id="inputTitulo">
+                  <!-- Help -->
+                  <div class="help d-none d-lg-block">
+                    <div>
+                      <i class="far fa-question-circle"></i>
+                      <div class="tooltiptext">URL para onde deve ser direcionada a campanha</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tipo de Campanha -->
+              <div class="col-12">
+                <div class="tipoCampanha">
+                  <span class="titulo">Tipo de Campanha:</span>
+                  <!-- Check -->
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="CPC">
+                    <label class="custom-control-label noSelect" for="CPC">CPC</label>
+                  </div>
+
+                  <!-- Check -->
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="CPI">
+                    <label class="custom-control-label noSelect" for="CPI">CPI</label>
+                  </div>
+
+                  <!-- Check -->
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="CPV">
+                    <label class="custom-control-label noSelect" for="CPV">CPV</label>
+                  </div>
+
+                  <!-- Check -->
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="CPS">
+                    <label class="custom-control-label noSelect" for="CPS">CPS</label>
+                  </div>
+
+                  <!-- Check -->
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="CPA">
+                    <label class="custom-control-label noSelect" for="CPA">CPA</label>
+                  </div>
+
+                  <!-- Check -->
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input type="checkbox" class="custom-control-input" id="CPM">
+                    <label class="custom-control-label noSelect" for="CPM">CPM</label>
+                  </div>
+
+                  <!-- Help -->
+                  <div class="help d-none d-inline-md-block">
+                    <div>
+                      <i class="far fa-question-circle"></i>
+                      <div class="tooltiptext">Clique aqui para abrir a página sobre os tipos de campanhas.</div>
+                      <a target="_blank" href="http://www.google.com" class="tudo"></a> <!-- Link -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </form>
+        </div>
+  
+        <!-- FOOTER DO MODAL -->
+        <div class="modal-footer d-flex flex-column flex-md-row justify-content-md-between">
+          <!-- Btn Cancelar-->
+          <a href="#cancelar" data-dismiss="modal" aria-label="Close" class="order-2 order-md-1 botao">
+            <span>Cancelar</span>
+          </a>
+          <!-- Btn Criar-->
+          <a href="#criar" class="order-1 order-md-2 botao criar">
+            <span>Criar Campanha</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FIM MODALS -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-select.js"></script>
+
+  <script src="js/theme.js"></script>
+
+  <script>
+    // Ficar mostrando sempre o Modal
+    $('#criandoCampanha').modal({
+      show: true
+    });
+  </script>
+</body>
+
+</html>
